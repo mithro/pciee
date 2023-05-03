@@ -20,3 +20,15 @@ I also have the following "expansion cards";
  * Bunch of Qnap combined GigE / M.2 NVMe hardware.
 
 I try to track this stuff in a [Google PCIe Switches Spreadsheet](https://docs.google.com/spreadsheets/d/1jZSAkNcLNtgT6uFQ9R1RPruqZ5_6tXa-Wqumv7s1jpU/edit#gid=1524818223) which should be publicly accessible.
+
+
+Interesting PCIe Kernel Parameters - https://static.lwn.net/kerneldoc/admin-guide/kernel-parameters.html
+
+ * `pci=realloc` - Enable/disable reallocating PCI bridge resources if allocations done by BIOS are too small to accommodate resources required by all child devices.
+
+ * `pci=nocrs` - [X86] Ignore PCI host bridge windows from ACPI. If you need to use this, please report a bug.
+ * `pci=assign-busses` - [X86] Always assign all PCI bus numbers ourselves, overriding.
+ * `pci=pcie_scan_all` - Scan all possible PCIe devices.  Otherwise we only look for one device below a PCIe downstream port.
+
+ * `pci=earlydump` - dump PCI config space before the kernel changes anything.
+
