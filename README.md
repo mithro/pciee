@@ -7,7 +7,9 @@ Experiments in understanding PCIe
  * Dell PowerEdge C410x
 
 The Supermicro 4028GR-TVRT has 2 x `PEX 9765` (65 lane, 17 port, PCI Express Gen3 ExpressFabric Platform) switches in it.
+
 The Dell C410X has 4 x `PEX 8696` (96-Lane, 24-Port PCI Express Gen 2 - 5.0 GT/s) switches in it.
+
 The IBM AC922 8335-GTH has a `PEX 8733` (32-Lane, 18-Port PCI Express Gen 3 - 8 GT/s) switch in it.
 
 I also have the following "expansion cards";
