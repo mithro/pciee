@@ -1,13 +1,112 @@
 #!/usr/bin/env python3
 
-import subprocess
+import os
 import pprint
+import subprocess
+import sys
 
-p = subprocess.Popen(['sudo', 'cat', '/proc/iomem'], stdout=subprocess.PIPE, encoding='utf-8')
-data_iomem, _ = p.communicate()
+COLS = int(os.environ.get('COLS', '80'))
 
-p = subprocess.Popen(['lspci', '-PPP'], stdout=subprocess.PIPE, encoding='utf-8')
-data_lspci, _ = p.communicate()
+def p(d, i=0):
+    if isinstance(d, dict):
+        if not d:
+            print('{}', end='')
+            return
+        print('{', end='\n')
+        for k in sorted(d):
+            if isinstance(k, tuple):
+                v = '('+hex(k[0])+', '+hex(k[1])+')'
+            else:
+                v = repr(k)
+
+            print((i+1)*' ', v, ':', end=' ')
+            p(d[k], i+1)
+            print(',', end='\n')
+        print(i*' ', '}', end='')
+    else:
+        print(repr(d), end='')
+
+
+def parents(start, end, regions):
+    """
+    >>> regions = {}
+    >>> a = (0, 1000)
+    >>> b = (2000, 3000)
+    >>> 
+    >>> parents(*a, regions)
+    >>> parents(*b, regions)
+    >>> list(regions.keys())
+    [(0, 1000), (2000, 3000)]
+    >>> parents(100, 200, regions)
+    >>> list(regions.keys())
+    [(0, 1000), (2000, 3000)]
+    >>> list(sorted(regions[a].keys()))
+    [(100, 200)]
+    >>> parents(50, 75, regions)
+    >>> list(sorted(regions[a].keys()))
+    [(50, 75), (100, 200)]
+    >>> parents(2000, 2100, regions)
+    >>> list(regions.keys())
+    [(0, 1000), (2000, 3000)]
+    >>> list(sorted(regions[b].keys()))
+    [(2000, 2100)]
+    >>> parents(2000, 2001, regions)
+    >>> list(sorted(regions[b].keys()))
+    [(2000, 2100)]
+    >>> parents(200, 300, regions)
+    >>> parents(100, 150, regions)
+    >>> p(regions)
+    {
+      (0x0, 0x3e8) : {
+       (0x32, 0x4b) : {},
+       (0x64, 0xc8) : {
+        (0x64, 0x96) : {},
+       },
+       (0xc8, 0x12c) : {},
+      },
+      (0x7d0, 0xbb8) : {
+       (0x7d0, 0x834) : {
+        (0x7d0, 0x7d1) : {},
+       },
+      },
+     }
+    """
+    assert end >= start, (start, end)
+
+    if (start, end) in regions:
+        return regions[(start, end)]
+
+    for (istart, iend) in regions.keys():
+        if start < istart:
+            continue
+        if start >= iend:
+            continue
+
+        assert end <= iend, ((hex(start), hex(end)), (hex(istart), hex(iend)))
+
+        return parents(start, end, regions[(istart, iend)])
+
+    if (start, end) not in regions:
+        regions[(start, end)] = {}
+    return regions[(start, end)]
+
+
+#import doctest
+#if not doctest.testmod():
+#    sys.exit(1)
+
+
+try:
+    data_iomem = open('iomem', encoding='utf-8').read()
+except FileNotFoundError:
+    p = subprocess.Popen(['sudo', 'cat', '/proc/iomem'], stdout=subprocess.PIPE, encoding='utf-8')
+    data_iomem, _ = p.communicate()
+
+try:
+    data_lspci = open('lspci', encoding='utf-8').read()
+except FileNotFoundError:
+    p = subprocess.Popen(['lspci', '-PPP'], stdout=subprocess.PIPE, encoding='utf-8')
+    data_lspci, _ = p.communicate()
 
 
 mem = {}
@@ -50,8 +149,7 @@ for line in data_iomem.splitlines():
     iend = eval('0x'+end)
     isize = iend-istart+1
 
-    region = (istart, iend, isize)
-    mem[region] = info
+    region = (istart, isize, iend, i)
 
     if info.startswith('0000:'):
         info = info[5:]
@@ -65,14 +163,46 @@ for line in data_iomem.splitlines():
         else:
             info = info + ' ?????? ' + repr(busno)
 
-    hregion = (' '*i, lpad(start, '0', m), lpad(end, '0', m), lpad(hex(isize)[2:], ' ', m))
-    hmem.append((hregion, info))
+    if region not in mem:
+        mem[region] = [info,]
+    else:
+        mem[region].append(info)
 
-pprint.pprint(devices)
 
-print()
+smem = []
+for (istart, size, iend, i), info in sorted(mem.items()):
+    smem.append((istart, iend, info))
 
-for (l, start, end, size), info in hmem:
-    if len(l) == 0:
-        print()
-    print(l, start, end, (10-len(l))*' ', size, l, info)
+
+tree = {}
+for start, end, info in sorted(smem, key=lambda x: (x[0], 0xffffffffffff-x[1], x[2])):
+    d = parents(start, end, tree)
+    if (0, 0) not in d:
+        d[(0,0)] = []
+    d[(0,0)].extend(info)
+
+
+def pmem(region, i=0):
+    for (istart, iend), d in region.items():
+        if (istart, iend) == (0, 0):
+            continue
+
+        isize = iend-istart+1
+
+        hstart = lpad(hex(istart)[2:], '0', m)
+        hend   = lpad(hex(iend)[2:], '0', m)
+        hsize  = lpad(hex(isize)[2:], ' ', m)
+
+        info = d.get((0, 0), [])
+
+        p1 = ' '*i
+        p2 = ' '*(5-i)
+
+        print('|', p1, hstart, hend, p2, '|', hsize, '|', p1, info) #" && ".join(info))
+
+        if len(d) == 1:
+            continue
+
+        pmem(d, i+1)
+
+pmem(tree)
