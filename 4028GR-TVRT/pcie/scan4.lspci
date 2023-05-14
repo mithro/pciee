@@ -14,6 +14,7 @@
 00:05.1 System peripheral: Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO Hot Plug (rev 01)
 00:05.2 System peripheral: Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO RAS/Control Status/Global Errors (rev 01)
 00:05.4 PIC: Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D I/O APIC (rev 01)
+-----------------------------------------
 00:05.6 Performance counters: Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IO Performance Monitoring (rev 01)
 00:06.0 System peripheral: Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO Debug (rev 01)
 00:06.1 System peripheral: Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO Debug (rev 01)
@@ -28,10 +29,12 @@
 00:07.2 System peripheral: Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO Debug (rev 01)
 00:07.3 System peripheral: Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO Debug (rev 01)
 00:07.4 System peripheral: Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO Debug (rev 01)
+-----------------------------------------
 00:11.0 Unassigned class [ff00]: Intel Corporation C610/X99 series chipset SPSR (rev 05)
 00:11.1 SMBus: Intel Corporation C610/X99 series chipset MS SMBus 0 (rev 05)
 00:11.2 SMBus: Intel Corporation C610/X99 series chipset MS SMBus 1 (rev 05)
 00:11.3 SMBus: Intel Corporation C610/X99 series chipset MS SMBus 2 (rev 05)
+00:11.4
 00:14.0 USB controller: Intel Corporation C610/X99 series chipset USB xHCI Host Controller (rev 05)
 00:16.0 Communication controller: Intel Corporation C610/X99 series chipset MEI Controller #1 (rev 05)
 00:16.1 Communication controller: Intel Corporation C610/X99 series chipset MEI Controller #2 (rev 05)
@@ -42,7 +45,9 @@
 00:1f.0 ISA bridge: Intel Corporation C610/X99 series chipset LPC Controller (rev 05)
 00:1f.2 SATA controller: Intel Corporation C610/X99 series chipset 6-Port SATA Controller [AHCI mode] (rev 05)
 00:1f.3 SMBus: Intel Corporation C610/X99 series chipset SMBus Controller (rev 05)
+
 00:01.0/01:00.0 PCI bridge: PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch
+-----------------------------------------
 00:01.0/01:00.0/02:00.0 PCI bridge: PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch
 00:01.0/01:00.0/02:01.0 PCI bridge: PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch
 00:01.0/01:00.0/02:02.0 PCI bridge: PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch
@@ -54,18 +59,41 @@
 00:01.0/01:00.0/02:00.0/03:00.0 Non-Volatile memory controller: Intel Corporation NVMe Datacenter SSD [3DNAND, Beta Rock Controller]
 00:01.0/01:00.0/02:01.0/04:00.0 Non-Volatile memory controller: Union Memory (Shenzhen) AM630 PCIe 4.0 x4 NVMe SSD Controller (rev 03)
 00:01.0/01:00.0/02:04.0/07:00.0 Non-Volatile memory controller: Intel Corporation NVMe Datacenter SSD [3DNAND, Beta Rock Controller]
+-----------------------------------------
 00:02.0/0b:00.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa)
 00:02.0/0b:00.0/0c:04.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa)
 00:02.0/0b:00.0/0c:08.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa)
 00:02.0/0b:00.0/0c:0c.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa)
 00:02.0/0b:00.0/0c:04.0/0d:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
 00:02.0/0b:00.0/0c:08.0/0e:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+-----------------------------------------
 00:02.0/0b:00.0/0c:0c.0/0f:00.0 PCI bridge: PLX Technology, Inc. Device 8733 (rev ba)
 00:02.0/0b:00.0/0c:0c.0/0f:00.1 System peripheral: PLX Technology, Inc. PEX PCI Express Switch DMA interface (rev ba)
 00:02.0/0b:00.0/0c:0c.0/0f:00.2 System peripheral: PLX Technology, Inc. PEX PCI Express Switch DMA interface (rev ba)
 00:02.0/0b:00.0/0c:0c.0/0f:00.3 System peripheral: PLX Technology, Inc. PEX PCI Express Switch DMA interface (rev ba)
 00:02.0/0b:00.0/0c:0c.0/0f:00.4 System peripheral: PLX Technology, Inc. PEX PCI Express Switch DMA interface (rev ba)
 00:02.0/0b:00.0/0c:0c.0/0f:00.0/10:08.0 PCI bridge: PLX Technology, Inc. Device 8733 (rev ba)
+00:02.0
+00:02.0
+00:02.0
+00:02.0
+00:02.0
+00:02.0
+00:02.0
+00:02.0
+00:02.0
+00:02.0
+00:02.0
+00:02.0
+00:02.0
+00:02.0
+00:02.0
+00:02.0
+00:02.0
+00:02.0
+00:02.0
+00:02.0
+-----------------------------------------
 00:03.0/12:00.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa)
 00:03.0/12:00.0/13:04.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa)
 00:03.0/12:00.0/13:08.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa)
@@ -208,14 +236,24 @@
 80:07.2 System peripheral: Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO Debug (rev 01)
 80:07.3 System peripheral: Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO Debug (rev 01)
 80:07.4 System peripheral: Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO Debug (rev 01)
+--------------------------------
 80:00.0/81:00.0 Ethernet controller: Intel Corporation Ethernet Controller 10-Gigabit X540-AT2 (rev 01)
 80:00.0/81:00.1 Ethernet controller: Intel Corporation Ethernet Controller 10-Gigabit X540-AT2 (rev 01)
+--------------------------------
+
 80:01.0/82:00.0 VGA compatible controller: NVIDIA Corporation TU117GL [T1000 8GB] (rev a1)
 80:01.0/82:00.1 Audio device: NVIDIA Corporation Device 10fa (rev a1)
+80:01.0
+80:01.0
+80:01.0
+80:01.0
+80:01.0
+
 80:02.0/83:00.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa)
 80:02.0/83:00.0/84:04.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa)
 80:02.0/83:00.0/84:08.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa)
 80:02.0/83:00.0/84:0c.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa)
+
 80:02.0/83:00.0/84:04.0/85:00.0 PCI bridge: ASMedia Technology Inc. ASM2824 PCIe Gen3 Packet Switch (rev 01)
 80:02.0/83:00.0/84:04.0/85:00.0/86:00.0 PCI bridge: ASMedia Technology Inc. ASM2824 PCIe Gen3 Packet Switch (rev 01)
 80:02.0/83:00.0/84:04.0/85:00.0/86:04.0 PCI bridge: ASMedia Technology Inc. ASM2824 PCIe Gen3 Packet Switch (rev 01)
@@ -225,20 +263,25 @@
 80:02.0/83:00.0/84:04.0/85:00.0/86:04.0/88:00.0 Non-Volatile memory controller: Realtek Semiconductor Co., Ltd. RTS5763DL NVMe SSD Controller (rev 01)
 80:02.0/83:00.0/84:04.0/85:00.0/86:08.0/89:00.0 Non-Volatile memory controller: Samsung Electronics Co Ltd NVMe SSD Controller SM981/PM981/PM983
 80:02.0/83:00.0/84:04.0/85:00.0/86:0c.0/8a:00.0 Non-Volatile memory controller: Phison Electronics Corporation PS5013 E13 NVMe Controller (rev 01)
+
 80:02.0/83:00.0/84:08.0/8b:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
 80:02.0/83:00.0/84:0c.0/8c:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+
 80:03.0/8d:00.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa)
 80:03.0/8d:00.0/8e:04.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa)
 80:03.0/8d:00.0/8e:08.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa)
 80:03.0/8d:00.0/8e:0c.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa)
 80:03.0/8d:00.0/8e:04.0/8f:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
 80:03.0/8d:00.0/8e:08.0/90:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+
 80:03.0/8d:00.0/8e:0c.0/91:00.0 PCI bridge: PLX Technology, Inc. Device 8733 (rev ca)
 80:03.0/8d:00.0/8e:0c.0/91:00.1 System peripheral: PLX Technology, Inc. PEX PCI Express Switch DMA interface (rev ca)
 80:03.0/8d:00.0/8e:0c.0/91:00.2 System peripheral: PLX Technology, Inc. PEX PCI Express Switch DMA interface (rev ca)
 80:03.0/8d:00.0/8e:0c.0/91:00.3 System peripheral: PLX Technology, Inc. PEX PCI Express Switch DMA interface (rev ca)
 80:03.0/8d:00.0/8e:0c.0/91:00.4 System peripheral: PLX Technology, Inc. PEX PCI Express Switch DMA interface (rev ca)
 80:03.0/8d:00.0/8e:0c.0/91:00.0/92:08.0 PCI bridge: PLX Technology, Inc. Device 8733 (rev ca)
+
+======================================================
 ff:08.0 System peripheral: Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D QPI Link 0 (rev 01)
 ff:08.2 Performance counters: Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D QPI Link 0 (rev 01)
 ff:08.3 System peripheral: Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D QPI Link 0 (rev 01)
