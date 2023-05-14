@@ -1,0 +1,56 @@
+[] nvme nvme0: pci function 0000:03:00.0
+[] nvme nvme0: 56/0/0 default/read/poll queues
+[] nvme nvme0n1:
+
+[] nvme nvme1: pci function 0000:04:00.0
+[] nvme nvme1: 15/0/0 default/read/poll queues
+[] nvme nvme1n1: p2 p3
+[] EXT4-fs (nvme1n1p3): mounted filesystem with ordered data mode. Quota mode: none.
+[] EXT4-fs (nvme1n1p3): re-mounted. Quota mode: none.
+
+[] nvme nvme2: pci function 0000:07:00.0
+[] nvme nvme2: 56/0/0 default/read/poll queues
+[] nvme nvme2n1:
+
+[] nvme nvme3: pci function 0000:18:00.0
+[] nvme nvme3: missing or invalid SUBNQN field.
+[] nvme nvme3: allocated 32 MiB host memory buffer.
+[] nvme nvme3: 8/0/0 default/read/poll queues
+[] nvme nvme3: Ignoring bogus Namespace Identifiers
+
+[] nvme nvme4: pci function 0000:19:00.0
+[] nvme nvme4: missing or invalid SUBNQN field.
+[] nvme nvme4: Shutdown timeout set to 10 seconds
+[] nvme nvme4: 8/0/0 default/read/poll queues
+[] nvme nvme4: Ignoring bogus Namespace Identifiers
+
+[] nvme nvme5: pci function 0000:1a:00.0
+[] nvme nvme5: allocated 128 MiB host memory buffer.
+[] nvme nvme5: 8/0/0 default/read/poll queues
+
+[] nvme nvme6: pci function 0000:1b:00.0
+[] nvme nvme6: allocated 64 MiB host memory buffer.
+[] nvme nvme6: 7/0/0 default/read/poll queues
+[] nvme nvme6: Ignoring bogus Namespace Identifiers
+
+[] nvme nvme7: pci function 0000:87:00.0
+[] nvme nvme7: missing or invalid SUBNQN field.
+[] nvme nvme7: allocated 128 MiB host memory buffer.
+[] nvme nvme7: 8/0/0 default/read/poll queues
+
+[] nvme nvme8: pci function 0000:88:00.0
+[] nvme nvme8: allocated 64 MiB host memory buffer.
+[] nvme nvme8: 7/0/0 default/read/poll queues
+[] nvme nvme8: Ignoring bogus Namespace Identifiers
+
+[] nvme nvme9: pci function 0000:89:00.0
+[] nvme nvme9: missing or invalid SUBNQN field.
+[] nvme nvme9: Shutdown timeout set to 8 seconds
+[] nvme nvme9: 32/0/0 default/read/poll queues
+[] nvme nvme9n1: p1 p2
+
+[] nvme nvme10: pci function 0000:8a:00.0
+[] nvme nvme10: missing or invalid SUBNQN field.
+[] nvme nvme10: allocated 128 MiB host memory buffer.
+[] nvme nvme10: 8/0/0 default/read/poll queues
+
