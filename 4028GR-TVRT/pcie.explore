@@ -1,0 +1,1630 @@
+{'00:00.0': (['00:00.0'],
+             'Host bridge',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DMI2 '
+             '(rev 01)'),
+ '00:01.0': (['00:01.0'],
+             'PCI bridge',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D PCI '
+             'Express Root Port 1 (rev 01)'),
+ '00:02.0': (['00:02.0'],
+             'PCI bridge',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D PCI '
+             'Express Root Port 2 (rev 01)'),
+ '00:03.0': (['00:03.0'],
+             'PCI bridge',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D PCI '
+             'Express Root Port 3 (rev 01)'),
+ '00:04.0': (['00:04.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Crystal Beach DMA Channel 0 (rev 01)'),
+ '00:04.1': (['00:04.1'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Crystal Beach DMA Channel 1 (rev 01)'),
+ '00:04.2': (['00:04.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Crystal Beach DMA Channel 2 (rev 01)'),
+ '00:04.3': (['00:04.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Crystal Beach DMA Channel 3 (rev 01)'),
+ '00:04.4': (['00:04.4'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Crystal Beach DMA Channel 4 (rev 01)'),
+ '00:04.5': (['00:04.5'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Crystal Beach DMA Channel 5 (rev 01)'),
+ '00:04.6': (['00:04.6'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Crystal Beach DMA Channel 6 (rev 01)'),
+ '00:04.7': (['00:04.7'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Crystal Beach DMA Channel 7 (rev 01)'),
+ '00:05.0': (['00:05.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Map/VTd_Misc/System Management (rev 01)'),
+ '00:05.1': (['00:05.1'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO '
+             'Hot Plug (rev 01)'),
+ '00:05.2': (['00:05.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO '
+             'RAS/Control Status/Global Errors (rev 01)'),
+ '00:05.4': (['00:05.4'],
+             'PIC',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D I/O '
+             'APIC (rev 01)'),
+ '00:05.6': (['00:05.6'],
+             'Performance counters',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IO '
+             'Performance Monitoring (rev 01)'),
+ '00:06.0': (['00:06.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO '
+             'Debug (rev 01)'),
+ '00:06.1': (['00:06.1'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO '
+             'Debug (rev 01)'),
+ '00:06.2': (['00:06.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO '
+             'Debug (rev 01)'),
+ '00:06.3': (['00:06.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO '
+             'Debug (rev 01)'),
+ '00:06.4': (['00:06.4'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO '
+             'Debug (rev 01)'),
+ '00:06.5': (['00:06.5'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO '
+             'Debug (rev 01)'),
+ '00:06.6': (['00:06.6'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO '
+             'Debug (rev 01)'),
+ '00:06.7': (['00:06.7'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO '
+             'Debug (rev 01)'),
+ '00:07.0': (['00:07.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO '
+             'Debug (rev 01)'),
+ '00:07.1': (['00:07.1'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO '
+             'Debug (rev 01)'),
+ '00:07.2': (['00:07.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO '
+             'Debug (rev 01)'),
+ '00:07.3': (['00:07.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO '
+             'Debug (rev 01)'),
+ '00:07.4': (['00:07.4'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO '
+             'Debug (rev 01)'),
+ '00:11.0': (['00:11.0'],
+             'Unassigned class [ff00]',
+             'Intel Corporation C610/X99 series chipset SPSR (rev 05)'),
+ '00:11.1': (['00:11.1'],
+             'SMBus',
+             'Intel Corporation C610/X99 series chipset MS SMBus 0 (rev 05)'),
+ '00:11.2': (['00:11.2'],
+             'SMBus',
+             'Intel Corporation C610/X99 series chipset MS SMBus 1 (rev 05)'),
+ '00:11.3': (['00:11.3'],
+             'SMBus',
+             'Intel Corporation C610/X99 series chipset MS SMBus 2 (rev 05)'),
+ '00:14.0': (['00:14.0'],
+             'USB controller',
+             'Intel Corporation C610/X99 series chipset USB xHCI Host '
+             'Controller (rev 05)'),
+ '00:16.0': (['00:16.0'],
+             'Communication controller',
+             'Intel Corporation C610/X99 series chipset MEI Controller #1 (rev '
+             '05)'),
+ '00:16.1': (['00:16.1'],
+             'Communication controller',
+             'Intel Corporation C610/X99 series chipset MEI Controller #2 (rev '
+             '05)'),
+ '00:1a.0': (['00:1a.0'],
+             'USB controller',
+             'Intel Corporation C610/X99 series chipset USB Enhanced Host '
+             'Controller #2 (rev 05)'),
+ '00:1c.0': (['00:1c.0'],
+             'PCI bridge',
+             'Intel Corporation C610/X99 series chipset PCI Express Root Port '
+             '#1 (rev d5)'),
+ '00:1c.7': (['00:1c.7'],
+             'PCI bridge',
+             'Intel Corporation C610/X99 series chipset PCI Express Root Port '
+             '#8 (rev d5)'),
+ '00:1d.0': (['00:1d.0'],
+             'USB controller',
+             'Intel Corporation C610/X99 series chipset USB Enhanced Host '
+             'Controller #1 (rev 05)'),
+ '00:1f.0': (['00:1f.0'],
+             'ISA bridge',
+             'Intel Corporation C610/X99 series chipset LPC Controller (rev '
+             '05)'),
+ '00:1f.2': (['00:1f.2'],
+             'SATA controller',
+             'Intel Corporation C610/X99 series chipset 6-Port SATA Controller '
+             '[AHCI mode] (rev 05)'),
+ '00:1f.3': (['00:1f.3'],
+             'SMBus',
+             'Intel Corporation C610/X99 series chipset SMBus Controller (rev '
+             '05)'),
+ '01:00.0': (['01:00.0', '00:01.0'],
+             'PCI bridge',
+             'PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch'),
+ '02:00.0': (['02:00.0', '01:00.0', '00:01.0'],
+             'PCI bridge',
+             'PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch'),
+ '02:01.0': (['02:01.0', '01:00.0', '00:01.0'],
+             'PCI bridge',
+             'PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch'),
+ '02:02.0': (['02:02.0', '01:00.0', '00:01.0'],
+             'PCI bridge',
+             'PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch'),
+ '02:03.0': (['02:03.0', '01:00.0', '00:01.0'],
+             'PCI bridge',
+             'PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch'),
+ '02:04.0': (['02:04.0', '01:00.0', '00:01.0'],
+             'PCI bridge',
+             'PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch'),
+ '02:05.0': (['02:05.0', '01:00.0', '00:01.0'],
+             'PCI bridge',
+             'PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch'),
+ '02:06.0': (['02:06.0', '01:00.0', '00:01.0'],
+             'PCI bridge',
+             'PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch'),
+ '02:07.0': (['02:07.0', '01:00.0', '00:01.0'],
+             'PCI bridge',
+             'PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch'),
+ '03:00.0': (['03:00.0', '02:00.0', '01:00.0', '00:01.0'],
+             'Non-Volatile memory controller',
+             'Intel Corporation NVMe Datacenter SSD [3DNAND, Beta Rock '
+             'Controller]'),
+ '04:00.0': (['04:00.0', '02:01.0', '01:00.0', '00:01.0'],
+             'Non-Volatile memory controller',
+             'Union Memory (Shenzhen) AM630 PCIe 4.0 x4 NVMe SSD Controller '
+             '(rev 03)'),
+ '07:00.0': (['07:00.0', '02:04.0', '01:00.0', '00:01.0'],
+             'Non-Volatile memory controller',
+             'Intel Corporation NVMe Datacenter SSD [3DNAND, Beta Rock '
+             'Controller]'),
+ '0b:00.0': (['0b:00.0', '00:02.0'],
+             'PCI bridge',
+             'PLX Technology, Inc. Device 9765 (rev aa)'),
+ '0c:04.0': (['0c:04.0', '0b:00.0', '00:02.0'],
+             'PCI bridge',
+             'PLX Technology, Inc. Device 9765 (rev aa)'),
+ '0c:08.0': (['0c:08.0', '0b:00.0', '00:02.0'],
+             'PCI bridge',
+             'PLX Technology, Inc. Device 9765 (rev aa)'),
+ '0c:0c.0': (['0c:0c.0', '0b:00.0', '00:02.0'],
+             'PCI bridge',
+             'PLX Technology, Inc. Device 9765 (rev aa)'),
+ '0d:00.0': (['0d:00.0', '0c:04.0', '0b:00.0', '00:02.0'],
+             '3D controller',
+             'NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)'),
+ '0e:00.0': (['0e:00.0', '0c:08.0', '0b:00.0', '00:02.0'],
+             '3D controller',
+             'NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)'),
+ '0f:00.0': (['0f:00.0', '0c:0c.0', '0b:00.0', '00:02.0'],
+             'PCI bridge',
+             'PLX Technology, Inc. Device 8733 (rev ba)'),
+ '0f:00.1': (['0f:00.1', '0c:0c.0', '0b:00.0', '00:02.0'],
+             'System peripheral',
+             'PLX Technology, Inc. PEX PCI Express Switch DMA interface (rev '
+             'ba)'),
+ '0f:00.2': (['0f:00.2', '0c:0c.0', '0b:00.0', '00:02.0'],
+             'System peripheral',
+             'PLX Technology, Inc. PEX PCI Express Switch DMA interface (rev '
+             'ba)'),
+ '0f:00.3': (['0f:00.3', '0c:0c.0', '0b:00.0', '00:02.0'],
+             'System peripheral',
+             'PLX Technology, Inc. PEX PCI Express Switch DMA interface (rev '
+             'ba)'),
+ '0f:00.4': (['0f:00.4', '0c:0c.0', '0b:00.0', '00:02.0'],
+             'System peripheral',
+             'PLX Technology, Inc. PEX PCI Express Switch DMA interface (rev '
+             'ba)'),
+ '10:08.0': (['10:08.0', '0f:00.0', '0c:0c.0', '0b:00.0', '00:02.0'],
+             'PCI bridge',
+             'PLX Technology, Inc. Device 8733 (rev ba)'),
+ '12:00.0': (['12:00.0', '00:03.0'],
+             'PCI bridge',
+             'PLX Technology, Inc. Device 9765 (rev aa)'),
+ '13:04.0': (['13:04.0', '12:00.0', '00:03.0'],
+             'PCI bridge',
+             'PLX Technology, Inc. Device 9765 (rev aa)'),
+ '13:08.0': (['13:08.0', '12:00.0', '00:03.0'],
+             'PCI bridge',
+             'PLX Technology, Inc. Device 9765 (rev aa)'),
+ '13:0c.0': (['13:0c.0', '12:00.0', '00:03.0'],
+             'PCI bridge',
+             'PLX Technology, Inc. Device 9765 (rev aa)'),
+ '14:00.0': (['14:00.0', '13:04.0', '12:00.0', '00:03.0'],
+             '3D controller',
+             'NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)'),
+ '15:00.0': (['15:00.0', '13:08.0', '12:00.0', '00:03.0'],
+             '3D controller',
+             'NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)'),
+ '16:00.0': (['16:00.0', '13:0c.0', '12:00.0', '00:03.0'],
+             'PCI bridge',
+             'ASMedia Technology Inc. ASM2824 PCIe Gen3 Packet Switch (rev '
+             '01)'),
+ '17:00.0': (['17:00.0', '16:00.0', '13:0c.0', '12:00.0', '00:03.0'],
+             'PCI bridge',
+             'ASMedia Technology Inc. ASM2824 PCIe Gen3 Packet Switch (rev '
+             '01)'),
+ '17:04.0': (['17:04.0', '16:00.0', '13:0c.0', '12:00.0', '00:03.0'],
+             'PCI bridge',
+             'ASMedia Technology Inc. ASM2824 PCIe Gen3 Packet Switch (rev '
+             '01)'),
+ '17:08.0': (['17:08.0', '16:00.0', '13:0c.0', '12:00.0', '00:03.0'],
+             'PCI bridge',
+             'ASMedia Technology Inc. ASM2824 PCIe Gen3 Packet Switch (rev '
+             '01)'),
+ '17:0c.0': (['17:0c.0', '16:00.0', '13:0c.0', '12:00.0', '00:03.0'],
+             'PCI bridge',
+             'ASMedia Technology Inc. ASM2824 PCIe Gen3 Packet Switch (rev '
+             '01)'),
+ '18:00.0': (['18:00.0', '17:00.0', '16:00.0', '13:0c.0', '12:00.0', '00:03.0'],
+             'Non-Volatile memory controller',
+             'MAXIO Technology (Hangzhou) Ltd. NVMe SSD Controller MAP1202 '
+             '(rev 01)'),
+ '19:00.0': (['19:00.0', '17:04.0', '16:00.0', '13:0c.0', '12:00.0', '00:03.0'],
+             'Non-Volatile memory controller',
+             'Phison Electronics Corporation E12 NVMe Controller (rev 01)'),
+ '1a:00.0': (['1a:00.0', '17:08.0', '16:00.0', '13:0c.0', '12:00.0', '00:03.0'],
+             'Non-Volatile memory controller',
+             'Phison Electronics Corporation PS5013 E13 NVMe Controller (rev '
+             '01)'),
+ '1b:00.0': (['1b:00.0', '17:0c.0', '16:00.0', '13:0c.0', '12:00.0', '00:03.0'],
+             'Non-Volatile memory controller',
+             'Realtek Semiconductor Co., Ltd. RTS5763DL NVMe SSD Controller '
+             '(rev 01)'),
+ '1c:00.0': (['1c:00.0', '00:1c.0'],
+             'Serial Attached SCSI controller',
+             'Broadcom / LSI SAS3008 PCI-Express Fusion-MPT SAS-3 (rev 02)'),
+ '1d:00.0': (['1d:00.0', '00:1c.7'],
+             'PCI bridge',
+             'ASPEED Technology, Inc. AST1150 PCI-to-PCI Bridge (rev 03)'),
+ '1e:00.0': (['1e:00.0', '1d:00.0', '00:1c.7'],
+             'VGA compatible controller',
+             'ASPEED Technology, Inc. ASPEED Graphics Family (rev 30)'),
+ '7f:08.0': (['7f:08.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D QPI '
+             'Link 0 (rev 01)'),
+ '7f:08.2': (['7f:08.2'],
+             'Performance counters',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D QPI '
+             'Link 0 (rev 01)'),
+ '7f:08.3': (['7f:08.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D QPI '
+             'Link 0 (rev 01)'),
+ '7f:08.5': (['7f:08.5'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D QPI '
+             'Link 0 Debug (rev 01)'),
+ '7f:08.6': (['7f:08.6'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D QPI '
+             'Link 0 Debug (rev 01)'),
+ '7f:08.7': (['7f:08.7'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D QPI '
+             'Link 0 Debug (rev 01)'),
+ '7f:09.0': (['7f:09.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D QPI '
+             'Link 1 (rev 01)'),
+ '7f:09.2': (['7f:09.2'],
+             'Performance counters',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D QPI '
+             'Link 1 (rev 01)'),
+ '7f:09.3': (['7f:09.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D QPI '
+             'Link 1 (rev 01)'),
+ '7f:09.5': (['7f:09.5'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D QPI '
+             'Link 1 Debug (rev 01)'),
+ '7f:09.6': (['7f:09.6'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D QPI '
+             'Link 1 Debug (rev 01)'),
+ '7f:0b.0': (['7f:0b.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D R3 QPI '
+             'Link 0/1 (rev 01)'),
+ '7f:0b.1': (['7f:0b.1'],
+             'Performance counters',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D R3 QPI '
+             'Link 0/1 (rev 01)'),
+ '7f:0b.2': (['7f:0b.2'],
+             'Performance counters',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D R3 QPI '
+             'Link 0/1 (rev 01)'),
+ '7f:0b.3': (['7f:0b.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D R3 QPI '
+             'Link Debug (rev 01)'),
+ '7f:0c.0': (['7f:0c.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ '7f:0c.1': (['7f:0c.1'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ '7f:0c.2': (['7f:0c.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ '7f:0c.3': (['7f:0c.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ '7f:0c.4': (['7f:0c.4'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ '7f:0c.5': (['7f:0c.5'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ '7f:0c.6': (['7f:0c.6'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ '7f:0c.7': (['7f:0c.7'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ '7f:0d.0': (['7f:0d.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ '7f:0d.1': (['7f:0d.1'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ '7f:0d.2': (['7f:0d.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ '7f:0d.3': (['7f:0d.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ '7f:0d.4': (['7f:0d.4'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ '7f:0d.5': (['7f:0d.5'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ '7f:0f.0': (['7f:0f.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ '7f:0f.1': (['7f:0f.1'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ '7f:0f.2': (['7f:0f.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ '7f:0f.3': (['7f:0f.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ '7f:0f.4': (['7f:0f.4'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ '7f:0f.5': (['7f:0f.5'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ '7f:0f.6': (['7f:0f.6'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ '7f:10.0': (['7f:10.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D R2PCIe '
+             'Agent (rev 01)'),
+ '7f:10.1': (['7f:10.1'],
+             'Performance counters',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D R2PCIe '
+             'Agent (rev 01)'),
+ '7f:10.5': (['7f:10.5'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Ubox '
+             '(rev 01)'),
+ '7f:10.6': (['7f:10.6'],
+             'Performance counters',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Ubox '
+             '(rev 01)'),
+ '7f:10.7': (['7f:10.7'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Ubox '
+             '(rev 01)'),
+ '7f:12.0': (['7f:12.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Home '
+             'Agent 0 (rev 01)'),
+ '7f:12.1': (['7f:12.1'],
+             'Performance counters',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Home '
+             'Agent 0 (rev 01)'),
+ '7f:12.2': (['7f:12.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Home '
+             'Agent 0 Debug (rev 01)'),
+ '7f:12.4': (['7f:12.4'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Home '
+             'Agent 1 (rev 01)'),
+ '7f:12.5': (['7f:12.5'],
+             'Performance counters',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Home '
+             'Agent 1 (rev 01)'),
+ '7f:12.6': (['7f:12.6'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Home '
+             'Agent 1 Debug (rev 01)'),
+ '7f:13.0': (['7f:13.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 0 - Target Address/Thermal/RAS (rev 01)'),
+ '7f:13.1': (['7f:13.1'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 0 - Target Address/Thermal/RAS (rev 01)'),
+ '7f:13.2': (['7f:13.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 0 - Channel Target Address Decoder (rev 01)'),
+ '7f:13.3': (['7f:13.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 0 - Channel Target Address Decoder (rev 01)'),
+ '7f:13.4': (['7f:13.4'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 0 - Channel Target Address Decoder (rev 01)'),
+ '7f:13.5': (['7f:13.5'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 0 - Channel Target Address Decoder (rev 01)'),
+ '7f:13.6': (['7f:13.6'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DDRIO '
+             'Channel 0/1 Broadcast (rev 01)'),
+ '7f:13.7': (['7f:13.7'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DDRIO '
+             'Global Broadcast (rev 01)'),
+ '7f:14.0': (['7f:14.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 0 - Channel 0 Thermal Control (rev 01)'),
+ '7f:14.1': (['7f:14.1'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 0 - Channel 1 Thermal Control (rev 01)'),
+ '7f:14.2': (['7f:14.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 0 - Channel 0 Error (rev 01)'),
+ '7f:14.3': (['7f:14.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 0 - Channel 1 Error (rev 01)'),
+ '7f:14.4': (['7f:14.4'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DDRIO '
+             'Channel 0/1 Interface (rev 01)'),
+ '7f:14.5': (['7f:14.5'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DDRIO '
+             'Channel 0/1 Interface (rev 01)'),
+ '7f:14.6': (['7f:14.6'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DDRIO '
+             'Channel 0/1 Interface (rev 01)'),
+ '7f:14.7': (['7f:14.7'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DDRIO '
+             'Channel 0/1 Interface (rev 01)'),
+ '7f:15.0': (['7f:15.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 0 - Channel 2 Thermal Control (rev 01)'),
+ '7f:15.1': (['7f:15.1'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 0 - Channel 3 Thermal Control (rev 01)'),
+ '7f:15.2': (['7f:15.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 0 - Channel 2 Error (rev 01)'),
+ '7f:15.3': (['7f:15.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 0 - Channel 3 Error (rev 01)'),
+ '7f:16.0': (['7f:16.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Target '
+             'Address/Thermal/RAS (rev 01)'),
+ '7f:16.1': (['7f:16.1'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Target '
+             'Address/Thermal/RAS (rev 01)'),
+ '7f:16.2': (['7f:16.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Channel Target Address Decoder (rev 01)'),
+ '7f:16.3': (['7f:16.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Channel Target Address Decoder (rev 01)'),
+ '7f:16.4': (['7f:16.4'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Channel Target Address Decoder (rev 01)'),
+ '7f:16.5': (['7f:16.5'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Channel Target Address Decoder (rev 01)'),
+ '7f:16.6': (['7f:16.6'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DDRIO '
+             'Channel 2/3 Broadcast (rev 01)'),
+ '7f:16.7': (['7f:16.7'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DDRIO '
+             'Global Broadcast (rev 01)'),
+ '7f:17.0': (['7f:17.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 1 - Channel 0 Thermal Control (rev 01)'),
+ '7f:17.1': (['7f:17.1'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 1 - Channel 1 Thermal Control (rev 01)'),
+ '7f:17.2': (['7f:17.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 1 - Channel 0 Error (rev 01)'),
+ '7f:17.3': (['7f:17.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 1 - Channel 1 Error (rev 01)'),
+ '7f:17.4': (['7f:17.4'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DDRIO '
+             'Channel 2/3 Interface (rev 01)'),
+ '7f:17.5': (['7f:17.5'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DDRIO '
+             'Channel 2/3 Interface (rev 01)'),
+ '7f:17.6': (['7f:17.6'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DDRIO '
+             'Channel 2/3 Interface (rev 01)'),
+ '7f:17.7': (['7f:17.7'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DDRIO '
+             'Channel 2/3 Interface (rev 01)'),
+ '7f:18.0': (['7f:18.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 1 - Channel 2 Thermal Control (rev 01)'),
+ '7f:18.1': (['7f:18.1'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 1 - Channel 3 Thermal Control (rev 01)'),
+ '7f:18.2': (['7f:18.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 1 - Channel 2 Error (rev 01)'),
+ '7f:18.3': (['7f:18.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 1 - Channel 3 Error (rev 01)'),
+ '7f:1e.0': (['7f:1e.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Power '
+             'Control Unit (rev 01)'),
+ '7f:1e.1': (['7f:1e.1'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Power '
+             'Control Unit (rev 01)'),
+ '7f:1e.2': (['7f:1e.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Power '
+             'Control Unit (rev 01)'),
+ '7f:1e.3': (['7f:1e.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Power '
+             'Control Unit (rev 01)'),
+ '7f:1e.4': (['7f:1e.4'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Power '
+             'Control Unit (rev 01)'),
+ '7f:1f.0': (['7f:1f.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Power '
+             'Control Unit (rev 01)'),
+ '7f:1f.2': (['7f:1f.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Power '
+             'Control Unit (rev 01)'),
+ '80:00.0': (['80:00.0'],
+             'PCI bridge',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D PCI '
+             'Express Root Port 0 (rev 01)'),
+ '80:01.0': (['80:01.0'],
+             'PCI bridge',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D PCI '
+             'Express Root Port 1 (rev 01)'),
+ '80:02.0': (['80:02.0'],
+             'PCI bridge',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D PCI '
+             'Express Root Port 2 (rev 01)'),
+ '80:03.0': (['80:03.0'],
+             'PCI bridge',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D PCI '
+             'Express Root Port 3 (rev 01)'),
+ '80:04.0': (['80:04.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Crystal Beach DMA Channel 0 (rev 01)'),
+ '80:04.1': (['80:04.1'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Crystal Beach DMA Channel 1 (rev 01)'),
+ '80:04.2': (['80:04.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Crystal Beach DMA Channel 2 (rev 01)'),
+ '80:04.3': (['80:04.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Crystal Beach DMA Channel 3 (rev 01)'),
+ '80:04.4': (['80:04.4'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Crystal Beach DMA Channel 4 (rev 01)'),
+ '80:04.5': (['80:04.5'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Crystal Beach DMA Channel 5 (rev 01)'),
+ '80:04.6': (['80:04.6'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Crystal Beach DMA Channel 6 (rev 01)'),
+ '80:04.7': (['80:04.7'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Crystal Beach DMA Channel 7 (rev 01)'),
+ '80:05.0': (['80:05.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Map/VTd_Misc/System Management (rev 01)'),
+ '80:05.1': (['80:05.1'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO '
+             'Hot Plug (rev 01)'),
+ '80:05.2': (['80:05.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO '
+             'RAS/Control Status/Global Errors (rev 01)'),
+ '80:05.4': (['80:05.4'],
+             'PIC',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D I/O '
+             'APIC (rev 01)'),
+ '80:05.6': (['80:05.6'],
+             'Performance counters',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IO '
+             'Performance Monitoring (rev 01)'),
+ '80:06.0': (['80:06.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO '
+             'Debug (rev 01)'),
+ '80:06.1': (['80:06.1'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO '
+             'Debug (rev 01)'),
+ '80:06.2': (['80:06.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO '
+             'Debug (rev 01)'),
+ '80:06.3': (['80:06.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO '
+             'Debug (rev 01)'),
+ '80:06.4': (['80:06.4'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO '
+             'Debug (rev 01)'),
+ '80:06.5': (['80:06.5'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO '
+             'Debug (rev 01)'),
+ '80:06.6': (['80:06.6'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO '
+             'Debug (rev 01)'),
+ '80:06.7': (['80:06.7'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO '
+             'Debug (rev 01)'),
+ '80:07.0': (['80:07.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO '
+             'Debug (rev 01)'),
+ '80:07.1': (['80:07.1'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO '
+             'Debug (rev 01)'),
+ '80:07.2': (['80:07.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO '
+             'Debug (rev 01)'),
+ '80:07.3': (['80:07.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO '
+             'Debug (rev 01)'),
+ '80:07.4': (['80:07.4'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D IIO '
+             'Debug (rev 01)'),
+ '81:00.0': (['81:00.0', '80:00.0'],
+             'Ethernet controller',
+             'Intel Corporation Ethernet Controller 10-Gigabit X540-AT2 (rev '
+             '01)'),
+ '81:00.1': (['81:00.1', '80:00.0'],
+             'Ethernet controller',
+             'Intel Corporation Ethernet Controller 10-Gigabit X540-AT2 (rev '
+             '01)'),
+ '82:00.0': (['82:00.0', '80:01.0'],
+             'VGA compatible controller',
+             'NVIDIA Corporation TU117GL [T1000 8GB] (rev a1)'),
+ '82:00.1': (['82:00.1', '80:01.0'],
+             'Audio device',
+             'NVIDIA Corporation Device 10fa (rev a1)'),
+ '83:00.0': (['83:00.0', '80:02.0'],
+             'PCI bridge',
+             'PLX Technology, Inc. Device 9765 (rev aa)'),
+ '84:04.0': (['84:04.0', '83:00.0', '80:02.0'],
+             'PCI bridge',
+             'PLX Technology, Inc. Device 9765 (rev aa)'),
+ '84:08.0': (['84:08.0', '83:00.0', '80:02.0'],
+             'PCI bridge',
+             'PLX Technology, Inc. Device 9765 (rev aa)'),
+ '84:0c.0': (['84:0c.0', '83:00.0', '80:02.0'],
+             'PCI bridge',
+             'PLX Technology, Inc. Device 9765 (rev aa)'),
+ '85:00.0': (['85:00.0', '84:04.0', '83:00.0', '80:02.0'],
+             'PCI bridge',
+             'ASMedia Technology Inc. ASM2824 PCIe Gen3 Packet Switch (rev '
+             '01)'),
+ '86:00.0': (['86:00.0', '85:00.0', '84:04.0', '83:00.0', '80:02.0'],
+             'PCI bridge',
+             'ASMedia Technology Inc. ASM2824 PCIe Gen3 Packet Switch (rev '
+             '01)'),
+ '86:04.0': (['86:04.0', '85:00.0', '84:04.0', '83:00.0', '80:02.0'],
+             'PCI bridge',
+             'ASMedia Technology Inc. ASM2824 PCIe Gen3 Packet Switch (rev '
+             '01)'),
+ '86:08.0': (['86:08.0', '85:00.0', '84:04.0', '83:00.0', '80:02.0'],
+             'PCI bridge',
+             'ASMedia Technology Inc. ASM2824 PCIe Gen3 Packet Switch (rev '
+             '01)'),
+ '86:0c.0': (['86:0c.0', '85:00.0', '84:04.0', '83:00.0', '80:02.0'],
+             'PCI bridge',
+             'ASMedia Technology Inc. ASM2824 PCIe Gen3 Packet Switch (rev '
+             '01)'),
+ '87:00.0': (['87:00.0', '86:00.0', '85:00.0', '84:04.0', '83:00.0', '80:02.0'],
+             'Non-Volatile memory controller',
+             'Phison Electronics Corporation PS5013 E13 NVMe Controller (rev '
+             '01)'),
+ '88:00.0': (['88:00.0', '86:04.0', '85:00.0', '84:04.0', '83:00.0', '80:02.0'],
+             'Non-Volatile memory controller',
+             'Realtek Semiconductor Co., Ltd. RTS5763DL NVMe SSD Controller '
+             '(rev 01)'),
+ '89:00.0': (['89:00.0', '86:08.0', '85:00.0', '84:04.0', '83:00.0', '80:02.0'],
+             'Non-Volatile memory controller',
+             'Samsung Electronics Co Ltd NVMe SSD Controller '
+             'SM981/PM981/PM983'),
+ '8a:00.0': (['8a:00.0', '86:0c.0', '85:00.0', '84:04.0', '83:00.0', '80:02.0'],
+             'Non-Volatile memory controller',
+             'Phison Electronics Corporation PS5013 E13 NVMe Controller (rev '
+             '01)'),
+ '8b:00.0': (['8b:00.0', '84:08.0', '83:00.0', '80:02.0'],
+             '3D controller',
+             'NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)'),
+ '8c:00.0': (['8c:00.0', '84:0c.0', '83:00.0', '80:02.0'],
+             '3D controller',
+             'NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)'),
+ '8d:00.0': (['8d:00.0', '80:03.0'],
+             'PCI bridge',
+             'PLX Technology, Inc. Device 9765 (rev aa)'),
+ '8e:04.0': (['8e:04.0', '8d:00.0', '80:03.0'],
+             'PCI bridge',
+             'PLX Technology, Inc. Device 9765 (rev aa)'),
+ '8e:08.0': (['8e:08.0', '8d:00.0', '80:03.0'],
+             'PCI bridge',
+             'PLX Technology, Inc. Device 9765 (rev aa)'),
+ '8e:0c.0': (['8e:0c.0', '8d:00.0', '80:03.0'],
+             'PCI bridge',
+             'PLX Technology, Inc. Device 9765 (rev aa)'),
+ '8f:00.0': (['8f:00.0', '8e:04.0', '8d:00.0', '80:03.0'],
+             '3D controller',
+             'NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)'),
+ '90:00.0': (['90:00.0', '8e:08.0', '8d:00.0', '80:03.0'],
+             '3D controller',
+             'NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)'),
+ '91:00.0': (['91:00.0', '8e:0c.0', '8d:00.0', '80:03.0'],
+             'PCI bridge',
+             'PLX Technology, Inc. Device 8733 (rev ca)'),
+ '91:00.1': (['91:00.1', '8e:0c.0', '8d:00.0', '80:03.0'],
+             'System peripheral',
+             'PLX Technology, Inc. PEX PCI Express Switch DMA interface (rev '
+             'ca)'),
+ '91:00.2': (['91:00.2', '8e:0c.0', '8d:00.0', '80:03.0'],
+             'System peripheral',
+             'PLX Technology, Inc. PEX PCI Express Switch DMA interface (rev '
+             'ca)'),
+ '91:00.3': (['91:00.3', '8e:0c.0', '8d:00.0', '80:03.0'],
+             'System peripheral',
+             'PLX Technology, Inc. PEX PCI Express Switch DMA interface (rev '
+             'ca)'),
+ '91:00.4': (['91:00.4', '8e:0c.0', '8d:00.0', '80:03.0'],
+             'System peripheral',
+             'PLX Technology, Inc. PEX PCI Express Switch DMA interface (rev '
+             'ca)'),
+ '92:08.0': (['92:08.0', '91:00.0', '8e:0c.0', '8d:00.0', '80:03.0'],
+             'PCI bridge',
+             'PLX Technology, Inc. Device 8733 (rev ca)'),
+ 'ff:08.0': (['ff:08.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D QPI '
+             'Link 0 (rev 01)'),
+ 'ff:08.2': (['ff:08.2'],
+             'Performance counters',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D QPI '
+             'Link 0 (rev 01)'),
+ 'ff:08.3': (['ff:08.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D QPI '
+             'Link 0 (rev 01)'),
+ 'ff:08.5': (['ff:08.5'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D QPI '
+             'Link 0 Debug (rev 01)'),
+ 'ff:08.6': (['ff:08.6'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D QPI '
+             'Link 0 Debug (rev 01)'),
+ 'ff:08.7': (['ff:08.7'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D QPI '
+             'Link 0 Debug (rev 01)'),
+ 'ff:09.0': (['ff:09.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D QPI '
+             'Link 1 (rev 01)'),
+ 'ff:09.2': (['ff:09.2'],
+             'Performance counters',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D QPI '
+             'Link 1 (rev 01)'),
+ 'ff:09.3': (['ff:09.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D QPI '
+             'Link 1 (rev 01)'),
+ 'ff:09.5': (['ff:09.5'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D QPI '
+             'Link 1 Debug (rev 01)'),
+ 'ff:09.6': (['ff:09.6'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D QPI '
+             'Link 1 Debug (rev 01)'),
+ 'ff:0b.0': (['ff:0b.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D R3 QPI '
+             'Link 0/1 (rev 01)'),
+ 'ff:0b.1': (['ff:0b.1'],
+             'Performance counters',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D R3 QPI '
+             'Link 0/1 (rev 01)'),
+ 'ff:0b.2': (['ff:0b.2'],
+             'Performance counters',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D R3 QPI '
+             'Link 0/1 (rev 01)'),
+ 'ff:0b.3': (['ff:0b.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D R3 QPI '
+             'Link Debug (rev 01)'),
+ 'ff:0c.0': (['ff:0c.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ 'ff:0c.1': (['ff:0c.1'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ 'ff:0c.2': (['ff:0c.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ 'ff:0c.3': (['ff:0c.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ 'ff:0c.4': (['ff:0c.4'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ 'ff:0c.5': (['ff:0c.5'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ 'ff:0c.6': (['ff:0c.6'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ 'ff:0c.7': (['ff:0c.7'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ 'ff:0d.0': (['ff:0d.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ 'ff:0d.1': (['ff:0d.1'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ 'ff:0d.2': (['ff:0d.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ 'ff:0d.3': (['ff:0d.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ 'ff:0d.4': (['ff:0d.4'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ 'ff:0d.5': (['ff:0d.5'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ 'ff:0f.0': (['ff:0f.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ 'ff:0f.1': (['ff:0f.1'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ 'ff:0f.2': (['ff:0f.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ 'ff:0f.3': (['ff:0f.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ 'ff:0f.4': (['ff:0f.4'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ 'ff:0f.5': (['ff:0f.5'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ 'ff:0f.6': (['ff:0f.6'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Caching Agent (rev 01)'),
+ 'ff:10.0': (['ff:10.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D R2PCIe '
+             'Agent (rev 01)'),
+ 'ff:10.1': (['ff:10.1'],
+             'Performance counters',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D R2PCIe '
+             'Agent (rev 01)'),
+ 'ff:10.5': (['ff:10.5'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Ubox '
+             '(rev 01)'),
+ 'ff:10.6': (['ff:10.6'],
+             'Performance counters',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Ubox '
+             '(rev 01)'),
+ 'ff:10.7': (['ff:10.7'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Ubox '
+             '(rev 01)'),
+ 'ff:12.0': (['ff:12.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Home '
+             'Agent 0 (rev 01)'),
+ 'ff:12.1': (['ff:12.1'],
+             'Performance counters',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Home '
+             'Agent 0 (rev 01)'),
+ 'ff:12.2': (['ff:12.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Home '
+             'Agent 0 Debug (rev 01)'),
+ 'ff:12.4': (['ff:12.4'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Home '
+             'Agent 1 (rev 01)'),
+ 'ff:12.5': (['ff:12.5'],
+             'Performance counters',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Home '
+             'Agent 1 (rev 01)'),
+ 'ff:12.6': (['ff:12.6'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Home '
+             'Agent 1 Debug (rev 01)'),
+ 'ff:13.0': (['ff:13.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 0 - Target Address/Thermal/RAS (rev 01)'),
+ 'ff:13.1': (['ff:13.1'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 0 - Target Address/Thermal/RAS (rev 01)'),
+ 'ff:13.2': (['ff:13.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 0 - Channel Target Address Decoder (rev 01)'),
+ 'ff:13.3': (['ff:13.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 0 - Channel Target Address Decoder (rev 01)'),
+ 'ff:13.4': (['ff:13.4'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 0 - Channel Target Address Decoder (rev 01)'),
+ 'ff:13.5': (['ff:13.5'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 0 - Channel Target Address Decoder (rev 01)'),
+ 'ff:13.6': (['ff:13.6'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DDRIO '
+             'Channel 0/1 Broadcast (rev 01)'),
+ 'ff:13.7': (['ff:13.7'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DDRIO '
+             'Global Broadcast (rev 01)'),
+ 'ff:14.0': (['ff:14.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 0 - Channel 0 Thermal Control (rev 01)'),
+ 'ff:14.1': (['ff:14.1'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 0 - Channel 1 Thermal Control (rev 01)'),
+ 'ff:14.2': (['ff:14.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 0 - Channel 0 Error (rev 01)'),
+ 'ff:14.3': (['ff:14.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 0 - Channel 1 Error (rev 01)'),
+ 'ff:14.4': (['ff:14.4'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DDRIO '
+             'Channel 0/1 Interface (rev 01)'),
+ 'ff:14.5': (['ff:14.5'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DDRIO '
+             'Channel 0/1 Interface (rev 01)'),
+ 'ff:14.6': (['ff:14.6'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DDRIO '
+             'Channel 0/1 Interface (rev 01)'),
+ 'ff:14.7': (['ff:14.7'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DDRIO '
+             'Channel 0/1 Interface (rev 01)'),
+ 'ff:15.0': (['ff:15.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 0 - Channel 2 Thermal Control (rev 01)'),
+ 'ff:15.1': (['ff:15.1'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 0 - Channel 3 Thermal Control (rev 01)'),
+ 'ff:15.2': (['ff:15.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 0 - Channel 2 Error (rev 01)'),
+ 'ff:15.3': (['ff:15.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 0 - Channel 3 Error (rev 01)'),
+ 'ff:16.0': (['ff:16.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Target '
+             'Address/Thermal/RAS (rev 01)'),
+ 'ff:16.1': (['ff:16.1'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Target '
+             'Address/Thermal/RAS (rev 01)'),
+ 'ff:16.2': (['ff:16.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Channel Target Address Decoder (rev 01)'),
+ 'ff:16.3': (['ff:16.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Channel Target Address Decoder (rev 01)'),
+ 'ff:16.4': (['ff:16.4'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Channel Target Address Decoder (rev 01)'),
+ 'ff:16.5': (['ff:16.5'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D '
+             'Channel Target Address Decoder (rev 01)'),
+ 'ff:16.6': (['ff:16.6'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DDRIO '
+             'Channel 2/3 Broadcast (rev 01)'),
+ 'ff:16.7': (['ff:16.7'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DDRIO '
+             'Global Broadcast (rev 01)'),
+ 'ff:17.0': (['ff:17.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 1 - Channel 0 Thermal Control (rev 01)'),
+ 'ff:17.1': (['ff:17.1'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 1 - Channel 1 Thermal Control (rev 01)'),
+ 'ff:17.2': (['ff:17.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 1 - Channel 0 Error (rev 01)'),
+ 'ff:17.3': (['ff:17.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 1 - Channel 1 Error (rev 01)'),
+ 'ff:17.4': (['ff:17.4'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DDRIO '
+             'Channel 2/3 Interface (rev 01)'),
+ 'ff:17.5': (['ff:17.5'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DDRIO '
+             'Channel 2/3 Interface (rev 01)'),
+ 'ff:17.6': (['ff:17.6'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DDRIO '
+             'Channel 2/3 Interface (rev 01)'),
+ 'ff:17.7': (['ff:17.7'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DDRIO '
+             'Channel 2/3 Interface (rev 01)'),
+ 'ff:18.0': (['ff:18.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 1 - Channel 2 Thermal Control (rev 01)'),
+ 'ff:18.1': (['ff:18.1'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 1 - Channel 3 Thermal Control (rev 01)'),
+ 'ff:18.2': (['ff:18.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 1 - Channel 2 Error (rev 01)'),
+ 'ff:18.3': (['ff:18.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Memory '
+             'Controller 1 - Channel 3 Error (rev 01)'),
+ 'ff:1e.0': (['ff:1e.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Power '
+             'Control Unit (rev 01)'),
+ 'ff:1e.1': (['ff:1e.1'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Power '
+             'Control Unit (rev 01)'),
+ 'ff:1e.2': (['ff:1e.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Power '
+             'Control Unit (rev 01)'),
+ 'ff:1e.3': (['ff:1e.3'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Power '
+             'Control Unit (rev 01)'),
+ 'ff:1e.4': (['ff:1e.4'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Power '
+             'Control Unit (rev 01)'),
+ 'ff:1f.0': (['ff:1f.0'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Power '
+             'Control Unit (rev 01)'),
+ 'ff:1f.2': (['ff:1f.2'],
+             'System peripheral',
+             'Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Power '
+             'Control Unit (rev 01)')}
+
+
+ 000000000000 000000000fff                    1000  Reserved
+
+ 000000001000 00000009ffff                   9f000  System RAM
+
+ 0000000a0000 0000000bffff                   20000  PCI Bus 0000:00 Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DMI2 (rev 01)
+
+ 0000000c0000 0000000c59ff                    5a00  Video ROM
+
+ 0000000f0000 0000000fffff                   10000  System ROM
+
+ 000000100000 00006fdbc017                6fcbc018  System RAM
+
+ 00006fdbc018 00006fddbc57                   1fc40  System RAM
+
+ 00006fddbc58 00006fddc017                     3c0  System RAM
+
+ 00006fddc018 00006fde4057                    8040  System RAM
+
+ 00006fde4058 00006fde5017                     fc0  System RAM
+
+ 00006fde5018 00006fe2ae57                   45e40  System RAM
+
+ 00006fe2ae58 00006fe2b017                     1c0  System RAM
+
+ 00006fe2b018 00006fe32257                    7240  System RAM
+
+ 00006fe32258 00006fe33017                     dc0  System RAM
+
+ 00006fe33018 00006fe3a257                    7240  System RAM
+
+ 00006fe3a258 000076e6cfff                 7032da8  System RAM
+
+ 000076e6d000 000076f4efff                   e2000  Reserved
+
+ 000076f4f000 000078f9ffff                 2051000  System RAM
+
+ 000078fa0000 0000797b5fff                  816000  Reserved
+   00007917d018 00007917d018                     1    APEI ERST
+   00007917d01c 00007917d021                     6    APEI ERST
+   00007917d028 00007917d039                    12    APEI ERST
+   00007917d040 00007917d04c                     d    APEI ERST
+   00007917d050 00007917f04f                  2000    APEI ERST
+
+ 0000797b6000 0000798b4fff                   ff000  System RAM
+
+ 0000798b5000 000079e2efff                  57a000  ACPI Non-volatile Storage
+
+ 000079e2f000 00007bdbbfff                 1f8d000  Reserved
+
+ 00007bdbc000 00007bdbcfff                    1000  System RAM
+
+ 00007bdbd000 00007be42fff                   86000  Reserved
+
+ 00007be43000 00007bffffff                  1bd000  System RAM
+
+ 00007c000000 00008fffffff                14000000  Reserved
+   000080000000 00008fffffff              10000000    PCI MMCONFIG 0000 [bus 00-ff]
+
+ 000090000000 0000c7ffbfff                37ffc000  PCI Bus 0000:00 Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DMI2 (rev 01)
+   000090000000 000090ffffff               1000000    PCI Bus 0000:01 PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch
+     000090000000 000090ffffff             1000000      PCI Bus 0000:02 PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch
+       000090000000 0000901fffff            200000        PCI Bus 0000:03 Intel Corporation NVMe Datacenter SSD [3DNAND, Beta Rock Controller]
+         000090000000 000090003fff            4000          03:00.0 Intel Corporation NVMe Datacenter SSD [3DNAND, Beta Rock Controller]
+           000090000000 000090003fff          4000            nvme
+       000090200000 0000903fffff            200000        PCI Bus 0000:04 Union Memory (Shenzhen) AM630 PCIe 4.0 x4 NVMe SSD Controller (rev 03)
+         000090200000 000090203fff            4000          04:00.0 Union Memory (Shenzhen) AM630 PCIe 4.0 x4 NVMe SSD Controller (rev 03)
+           000090200000 000090203fff          4000            nvme
+       000090400000 0000905fffff            200000        PCI Bus 0000:05 ?????? '05:00.0'
+       000090600000 0000907fffff            200000        PCI Bus 0000:06 ?????? '06:00.0'
+       000090800000 0000909fffff            200000        PCI Bus 0000:07 Intel Corporation NVMe Datacenter SSD [3DNAND, Beta Rock Controller]
+         000090800000 000090803fff            4000          07:00.0 Intel Corporation NVMe Datacenter SSD [3DNAND, Beta Rock Controller]
+           000090800000 000090803fff          4000            nvme
+       000090a00000 000090bfffff            200000        PCI Bus 0000:08 ?????? '08:00.0'
+       000090c00000 000090dfffff            200000        PCI Bus 0000:09 ?????? '09:00.0'
+       000090e00000 000090ffffff            200000        PCI Bus 0000:0a ?????? '0a:00.0'
+   000091000000 000093ffffff               3000000    PCI Bus 0000:0b PLX Technology, Inc. Device 9765 (rev aa)
+     000091000000 000093ffffff             3000000      PCI Bus 0000:0c ?????? '0c:00.0'
+       000091000000 000091ffffff           1000000        PCI Bus 0000:0d NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+         000091000000 000091ffffff         1000000          0d:00.0 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+           000091000000 000091ffffff       1000000            nvidia
+       000092000000 000092ffffff           1000000        PCI Bus 0000:0e NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+         000092000000 000092ffffff         1000000          0e:00.0 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+           000092000000 000092ffffff       1000000            nvidia
+       000093000000 0000932fffff            300000        PCI Bus 0000:0f PLX Technology, Inc. Device 8733 (rev ba)
+         000093000000 0000931fffff          200000          PCI Bus 0000:10 ?????? '10:00.0'
+           000093000000 0000931fffff        200000            PCI Bus 0000:11 ?????? '11:00.0'
+         000093200000 00009323ffff           40000          0f:00.0 PLX Technology, Inc. Device 8733 (rev ba)
+         000093240000 000093241fff            2000          0f:00.1 PLX Technology, Inc. PEX PCI Express Switch DMA interface (rev ba)
+           000093240000 000093241fff          2000            plx_dma
+         000093242000 000093243fff            2000          0f:00.2 PLX Technology, Inc. PEX PCI Express Switch DMA interface (rev ba)
+           000093242000 000093243fff          2000            plx_dma
+         000093244000 000093245fff            2000          0f:00.3 PLX Technology, Inc. PEX PCI Express Switch DMA interface (rev ba)
+           000093244000 000093245fff          2000            plx_dma
+         000093246000 000093247fff            2000          0f:00.4 PLX Technology, Inc. PEX PCI Express Switch DMA interface (rev ba)
+           000093246000 000093247fff          2000            plx_dma
+   0000c0000000 0000c24fffff               2500000    PCI Bus 0000:12 PLX Technology, Inc. Device 9765 (rev aa)
+     0000c0000000 0000c23fffff             2400000      PCI Bus 0000:13 ?????? '13:00.0'
+       0000c0000000 0000c0ffffff           1000000        PCI Bus 0000:15 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+         0000c0000000 0000c0ffffff         1000000          15:00.0 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+           0000c0000000 0000c0ffffff       1000000            nvidia
+       0000c1000000 0000c1ffffff           1000000        PCI Bus 0000:14 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+         0000c1000000 0000c1ffffff         1000000          14:00.0 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+           0000c1000000 0000c1ffffff       1000000            nvidia
+       0000c2000000 0000c23fffff            400000        PCI Bus 0000:16 ASMedia Technology Inc. ASM2824 PCIe Gen3 Packet Switch (rev 01)
+         0000c2000000 0000c23fffff          400000          PCI Bus 0000:17 ASMedia Technology Inc. ASM2824 PCIe Gen3 Packet Switch (rev 01)
+           0000c2000000 0000c20fffff        100000            PCI Bus 0000:1b Realtek Semiconductor Co., Ltd. RTS5763DL NVMe SSD Controller (rev 01)
+           0000c2000000 0000c2003fff          4000            1b:00.0 Realtek Semiconductor Co., Ltd. RTS5763DL NVMe SSD Controller (rev 01)
+           0000c2000000 0000c2003fff          4000            nvme
+           0000c2004000 0000c2005fff          2000            1b:00.0 Realtek Semiconductor Co., Ltd. RTS5763DL NVMe SSD Controller (rev 01)
+           0000c2004000 0000c2005fff          2000            nvme
+           0000c2100000 0000c21fffff        100000            PCI Bus 0000:1a Phison Electronics Corporation PS5013 E13 NVMe Controller (rev 01)
+           0000c2100000 0000c2103fff          4000            1a:00.0 Phison Electronics Corporation PS5013 E13 NVMe Controller (rev 01)
+           0000c2100000 0000c2103fff          4000            nvme
+           0000c2200000 0000c22fffff        100000            PCI Bus 0000:19 Phison Electronics Corporation E12 NVMe Controller (rev 01)
+           0000c2200000 0000c2203fff          4000            19:00.0 Phison Electronics Corporation E12 NVMe Controller (rev 01)
+           0000c2200000 0000c2203fff          4000            nvme
+           0000c2300000 0000c23fffff        100000            PCI Bus 0000:18 MAXIO Technology (Hangzhou) Ltd. NVMe SSD Controller MAP1202 (rev 01)
+           0000c2300000 0000c2303fff          4000            18:00.0 MAXIO Technology (Hangzhou) Ltd. NVMe SSD Controller MAP1202 (rev 01)
+           0000c2300000 0000c2303fff          4000            nvme
+   0000c2500000 0000c25007ff                   800    00:1f.2 Intel Corporation C610/X99 series chipset 6-Port SATA Controller [AHCI mode] (rev 05)
+     0000c2500000 0000c25007ff                 800      ahci
+   0000c2501000 0000c25013ff                   400    00:1d.0 Intel Corporation C610/X99 series chipset USB Enhanced Host Controller #1 (rev 05)
+     0000c2501000 0000c25013ff                 400      ehci_hcd
+   0000c2502000 0000c25023ff                   400    00:1a.0 Intel Corporation C610/X99 series chipset USB Enhanced Host Controller #2 (rev 05)
+     0000c2502000 0000c25023ff                 400      ehci_hcd
+   0000c2504000 0000c250400f                    10    00:16.1 Intel Corporation C610/X99 series chipset MEI Controller #2 (rev 05)
+   0000c2505000 0000c250500f                    10    00:16.0 Intel Corporation C610/X99 series chipset MEI Controller #1 (rev 05)
+   0000c2506000 0000c2506fff                  1000    00:11.3 Intel Corporation C610/X99 series chipset MS SMBus 2 (rev 05)
+   0000c2507000 0000c2507fff                  1000    00:11.2 Intel Corporation C610/X99 series chipset MS SMBus 1 (rev 05)
+   0000c2508000 0000c2508fff                  1000    00:11.1 Intel Corporation C610/X99 series chipset MS SMBus 0 (rev 05)
+   0000c2509000 0000c2509fff                  1000    00:05.4 Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D I/O APIC (rev 01)
+   0000c6000000 0000c70fffff               1100000    PCI Bus 0000:1d ASPEED Technology, Inc. AST1150 PCI-to-PCI Bridge (rev 03)
+     0000c6000000 0000c70fffff             1100000      PCI Bus 0000:1e ASPEED Technology, Inc. ASPEED Graphics Family (rev 30)
+       0000c6000000 0000c6ffffff           1000000        1e:00.0 ASPEED Technology, Inc. ASPEED Graphics Family (rev 30)
+       0000c7000000 0000c701ffff             20000        1e:00.0 ASPEED Technology, Inc. ASPEED Graphics Family (rev 30)
+   0000c7500000 0000c76fffff                200000    PCI Bus 0000:1c Broadcom / LSI SAS3008 PCI-Express Fusion-MPT SAS-3 (rev 02)
+     0000c7500000 0000c75fffff              100000      1c:00.0 Broadcom / LSI SAS3008 PCI-Express Fusion-MPT SAS-3 (rev 02)
+     0000c7600000 0000c763ffff               40000      1c:00.0 Broadcom / LSI SAS3008 PCI-Express Fusion-MPT SAS-3 (rev 02)
+       0000c7600000 0000c763ffff             40000        mpt3sas
+     0000c7640000 0000c764ffff               10000      1c:00.0 Broadcom / LSI SAS3008 PCI-Express Fusion-MPT SAS-3 (rev 02)
+       0000c7640000 0000c764ffff             10000        mpt3sas
+
+ 0000c7ffc000 0000c7ffcfff                    1000  dmar1
+
+ 0000c8000000 0000fbffbfff                33ffc000  PCI Bus 0000:80 Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D PCI Express Root Port 0 (rev 01)
+   0000c8000000 0000caffffff               3000000    PCI Bus 0000:8d PLX Technology, Inc. Device 9765 (rev aa)
+     0000c8000000 0000caffffff             3000000      PCI Bus 0000:8e ?????? '8e:00.0'
+       0000c8000000 0000c8ffffff           1000000        PCI Bus 0000:8f NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+         0000c8000000 0000c8ffffff         1000000          8f:00.0 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+           0000c8000000 0000c8ffffff       1000000            nvidia
+       0000c9000000 0000c9ffffff           1000000        PCI Bus 0000:90 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+         0000c9000000 0000c9ffffff         1000000          90:00.0 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+           0000c9000000 0000c9ffffff       1000000            nvidia
+       0000ca000000 0000ca2fffff            300000        PCI Bus 0000:91 PLX Technology, Inc. Device 8733 (rev ca)
+         0000ca000000 0000ca1fffff          200000          PCI Bus 0000:92 ?????? '92:00.0'
+           0000ca000000 0000ca1fffff        200000            PCI Bus 0000:93 ?????? '93:00.0'
+         0000ca200000 0000ca23ffff           40000          91:00.0 PLX Technology, Inc. Device 8733 (rev ca)
+         0000ca240000 0000ca241fff            2000          91:00.1 PLX Technology, Inc. PEX PCI Express Switch DMA interface (rev ca)
+           0000ca240000 0000ca241fff          2000            plx_dma
+         0000ca242000 0000ca243fff            2000          91:00.2 PLX Technology, Inc. PEX PCI Express Switch DMA interface (rev ca)
+           0000ca242000 0000ca243fff          2000            plx_dma
+         0000ca244000 0000ca245fff            2000          91:00.3 PLX Technology, Inc. PEX PCI Express Switch DMA interface (rev ca)
+           0000ca244000 0000ca245fff          2000            plx_dma
+         0000ca246000 0000ca247fff            2000          91:00.4 PLX Technology, Inc. PEX PCI Express Switch DMA interface (rev ca)
+           0000ca246000 0000ca247fff          2000            plx_dma
+   0000f4000000 0000f64fffff               2500000    PCI Bus 0000:83 PLX Technology, Inc. Device 9765 (rev aa)
+     0000f4000000 0000f63fffff             2400000      PCI Bus 0000:84 ?????? '84:00.0'
+       0000f4000000 0000f4ffffff           1000000        PCI Bus 0000:8c NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+         0000f4000000 0000f4ffffff         1000000          8c:00.0 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+           0000f4000000 0000f4ffffff       1000000            nvidia
+       0000f5000000 0000f5ffffff           1000000        PCI Bus 0000:8b NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+         0000f5000000 0000f5ffffff         1000000          8b:00.0 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+           0000f5000000 0000f5ffffff       1000000            nvidia
+       0000f6000000 0000f63fffff            400000        PCI Bus 0000:85 ASMedia Technology Inc. ASM2824 PCIe Gen3 Packet Switch (rev 01)
+         0000f6000000 0000f63fffff          400000          PCI Bus 0000:86 ASMedia Technology Inc. ASM2824 PCIe Gen3 Packet Switch (rev 01)
+           0000f6000000 0000f60fffff        100000            PCI Bus 0000:8a Phison Electronics Corporation PS5013 E13 NVMe Controller (rev 01)
+           0000f6000000 0000f6003fff          4000            8a:00.0 Phison Electronics Corporation PS5013 E13 NVMe Controller (rev 01)
+           0000f6000000 0000f6003fff          4000            nvme
+           0000f6100000 0000f61fffff        100000            PCI Bus 0000:89 Samsung Electronics Co Ltd NVMe SSD Controller SM981/PM981/PM983
+           0000f6100000 0000f6103fff          4000            89:00.0 Samsung Electronics Co Ltd NVMe SSD Controller SM981/PM981/PM983
+           0000f6100000 0000f6103fff          4000            nvme
+           0000f6200000 0000f62fffff        100000            PCI Bus 0000:88 Realtek Semiconductor Co., Ltd. RTS5763DL NVMe SSD Controller (rev 01)
+           0000f6200000 0000f6203fff          4000            88:00.0 Realtek Semiconductor Co., Ltd. RTS5763DL NVMe SSD Controller (rev 01)
+           0000f6200000 0000f6203fff          4000            nvme
+           0000f6204000 0000f6205fff          2000            88:00.0 Realtek Semiconductor Co., Ltd. RTS5763DL NVMe SSD Controller (rev 01)
+           0000f6204000 0000f6205fff          2000            nvme
+           0000f6300000 0000f63fffff        100000            PCI Bus 0000:87 Phison Electronics Corporation PS5013 E13 NVMe Controller (rev 01)
+           0000f6300000 0000f6303fff          4000            87:00.0 Phison Electronics Corporation PS5013 E13 NVMe Controller (rev 01)
+           0000f6300000 0000f6303fff          4000            nvme
+   0000f6500000 0000f6500fff                  1000    80:05.4 Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D I/O APIC (rev 01)
+   0000fa000000 0000fb0fffff               1100000    PCI Bus 0000:82 NVIDIA Corporation TU117GL [T1000 8GB] (rev a1)
+     0000fa000000 0000faffffff             1000000      82:00.0 NVIDIA Corporation TU117GL [T1000 8GB] (rev a1)
+       0000fa000000 0000faffffff           1000000        nvidia
+     0000fb000000 0000fb07ffff               80000      82:00.0 NVIDIA Corporation TU117GL [T1000 8GB] (rev a1)
+     0000fb080000 0000fb083fff                4000      82:00.1 NVIDIA Corporation Device 10fa (rev a1)
+       0000fb080000 0000fb083fff              4000        ICH HD audio
+
+ 0000fbffc000 0000fbffcfff                    1000  dmar0
+
+ 0000fec00000 0000fecfffff                  100000  PNP0003:00
+   0000fec00000 0000fec003ff                   400    IOAPIC 0
+   0000fec01000 0000fec013ff                   400    IOAPIC 1
+   0000fec40000 0000fec403ff                   400    IOAPIC 2
+
+ 0000fed00000 0000fed003ff                     400  HPET 0
+   0000fed00000 0000fed003ff                   400    PNP0103:00
+
+ 0000fed12000 0000fed1200f                      10  pnp 00:01
+
+ 0000fed12010 0000fed1201f                      10  pnp 00:01
+
+ 0000fed1b000 0000fed1bfff                    1000  pnp 00:01
+
+ 0000fed1c000 0000fed44fff                   29000  Reserved
+   0000fed1c000 0000fed3ffff                 24000    pnp 00:01
+     0000fed1f410 0000fed1f414                   5      iTCO_wdt.1.auto
+   0000fed40000 0000fed44fff                  5000    MSFT0101:00
+     0000fed40000 0000fed44fff                5000      MSFT0101:00 MSFT0101:00
+
+ 0000fed45000 0000fed8bfff                   47000  pnp 00:01
+
+ 0000fee00000 0000feefffff                  100000  pnp 00:01
+   0000fee00000 0000fee00fff                  1000    Local APIC
+
+ 0000ff000000 0000ffffffff                 1000000  Reserved
+   0000ff000000 0000ffffffff               1000000    pnp 00:01
+
+ 000100000000 01007fffffff              ff80000000  System RAM
+   00f99da00000 00f99ec02187               1202188    Kernel code
+   00f99ee00000 00f99f908fff                b09000    Kernel rodata
+   00f99fa00000 00f99fdf50bf                3f50c0    Kernel data
+   00f9a0135000 00f9a05fffff                4cb000    Kernel bss
+
+ 020000000000 02ffffffffff             10000000000  PCI Bus 0000:00 Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DMI2 (rev 01)
+   020000000000 020000ffffff               1000000    PCI Bus 0000:01 PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch
+     020000000000 020000ffffff             1000000      PCI Bus 0000:02 PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch
+       020000000000 0200001fffff            200000        PCI Bus 0000:03 Intel Corporation NVMe Datacenter SSD [3DNAND, Beta Rock Controller]
+       020000200000 0200003fffff            200000        PCI Bus 0000:04 Union Memory (Shenzhen) AM630 PCIe 4.0 x4 NVMe SSD Controller (rev 03)
+       020000400000 0200005fffff            200000        PCI Bus 0000:05 ?????? '05:00.0'
+       020000600000 0200007fffff            200000        PCI Bus 0000:06 ?????? '06:00.0'
+       020000800000 0200009fffff            200000        PCI Bus 0000:07 Intel Corporation NVMe Datacenter SSD [3DNAND, Beta Rock Controller]
+       020000a00000 020000bfffff            200000        PCI Bus 0000:08 ?????? '08:00.0'
+       020000c00000 020000dfffff            200000        PCI Bus 0000:09 ?????? '09:00.0'
+       020000e00000 020000ffffff            200000        PCI Bus 0000:0a ?????? '0a:00.0'
+   02e000000000 02ec01ffffff             c02000000    PCI Bus 0000:12 PLX Technology, Inc. Device 9765 (rev aa)
+     02e000000000 02ec01ffffff           c02000000      PCI Bus 0000:13 ?????? '13:00.0'
+       02e000000000 02e401ffffff         402000000        PCI Bus 0000:15 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+         02e000000000 02e3ffffffff       400000000          15:00.0 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+         02e400000000 02e401ffffff         2000000          15:00.0 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+       02e800000000 02ec01ffffff         402000000        PCI Bus 0000:14 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+         02e800000000 02ebffffffff       400000000          14:00.0 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+         02ec00000000 02ec01ffffff         2000000          14:00.0 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+   02f000000000 02fc01ffffff             c02000000    PCI Bus 0000:0b PLX Technology, Inc. Device 9765 (rev aa)
+     02f000000000 02fc01ffffff           c02000000      PCI Bus 0000:0c ?????? '0c:00.0'
+       02f000000000 02f401ffffff         402000000        PCI Bus 0000:0e NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+         02f000000000 02f3ffffffff       400000000          0e:00.0 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+         02f400000000 02f401ffffff         2000000          0e:00.0 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+       02f402000000 02f4021fffff            200000        PCI Bus 0000:0f PLX Technology, Inc. Device 8733 (rev ba)
+         02f402000000 02f4021fffff          200000          PCI Bus 0000:10 ?????? '10:00.0'
+           02f402000000 02f4021fffff        200000            PCI Bus 0000:11 ?????? '11:00.0'
+       02f800000000 02fc01ffffff         402000000        PCI Bus 0000:0d NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+         02f800000000 02fbffffffff       400000000          0d:00.0 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+         02fc00000000 02fc01ffffff         2000000          0d:00.0 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+   02fffff00000 02fffff0ffff                 10000    00:14.0 Intel Corporation C610/X99 series chipset USB xHCI Host Controller (rev 05)
+     02fffff00000 02fffff0ffff               10000      xhci-hcd
+   02fffff10000 02fffff13fff                  4000    00:04.7 Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Crystal Beach DMA Channel 7 (rev 01)
+     02fffff10000 02fffff13fff                4000      ioatdma
+   02fffff14000 02fffff17fff                  4000    00:04.6 Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Crystal Beach DMA Channel 6 (rev 01)
+     02fffff14000 02fffff17fff                4000      ioatdma
+   02fffff18000 02fffff1bfff                  4000    00:04.5 Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Crystal Beach DMA Channel 5 (rev 01)
+     02fffff18000 02fffff1bfff                4000      ioatdma
+   02fffff1c000 02fffff1ffff                  4000    00:04.4 Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Crystal Beach DMA Channel 4 (rev 01)
+     02fffff1c000 02fffff1ffff                4000      ioatdma
+   02fffff20000 02fffff23fff                  4000    00:04.3 Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Crystal Beach DMA Channel 3 (rev 01)
+     02fffff20000 02fffff23fff                4000      ioatdma
+   02fffff24000 02fffff27fff                  4000    00:04.2 Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Crystal Beach DMA Channel 2 (rev 01)
+     02fffff24000 02fffff27fff                4000      ioatdma
+   02fffff28000 02fffff2bfff                  4000    00:04.1 Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Crystal Beach DMA Channel 1 (rev 01)
+     02fffff28000 02fffff2bfff                4000      ioatdma
+   02fffff2c000 02fffff2ffff                  4000    00:04.0 Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Crystal Beach DMA Channel 0 (rev 01)
+     02fffff2c000 02fffff2ffff                4000      ioatdma
+   02fffff31000 02fffff310ff                   100    00:1f.3 Intel Corporation C610/X99 series chipset SMBus Controller (rev 05)
+
+ 030000000000 03ffffffffff             10000000000  PCI Bus 0000:80 Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D PCI Express Root Port 0 (rev 01)
+   030000000000 0300008fffff                900000    PCI Bus 0000:81 Intel Corporation Ethernet Controller 10-Gigabit X540-AT2 (rev 01)
+     030000000000 0300001fffff              200000      81:00.0 Intel Corporation Ethernet Controller 10-Gigabit X540-AT2 (rev 01)
+       030000000000 0300001fffff            200000        ixgbe
+     030000200000 0300003fffff              200000      81:00.1 Intel Corporation Ethernet Controller 10-Gigabit X540-AT2 (rev 01)
+       030000200000 0300003fffff            200000        ixgbe
+     030000400000 030000403fff                4000      81:00.0 Intel Corporation Ethernet Controller 10-Gigabit X540-AT2 (rev 01)
+       030000400000 030000403fff              4000        ixgbe
+     030000404000 030000503fff              100000      81:00.0 Intel Corporation Ethernet Controller 10-Gigabit X540-AT2 (rev 01)
+     030000504000 030000603fff              100000      81:00.0 Intel Corporation Ethernet Controller 10-Gigabit X540-AT2 (rev 01)
+     030000604000 030000607fff                4000      81:00.1 Intel Corporation Ethernet Controller 10-Gigabit X540-AT2 (rev 01)
+       030000604000 030000607fff              4000        ixgbe
+     030000608000 030000707fff              100000      81:00.1 Intel Corporation Ethernet Controller 10-Gigabit X540-AT2 (rev 01)
+     030000708000 030000807fff              100000      81:00.1 Intel Corporation Ethernet Controller 10-Gigabit X540-AT2 (rev 01)
+   03e000000000 03ec01ffffff             c02000000    PCI Bus 0000:8d PLX Technology, Inc. Device 9765 (rev aa)
+     03e000000000 03ec01ffffff           c02000000      PCI Bus 0000:8e ?????? '8e:00.0'
+       03e000000000 03e401ffffff         402000000        PCI Bus 0000:90 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+         03e000000000 03e3ffffffff       400000000          90:00.0 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+         03e400000000 03e401ffffff         2000000          90:00.0 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+       03e402000000 03e4021fffff            200000        PCI Bus 0000:91 PLX Technology, Inc. Device 8733 (rev ca)
+         03e402000000 03e4021fffff          200000          PCI Bus 0000:92 ?????? '92:00.0'
+           03e402000000 03e4021fffff        200000            PCI Bus 0000:93 ?????? '93:00.0'
+       03e800000000 03ec01ffffff         402000000        PCI Bus 0000:8f NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+         03e800000000 03ebffffffff       400000000          8f:00.0 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+         03ec00000000 03ec01ffffff         2000000          8f:00.0 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+   03f000000000 03fc01ffffff             c02000000    PCI Bus 0000:83 PLX Technology, Inc. Device 9765 (rev aa)
+     03f000000000 03fc01ffffff           c02000000      PCI Bus 0000:84 ?????? '84:00.0'
+       03f000000000 03f401ffffff         402000000        PCI Bus 0000:8c NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+         03f000000000 03f3ffffffff       400000000          8c:00.0 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+         03f400000000 03f401ffffff         2000000          8c:00.0 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+       03f800000000 03fc01ffffff         402000000        PCI Bus 0000:8b NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+         03f800000000 03fbffffffff       400000000          8b:00.0 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+         03fc00000000 03fc01ffffff         2000000          8b:00.0 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+   03fc10000000 03fc21ffffff              12000000    PCI Bus 0000:82 NVIDIA Corporation TU117GL [T1000 8GB] (rev a1)
+     03fc10000000 03fc1fffffff            10000000      82:00.0 NVIDIA Corporation TU117GL [T1000 8GB] (rev a1)
+     03fc20000000 03fc21ffffff             2000000      82:00.0 NVIDIA Corporation TU117GL [T1000 8GB] (rev a1)
+   03fffff00000 03fffff03fff                  4000    80:04.7 Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Crystal Beach DMA Channel 7 (rev 01)
+     03fffff00000 03fffff03fff                4000      ioatdma
+   03fffff04000 03fffff07fff                  4000    80:04.6 Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Crystal Beach DMA Channel 6 (rev 01)
+     03fffff04000 03fffff07fff                4000      ioatdma
+   03fffff08000 03fffff0bfff                  4000    80:04.5 Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Crystal Beach DMA Channel 5 (rev 01)
+     03fffff08000 03fffff0bfff                4000      ioatdma
+   03fffff0c000 03fffff0ffff                  4000    80:04.4 Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Crystal Beach DMA Channel 4 (rev 01)
+     03fffff0c000 03fffff0ffff                4000      ioatdma
+   03fffff10000 03fffff13fff                  4000    80:04.3 Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Crystal Beach DMA Channel 3 (rev 01)
+     03fffff10000 03fffff13fff                4000      ioatdma
+   03fffff14000 03fffff17fff                  4000    80:04.2 Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Crystal Beach DMA Channel 2 (rev 01)
+     03fffff14000 03fffff17fff                4000      ioatdma
+   03fffff18000 03fffff1bfff                  4000    80:04.1 Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Crystal Beach DMA Channel 1 (rev 01)
+     03fffff18000 03fffff1bfff                4000      ioatdma
+   03fffff1c000 03fffff1ffff                  4000    80:04.0 Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Crystal Beach DMA Channel 0 (rev 01)
+     03fffff1c000 03fffff1ffff                4000      ioatdma
