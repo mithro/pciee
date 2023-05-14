@@ -1,0 +1,150 @@
+[] scsi host0: ahci
+[] scsi host1: ahci
+[] scsi host2: ahci
+[] scsi host3: ahci
+[] scsi host4: ahci
+[] scsi host5: ahci
+
+[] scsi 4:0:0:0: Direct-Access     ATA      SATA SSD         02.1 PQ: 0 ANSI: 5
+[] sd 4:0:0:0: Attached scsi generic sg0 type 0
+[] sd 4:0:0:0: [sda] 125045424 512-byte logical blocks: (64.0 GB/59.6 GiB)
+[] sd 4:0:0:0: [sda] Write Protect is off
+[] sd 4:0:0:0: [sda] Mode Sense: 00 3a 00 00
+[] sd 4:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[] sd 4:0:0:0: [sda] Preferred minimum I/O size 512 bytes
+[]  sda: sda1 sda2 sda3 sda4 sda5 sda6 sda7
+[] sd 4:0:0:0: [sda] Attached SCSI disk
+[] EXT4-fs (sda5): mounted filesystem with ordered data mode. Quota mode: none.
+
+[] scsi host6: Fusion MPT SAS Host
+[] scsi 6:0:0:0: Direct-Access     SEAGATE  ST2000NX0433     N004 PQ: 0 ANSI: 6
+[] scsi 6:0:0:0: SSP: handle(0x000d), sas_addr(0x5000c500a0132731), phy(4), device_name(0x5000c500a0132730)
+[] scsi 6:0:0:0: enclosure logical id (0x5003048024664a01), slot(4)
+[] scsi 6:0:0:0: enclosure level(0x0000), connector name(     )
+[] scsi 6:0:0:0: qdepth(254), tagged(1), scsi_level(7), cmd_que(1)
+[] sd 6:0:0:0: Attached scsi generic sg1 type 0
+[] sd 6:0:0:0: [sdb] 3907029168 512-byte logical blocks: (2.00 TB/1.82 TiB)
+[] sd 6:0:0:0: [sdb] Write Protect is off
+[] sd 6:0:0:0: [sdb] Mode Sense: db 00 10 08
+[] sd 6:0:0:0: [sdb] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[] sd 6:0:0:0: [sdb] Preferred minimum I/O size 512 bytes
+[] sd 6:0:0:0: [sdb] Attached SCSI disk
+
+[] scsi 6:0:1:0: Direct-Access     SEAGATE  ST2000NX0433     N004 PQ: 0 ANSI: 6
+[] scsi 6:0:1:0: SSP: handle(0x0009), sas_addr(0x5000c500bb64bfb9), phy(0), device_name(0x5000c500bb64bfb8)
+[] scsi 6:0:1:0: enclosure logical id (0x5003048024664a01), slot(0)
+[] scsi 6:0:1:0: enclosure level(0x0000), connector name(     )
+[] scsi 6:0:1:0: qdepth(254), tagged(1), scsi_level(7), cmd_que(1)
+[] sd 6:0:1:0: Attached scsi generic sg2 type 0
+[] sd 6:0:1:0: [sdc] 3907029168 512-byte logical blocks: (2.00 TB/1.82 TiB)
+[] sd 6:0:1:0: [sdc] Write Protect is off
+[] sd 6:0:1:0: [sdc] Mode Sense: db 00 10 08
+[] sd 6:0:1:0: [sdc] Write cache: disabled, read cache: enabled, supports DPO and FUA
+[] sd 6:0:1:0: [sdc] Preferred minimum I/O size 512 bytes
+[] sd 6:0:1:0: [sdc] Attached SCSI disk
+[] sd 6:0:1:0: [sdc] tag#710 FAILED Result: hostbyte=DID_SOFT_ERROR driverbyte=DRIVER_OK cmd_age=0s
+[] sd 6:0:1:0: [sdc] tag#710 CDB: Write(10) 2a 00 00 00 a8 00 00 04 00 00
+[] I/O error, dev sdc, sector 43008 op 0x1:(WRITE) flags 0x4000 phys_seg 128 prio class 0
+[] sd 6:0:1:0: [sdc] tag#711 FAILED Result: hostbyte=DID_SOFT_ERROR driverbyte=DRIVER_OK cmd_age=0s
+[] sd 6:0:1:0: [sdc] tag#711 CDB: Write(10) 2a 00 00 00 ac 00 00 04 00 00
+[] I/O error, dev sdc, sector 44032 op 0x1:(WRITE) flags 0x0 phys_seg 128 prio class 0
+
+[] scsi 6:0:2:0: Direct-Access     SEAGATE  ST2000NX0433     N004 PQ: 0 ANSI: 6
+[] scsi 6:0:2:0: SSP: handle(0x000a), sas_addr(0x5000c500bb69c281), phy(1), device_name(0x5000c500bb69c280)
+[] scsi 6:0:2:0: enclosure logical id (0x5003048024664a01), slot(1)
+[] scsi 6:0:2:0: enclosure level(0x0000), connector name(     )
+[] scsi 6:0:2:0: qdepth(254), tagged(1), scsi_level(7), cmd_que(1)
+[] scsi 6:0:2:0: Attached scsi generic sg3 type 0
+[] sd 6:0:2:0: [sdd] 3907029168 512-byte logical blocks: (2.00 TB/1.82 TiB)
+[] sd 6:0:2:0: [sdd] Write Protect is off
+[] sd 6:0:2:0: [sdd] Mode Sense: db 00 10 08
+[] sd 6:0:2:0: [sdd] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[] sd 6:0:2:0: [sdd] Preferred minimum I/O size 512 bytes
+[] sd 6:0:2:0: [sdd] Attached SCSI disk
+
+[] scsi 6:0:3:0: Direct-Access     SEAGATE  ST2000NX0433     N004 PQ: 0 ANSI: 6
+[] scsi 6:0:3:0: SSP: handle(0x000b), sas_addr(0x5000c500bb64a1f5), phy(2), device_name(0x5000c500bb64a1f4)
+[] scsi 6:0:3:0: enclosure logical id (0x5003048024664a01), slot(2)
+[] scsi 6:0:3:0: enclosure level(0x0000), connector name(     )
+[] scsi 6:0:3:0: qdepth(254), tagged(1), scsi_level(7), cmd_que(1)
+[] scsi 6:0:3:0: Attached scsi generic sg4 type 0
+[] sd 6:0:3:0: [sde] 3907029168 512-byte logical blocks: (2.00 TB/1.82 TiB)
+[] sd 6:0:3:0: [sde] Write Protect is off
+[] sd 6:0:3:0: [sde] Mode Sense: db 00 10 08
+[] sd 6:0:3:0: [sde] Write cache: disabled, read cache: enabled, supports DPO and FUA
+[] sd 6:0:3:0: [sde] Preferred minimum I/O size 512 bytes
+[] sd 6:0:3:0: [sde] Attached SCSI disk
+
+[] scsi 6:0:4:0: Direct-Access     SEAGATE  ST2000NX0433     N004 PQ: 0 ANSI: 6
+[] scsi 6:0:4:0: SSP: handle(0x000c), sas_addr(0x5000c500bb6417e9), phy(3), device_name(0x5000c500bb6417e8)
+[] scsi 6:0:4:0: enclosure logical id (0x5003048024664a01), slot(3)
+[] scsi 6:0:4:0: enclosure level(0x0000), connector name(     )
+[] scsi 6:0:4:0: qdepth(254), tagged(1), scsi_level(7), cmd_que(1)
+[] sd 6:0:4:0: Attached scsi generic sg5 type 0
+[] sd 6:0:4:0: [sdf] 3907029168 512-byte logical blocks: (2.00 TB/1.82 TiB)
+[] sd 6:0:4:0: [sdf] Write Protect is off
+[] sd 6:0:4:0: [sdf] Mode Sense: db 00 10 08
+[] sd 6:0:4:0: [sdf] Write cache: disabled, read cache: enabled, supports DPO and FUA
+[] sd 6:0:4:0: [sdf] Preferred minimum I/O size 512 bytes
+[] sd 6:0:4:0: [sdf] Attached SCSI disk
+
+[] scsi 6:0:5:0: Direct-Access     SEAGATE  ST2000NX0433     N004 PQ: 0 ANSI: 6
+[] scsi 6:0:5:0: SSP: handle(0x000e), sas_addr(0x5000c500a0132af9), phy(5), device_name(0x5000c500a0132af8)
+[] scsi 6:0:5:0: enclosure logical id (0x5003048024664a01), slot(5)
+[] scsi 6:0:5:0: enclosure level(0x0000), connector name(     )
+[] scsi 6:0:5:0: qdepth(254), tagged(1), scsi_level(7), cmd_que(1)
+[] sd 6:0:5:0: Attached scsi generic sg6 type 0
+[] sd 6:0:5:0: [sdh] 3907029168 512-byte logical blocks: (2.00 TB/1.82 TiB)
+[] sd 6:0:5:0: [sdh] Write Protect is off
+[] sd 6:0:5:0: [sdh] Mode Sense: db 00 10 08
+[] sd 6:0:5:0: [sdh] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[] sd 6:0:5:0: [sdh] Preferred minimum I/O size 512 bytes
+[] sd 6:0:5:0: [sdh] Attached SCSI disk
+
+[] scsi 6:0:6:0: Direct-Access     SEAGATE  ST2000NX0433     N004 PQ: 0 ANSI: 6
+[] scsi 6:0:6:0: SSP: handle(0x000f), sas_addr(0x5000c500a0133425), phy(6), device_name(0x5000c500a0133424)
+[] scsi 6:0:6:0: enclosure logical id (0x5003048024664a01), slot(6)
+[] scsi 6:0:6:0: enclosure level(0x0000), connector name(     )
+[] scsi 6:0:6:0: qdepth(254), tagged(1), scsi_level(7), cmd_que(1)
+[] sd 6:0:6:0: Attached scsi generic sg7 type 0
+[] sd 6:0:6:0: [sdg] 3907029168 512-byte logical blocks: (2.00 TB/1.82 TiB)
+[] sd 6:0:6:0: [sdg] Write Protect is off
+[] sd 6:0:6:0: [sdg] Mode Sense: db 00 10 08
+[] sd 6:0:6:0: [sdg] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[] sd 6:0:6:0: [sdg] Preferred minimum I/O size 512 bytes
+[] sd 6:0:6:0: [sdg] Attached SCSI disk
+
+[] scsi 6:0:7:0: Direct-Access     SEAGATE  ST2000NX0433     N004 PQ: 0 ANSI: 6
+[] scsi 6:0:7:0: SSP: handle(0x0010), sas_addr(0x5000c500a01335b9), phy(7), device_name(0x5000c500a01335b8)
+[] scsi 6:0:7:0: enclosure logical id (0x5003048024664a01), slot(7)
+[] scsi 6:0:7:0: enclosure level(0x0000), connector name(     )
+[] scsi 6:0:7:0: qdepth(254), tagged(1), scsi_level(7), cmd_que(1)
+[] sd 6:0:7:0: Attached scsi generic sg8 type 0
+[] sd 6:0:7:0: [sdi] 3907029168 512-byte logical blocks: (2.00 TB/1.82 TiB)
+[] sd 6:0:7:0: [sdi] Write Protect is off
+[] sd 6:0:7:0: [sdi] Mode Sense: db 00 10 08
+[] sd 6:0:7:0: [sdi] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[] sd 6:0:7:0: [sdi] Preferred minimum I/O size 512 bytes
+[] sd 6:0:7:0: [sdi] Attached SCSI disk
+
+[] scsi 5:0:0:0: Direct-Access     ATA      SATA SSD         02.1 PQ: 0 ANSI: 5
+[] sd 5:0:0:0: Attached scsi generic sg9 type 0
+[] sd 5:0:0:0: [sdj] 125045424 512-byte logical blocks: (64.0 GB/59.6 GiB)
+[] sd 5:0:0:0: [sdj] Write Protect is off
+[] sd 5:0:0:0: [sdj] Mode Sense: 00 3a 00 00
+[] sd 5:0:0:0: [sdj] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[] sd 5:0:0:0: [sdj] Preferred minimum I/O size 512 bytes
+[]  sdj: sdj1 sdj2 sdj3 sdj4 sdj5 sdj6 sdj7
+[] sd 5:0:0:0: [sdj] Attached SCSI disk
+
+[] scsi host7: usb-storage 3-9:1.0
+[] scsi 7:0:0:0: Direct-Access     SanDisk  Cruzer Blade     1.00 PQ: 0 ANSI: 6
+[] sd 7:0:0:0: Attached scsi generic sg10 type 0
+[] sd 7:0:0:0: [sdk] 15232000 512-byte logical blocks: (7.80 GB/7.26 GiB)
+[] sd 7:0:0:0: [sdk] Write Protect is off
+[] sd 7:0:0:0: [sdk] Mode Sense: 43 00 00 00
+[] sd 7:0:0:0: [sdk] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+[]  sdk: sdk1
+[] sd 7:0:0:0: [sdk] Attached SCSI removable disk
+
+
