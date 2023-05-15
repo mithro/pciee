@@ -182,6 +182,9 @@ for start, end, info in sorted(smem, key=lambda x: (x[0], 0xffffffffffff-x[1], x
     d[(0,0)].extend(info)
 
 
+F = 0xffffffffffff
+rend = [F]
+
 def pmem(region, i=0):
     for (istart, iend), d in region.items():
         if (istart, iend) == (0, 0):
@@ -194,6 +197,15 @@ def pmem(region, i=0):
         hsize  = lpad(hex(isize)[2:], ' ', m)
 
         info = d.get((0, 0), [])
+
+        if 'DMI2' in repr(info) or 'Root Port' in repr(info):
+            print()
+            print()
+            rend[0] = iend+1
+        elif istart >= rend[0]:
+            print()
+            print()
+            rend[0] = F
 
         p1 = ' '*i
         p2 = ' '*(5-i)

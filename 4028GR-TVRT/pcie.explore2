@@ -1,6 +1,10 @@
 |  000000000000 000000000fff       |         1000 |  ['Reserved']
 |  000000001000 00000009ffff       |        9f000 |  ['System RAM']
+
+
 |  0000000a0000 0000000bffff       |        20000 |  ['PCI Bus 0000:00 Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DMI2 (rev 01)']
+
+
 |  0000000c0000 0000000c59ff       |         5a00 |  ['Video ROM']
 |  0000000f0000 0000000fffff       |        10000 |  ['System ROM']
 |  000000100000 00006fdbc017       |     6fcbc018 |  ['System RAM']
@@ -30,6 +34,8 @@
 |  00007be43000 00007bffffff       |       1bd000 |  ['System RAM']
 |  00007c000000 00008fffffff       |     14000000 |  ['Reserved']
 |   000080000000 00008fffffff      |     10000000 |   ['PCI MMCONFIG 0000 [bus 00-ff]']
+
+
 |  000090000000 0000c7ffbfff       |     37ffc000 |  ['PCI Bus 0000:00 Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DMI2 (rev 01)']
 |   000090000000 000090ffffff      |      1000000 |   ['PCI Bus 0000:01 PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch', 'PCI Bus 0000:02 PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch']
 |    000090000000 0000901fffff     |       200000 |    ['PCI Bus 0000:03 Intel Corporation NVMe Datacenter SSD [3DNAND, Beta Rock Controller]']
@@ -83,7 +89,11 @@
 |    0000c7500000 0000c75fffff     |       100000 |    ['1c:00.0 Broadcom / LSI SAS3008 PCI-Express Fusion-MPT SAS-3 (rev 02)']
 |    0000c7600000 0000c763ffff     |        40000 |    ['1c:00.0 Broadcom / LSI SAS3008 PCI-Express Fusion-MPT SAS-3 (rev 02)', 'mpt3sas']
 |    0000c7640000 0000c764ffff     |        10000 |    ['1c:00.0 Broadcom / LSI SAS3008 PCI-Express Fusion-MPT SAS-3 (rev 02)', 'mpt3sas']
+
+
 |  0000c7ffc000 0000c7ffcfff       |         1000 |  ['dmar1']
+
+
 |  0000c8000000 0000fbffbfff       |     33ffc000 |  ['PCI Bus 0000:80 Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D PCI Express Root Port 0 (rev 01)']
 |   0000c8000000 0000caffffff      |      3000000 |   ['PCI Bus 0000:8d PLX Technology, Inc. Device 9765 (rev aa)', "PCI Bus 0000:8e ?????? '8e:00.0'"]
 |    0000c8000000 0000c8ffffff     |      1000000 |    ['8f:00.0 NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)', 'PCI Bus 0000:8f NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)', 'nvidia']
@@ -114,6 +124,8 @@
 |    0000fa000000 0000faffffff     |      1000000 |    ['82:00.0 NVIDIA Corporation TU117GL [T1000 8GB] (rev a1)', 'nvidia']
 |    0000fb000000 0000fb07ffff     |        80000 |    ['82:00.0 NVIDIA Corporation TU117GL [T1000 8GB] (rev a1)']
 |    0000fb080000 0000fb083fff     |         4000 |    ['82:00.1 NVIDIA Corporation Device 10fa (rev a1)', 'ICH HD audio']
+
+
 |  0000fbffc000 0000fbffcfff       |         1000 |  ['dmar0']
 |  0000fec00000 0000fecfffff       |       100000 |  ['PNP0003:00']
 |   0000fec00000 0000fec003ff      |          400 |   ['IOAPIC 0']
@@ -136,6 +148,8 @@
 |   00f99ee00000 00f99f908fff      |       b09000 |   ['Kernel rodata']
 |   00f99fa00000 00f99fdf50bf      |       3f50c0 |   ['Kernel data']
 |   00f9a0135000 00f9a05fffff      |       4cb000 |   ['Kernel bss']
+
+
 |  020000000000 02ffffffffff       |  10000000000 |  ['PCI Bus 0000:00 Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D DMI2 (rev 01)']
 |   020000000000 020000ffffff      |      1000000 |   ['PCI Bus 0000:01 PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch', 'PCI Bus 0000:02 PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch']
 |    020000000000 0200001fffff     |       200000 |    ['PCI Bus 0000:03 Intel Corporation NVMe Datacenter SSD [3DNAND, Beta Rock Controller]']
@@ -171,6 +185,8 @@
 |   02fffff28000 02fffff2bfff      |         4000 |   ['00:04.1 Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Crystal Beach DMA Channel 1 (rev 01)', 'ioatdma']
 |   02fffff2c000 02fffff2ffff      |         4000 |   ['00:04.0 Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D Crystal Beach DMA Channel 0 (rev 01)', 'ioatdma']
 |   02fffff31000 02fffff310ff      |          100 |   ['00:1f.3 Intel Corporation C610/X99 series chipset SMBus Controller (rev 05)']
+
+
 |  030000000000 03ffffffffff       |  10000000000 |  ['PCI Bus 0000:80 Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D PCI Express Root Port 0 (rev 01)']
 |   030000000000 0300008fffff      |       900000 |   ['PCI Bus 0000:81 Intel Corporation Ethernet Controller 10-Gigabit X540-AT2 (rev 01)']
 |    030000000000 0300001fffff     |       200000 |    ['81:00.0 Intel Corporation Ethernet Controller 10-Gigabit X540-AT2 (rev 01)', 'ixgbe']
