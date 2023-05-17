@@ -52,6 +52,19 @@ class Region:
 
 
 @dataclass(eq=True, order=True, unsafe_hash=True)
+class BridgeRegion:
+    prefetchable: bool
+    type: str
+
+    start: HexInt
+    end: HexInt
+    size: int
+
+    disabled: bool
+    bits: int
+
+
+@dataclass(eq=True, order=True, unsafe_hash=True)
 class CapabilityVendor:
     id: int
     rev: int
@@ -215,6 +228,70 @@ def parse_region(line: str) -> Region:
         disabled=disabled,
         virtual=virtual)
     return region_info
+
+
+RE_BEHIND = re.compile(
+    "^(?P<prefetch>Prefetchable\s)?(?P<mtype>.*)\sbehind\sbridge:\s*"
+    "(?P<mstart>[0-9a-fA-F]+)(?P<mend>-[0-9a-fA-F]+)\s*"
+    "(\[(?P<disabled>disabled)\])?\s*"
+    "(\[size=(?P<size>[0-9]*.)\])?\s*"
+    "(\[(?P<bits>[0-9][0-9])-bit\])?\s*"
+)
+
+def parse_behind_bridge(s):
+    """
+
+    >>> parse_behind_bridge("I/O behind bridge: f000-0fff [disabled] [16-bit]")
+    BridgeRegion(prefetchable=True, type='i/o', start=0xf000, end=0xfff, size=None, disabled=True, bits=16)
+
+    >>> parse_behind_bridge("Memory behind bridge: d0900000-d09fffff [size=1M] [32-bit]")
+    BridgeRegion(prefetchable=True, type='memory', start=0xd0900000, end=0xd09fffff, size=1048576, disabled=False, bits=32)
+
+    >>> parse_behind_bridge("Prefetchable memory behind bridge: 00000000fff00000-00000000000fffff [disabled] [64-bit]")
+    BridgeRegion(prefetchable=False, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=64)
+
+    >>> parse_behind_bridge("Memory behind bridge: b3000000-b40fffff [size=17M] [32-bit]")
+    BridgeRegion(prefetchable=True, type='memory', start=0xb3000000, end=0xb40fffff, size=17825792, disabled=False, bits=32)
+
+    >>> parse_behind_bridge("Prefetchable memory behind bridge: a0000000-b20fffff [size=289M] [32-bit]")
+    BridgeRegion(prefetchable=False, type='memory', start=0xa0000000, end=0xb20fffff, size=303038464, disabled=False, bits=32)
+
+    >>> parse_behind_bridge("Memory behind bridge: b8000000-d01fffff [size=386M] [32-bit]")
+    BridgeRegion(prefetchable=True, type='memory', start=0xb8000000, end=0xd01fffff, size=404750336, disabled=False, bits=32)
+
+    >>> parse_behind_bridge("Prefetchable memory behind bridge: 103fc0000000-103ffbffffff [size=960M] [32-bit]")
+    BridgeRegion(prefetchable=False, type='memory', start=0x103fc0000000, end=0x103ffbffffff, size=1006632960, disabled=False, bits=32)
+
+    >>> parse_behind_bridge("Memory behind bridge: f0000000-f10fffff [size=17M] [32-bit]")
+    BridgeRegion(prefetchable=True, type='memory', start=0xf0000000, end=0xf10fffff, size=17825792, disabled=False, bits=32)
+
+    >>> parse_behind_bridge("Prefetchable memory behind bridge: f9000000-fbafffff [size=43M] [32-bit]")
+    BridgeRegion(prefetchable=False, type='memory', start=0xf9000000, end=0xfbafffff, size=45088768, disabled=False, bits=32)
+
+    """
+    m = RE_BEHIND.search(s)
+
+    prefetchable = m.group('prefetch') is None
+    mtype = m.group('mtype').lower()
+
+    mstart = HexInt(m.group('mstart'), 16)
+    mend = HexInt(m.group('mend')[1:], 16)
+
+    disabled = m.group('disabled') is not None
+
+    msize = m.group('size')
+    if msize:
+        msize = convert_size_to_bytes(msize)
+
+    bits = int(m.group('bits'))
+
+    return BridgeRegion(
+            prefetchable=prefetchable,
+            type=mtype,
+            start=mstart, end=mend, size=msize,
+            disabled=disabled,
+            bits=bits,
+        )
 
 
 RE_COLON_SPACE = re.compile('^\t*[A-Za-z0-9 /]+: ')
@@ -640,7 +717,14 @@ def parse_lspci_output(output):
             assert isinstance(l, str), l
             assert ': ' in l, l
             name, value = l.split(': ', 1)
-            if ',' in value:
+
+            if name.endswith(' behind bridge'):
+                value = parse_behind_bridge(l)
+                if 'BridgeRegions' not in details:
+                    details['BridgeRegions'] = []
+                details['BridgeRegions'].append(value)
+
+            elif ',' in value:
                 value = [v.strip() for v in value.split(',')]
 
             if name in FLAGS:
@@ -661,6 +745,7 @@ def main(args):
     devices = parse_lspci_output(output)
 
     regions = []
+    bridges = []
     for name, details in devices:
         print()
         print()
@@ -668,18 +753,31 @@ def main(args):
         pprint(details)
         for r in details.get('Regions', []):
             regions.append((r, name))
+        for r in details.get('BridgeRegions', []):
+            bridges.append((r, name))
 
     # 'I/O behind bridge': '0000f000-00000fff [disabled]',
     # 'Memory behind bridge': 'bc300000-bc3fffff [size=1M]',
     # 'Prefetchable memory behind bridge': '00000000fff00000-00000000000fffff [disabled]',
 
+    regions.sort()
+    bridges.sort()
+
     print()
     print('-'*75)
     print()
     print('Regions')
-    regions.sort()
+    print('-'*75)
     for r, d in regions:
         print(r, d.split(' ', 1)[0])
+    print('-'*75)
+    print()
+    print('Bridge Regions')
+    print('-'*75)
+    for r, d in bridges:
+        print(r, d.split(' ', 1)[0])
+    print('-'*75)
+    print()
 
     return 0
 

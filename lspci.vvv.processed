@@ -500,6 +500,7 @@
 
 00:1d.0 PCI bridge: Intel Corporation C620 Series Chipset Family PCI Express Root Port #9 (rev f9) (prog-if 00 [Normal decode])
 {'BridgeCtl': {'>Reset': False, 'DiscTmrSERREn': False, 'DiscTmrStat': False, 'FastB2B': False, 'MAbort': False, 'NoISA': False, 'Parity': False, 'PriDiscTmr': False, 'SERR': True, 'SecDiscTmr': False, 'VGA': False, 'VGA16': True},
+ 'BridgeRegions': [BridgeRegion(prefetchable=True, type='i/o', start=0xf000, end=0xfff, size=None, disabled=True, bits=16), BridgeRegion(prefetchable=True, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=32), BridgeRegion(prefetchable=False, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=64)],
  'Bus': ['primary=00', 'secondary=01', 'subordinate=01', 'sec-latency=0'],
  'Capabilities': [Capability(id=64,
                              version=-1,
@@ -541,14 +542,14 @@
                   Capability(id=144, version=-1, name='Subsystem: Lenovo C620 Series Chipset Family PCI Express Root Port', vendor=None, types=None, properties={}, regions=[]),
                   Capability(id=160, version=-1, name='Power Management version 3', vendor=None, types=None, properties={'Flags': {'PMEClk': False, 'DSI': False, 'D1': False, 'D2': False, 'AuxCurrent': '0mA', 'PME': {'D0': True, 'D1': False, 'D2': False, 'D3hot': True, 'D3cold': True}}, 'Status': {'D3': True, 'NoSoftRst': False, 'PME-Enable': True, 'DSel': '0', 'DScale': '0', 'PME': False}}, regions=[])],
  'Control': {'BusMaster': True, 'DisINTx': True, 'FastB2B': False, 'I/O': True, 'Mem': True, 'MemWINV': False, 'ParErr': False, 'SERR': False, 'SpecCycle': False, 'Stepping': False, 'VGASnoop': False},
- 'I/O behind bridge': 'f000-0fff [disabled] [16-bit]',
+ 'I/O behind bridge': BridgeRegion(prefetchable=True, type='i/o', start=0xf000, end=0xfff, size=None, disabled=True, bits=16),
  'IOMMU group': '45',
  'Interrupt': 'pin A routed to IRQ 25',
  'Kernel driver in use': 'pcieport',
  'Latency': ['0', 'Cache Line Size: 64 bytes'],
- 'Memory behind bridge': 'fff00000-000fffff [disabled] [32-bit]',
+ 'Memory behind bridge': BridgeRegion(prefetchable=True, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=32),
  'NUMA node': '0',
- 'Prefetchable memory behind bridge': '00000000fff00000-00000000000fffff [disabled] [64-bit]',
+ 'Prefetchable memory behind bridge': BridgeRegion(prefetchable=False, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=64),
  'Secondary status': {'66MHz': False, '<MAbort': True, '<PERR': False, '<SERR': False, '<TAbort': False, '>TAbort': False, 'DEVSEL': 'fast', 'FastB2B': False, 'ParErr': False},
  'Status': {'66MHz': False, '<MAbort': False, '<PERR': False, '<TAbort': False, '>SERR': False, '>TAbort': False, 'Cap': True, 'DEVSEL': 'fast', 'FastB2B': False, 'INTx': False, 'ParErr': False, 'UDF': False},
  'Subsystem': 'Lenovo C620 Series Chipset Family PCI Express Root Port'}
@@ -556,6 +557,7 @@
 
 00:1d.2 PCI bridge: Intel Corporation C620 Series Chipset Family PCI Express Root Port #11 (rev f9) (prog-if 00 [Normal decode])
 {'BridgeCtl': {'>Reset': False, 'DiscTmrSERREn': False, 'DiscTmrStat': False, 'FastB2B': False, 'MAbort': False, 'NoISA': False, 'Parity': True, 'PriDiscTmr': False, 'SERR': True, 'SecDiscTmr': False, 'VGA': False, 'VGA16': True},
+ 'BridgeRegions': [BridgeRegion(prefetchable=True, type='i/o', start=0x2000, end=0x2fff, size=4096, disabled=False, bits=16), BridgeRegion(prefetchable=True, type='memory', start=0x90100000, end=0x901fffff, size=1048576, disabled=False, bits=32), BridgeRegion(prefetchable=False, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=64)],
  'Bus': ['primary=00', 'secondary=02', 'subordinate=02', 'sec-latency=0'],
  'Capabilities': [Capability(id=64,
                              version=-1,
@@ -622,14 +624,14 @@
                              regions=[]),
                   Capability(id=544, version=1, name='Secondary PCI Express', vendor=None, types=None, properties={'LnkCtl3': {'LnkEquIntrruptEn': False, 'PerformEqu': True}, 'LaneErrStat': {'0': None}}, regions=[])],
  'Control': {'BusMaster': True, 'DisINTx': True, 'FastB2B': False, 'I/O': True, 'Mem': True, 'MemWINV': False, 'ParErr': True, 'SERR': True, 'SpecCycle': False, 'Stepping': False, 'VGASnoop': False},
- 'I/O behind bridge': '2000-2fff [size=4K] [16-bit]',
+ 'I/O behind bridge': BridgeRegion(prefetchable=True, type='i/o', start=0x2000, end=0x2fff, size=4096, disabled=False, bits=16),
  'IOMMU group': '46',
  'Interrupt': 'pin C routed to IRQ 26',
  'Kernel driver in use': 'pcieport',
  'Latency': ['0', 'Cache Line Size: 64 bytes'],
- 'Memory behind bridge': '90100000-901fffff [size=1M] [32-bit]',
+ 'Memory behind bridge': BridgeRegion(prefetchable=True, type='memory', start=0x90100000, end=0x901fffff, size=1048576, disabled=False, bits=32),
  'NUMA node': '0',
- 'Prefetchable memory behind bridge': '00000000fff00000-00000000000fffff [disabled] [64-bit]',
+ 'Prefetchable memory behind bridge': BridgeRegion(prefetchable=False, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=64),
  'Secondary status': {'66MHz': False, '<MAbort': True, '<PERR': False, '<SERR': False, '<TAbort': False, '>TAbort': False, 'DEVSEL': 'fast', 'FastB2B': False, 'ParErr': False},
  'Status': {'66MHz': False, '<MAbort': False, '<PERR': False, '<TAbort': False, '>SERR': False, '>TAbort': False, 'Cap': True, 'DEVSEL': 'fast', 'FastB2B': False, 'INTx': False, 'ParErr': False, 'UDF': False},
  'Subsystem': 'Lenovo C620 Series Chipset Family PCI Express Root Port'}
@@ -779,6 +781,7 @@
 
 07:00.0 PCI bridge: Intel Corporation Sky Lake-E PCI Express Root Port A (rev 04) (prog-if 00 [Normal decode])
 {'BridgeCtl': {'>Reset': False, 'DiscTmrSERREn': False, 'DiscTmrStat': False, 'FastB2B': False, 'MAbort': False, 'NoISA': False, 'Parity': True, 'PriDiscTmr': False, 'SERR': True, 'SecDiscTmr': False, 'VGA': False, 'VGA16': True},
+ 'BridgeRegions': [BridgeRegion(prefetchable=True, type='i/o', start=0x5000, end=0x5fff, size=4096, disabled=False, bits=16), BridgeRegion(prefetchable=True, type='memory', start=0xb3000000, end=0xb40fffff, size=17825792, disabled=False, bits=32), BridgeRegion(prefetchable=False, type='memory', start=0xa0000000, end=0xb20fffff, size=303038464, disabled=False, bits=32)],
  'Bus': ['primary=07', 'secondary=08', 'subordinate=08', 'sec-latency=0'],
  'Capabilities': [Capability(id=64, version=-1, name='Subsystem: Lenovo Sky Lake-E PCI Express Root Port A', vendor=None, types=None, properties={}, regions=[]),
                   Capability(id=96, version=-1, name='MSI: Enable+ Count=1/2 Maskable+ 64bit-', vendor=None, types=None, properties={'Address': {'fee00038  Data': '0000'}, 'Masking': {'00000002  Pending': '00000000'}}, regions=[]),
@@ -850,15 +853,15 @@
                   Capability(id=664, version=1, name='Unknown', vendor=CapabilityVendor(id=7, rev=0, len=36), types=None, properties={}, regions=[]),
                   Capability(id=768, version=1, name='Unknown', vendor=CapabilityVendor(id=8, rev=0, len=56), types=None, properties={}, regions=[])],
  'Control': {'BusMaster': True, 'DisINTx': True, 'FastB2B': False, 'I/O': True, 'Mem': True, 'MemWINV': False, 'ParErr': True, 'SERR': True, 'SpecCycle': False, 'Stepping': False, 'VGASnoop': False},
- 'I/O behind bridge': '5000-5fff [size=4K] [16-bit]',
+ 'I/O behind bridge': BridgeRegion(prefetchable=True, type='i/o', start=0x5000, end=0x5fff, size=4096, disabled=False, bits=16),
  'IOMMU group': '8',
  'Interrupt': 'pin A routed to IRQ 27',
  'Kernel driver in use': 'pcieport',
  'Latency': ['0', 'Cache Line Size: 64 bytes'],
- 'Memory behind bridge': 'b3000000-b40fffff [size=17M] [32-bit]',
+ 'Memory behind bridge': BridgeRegion(prefetchable=True, type='memory', start=0xb3000000, end=0xb40fffff, size=17825792, disabled=False, bits=32),
  'NUMA node': '0',
  'Physical Slot': '3',
- 'Prefetchable memory behind bridge': 'a0000000-b20fffff [size=289M] [32-bit]',
+ 'Prefetchable memory behind bridge': BridgeRegion(prefetchable=False, type='memory', start=0xa0000000, end=0xb20fffff, size=303038464, disabled=False, bits=32),
  'Secondary status': {'66MHz': False, '<MAbort': False, '<PERR': False, '<SERR': False, '<TAbort': False, '>TAbort': False, 'DEVSEL': 'fast', 'FastB2B': False, 'ParErr': False},
  'Status': {'66MHz': False, '<MAbort': False, '<PERR': False, '<TAbort': False, '>SERR': False, '>TAbort': False, 'Cap': True, 'DEVSEL': 'fast', 'FastB2B': False, 'INTx': False, 'ParErr': False, 'UDF': False},
  'Subsystem': 'Lenovo Sky Lake-E PCI Express Root Port A'}
@@ -1688,6 +1691,7 @@
 
 0e:00.0 PCI bridge: Intel Corporation Sky Lake-E PCI Express Root Port A (rev 04) (prog-if 00 [Normal decode])
 {'BridgeCtl': {'>Reset': False, 'DiscTmrSERREn': False, 'DiscTmrStat': False, 'FastB2B': False, 'MAbort': False, 'NoISA': False, 'Parity': False, 'PriDiscTmr': False, 'SERR': True, 'SecDiscTmr': False, 'VGA': False, 'VGA16': True},
+ 'BridgeRegions': [BridgeRegion(prefetchable=True, type='i/o', start=0xf000, end=0xfff, size=None, disabled=True, bits=16), BridgeRegion(prefetchable=True, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=32), BridgeRegion(prefetchable=False, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=64)],
  'Bus': ['primary=0e', 'secondary=0f', 'subordinate=0f', 'sec-latency=0'],
  'Capabilities': [Capability(id=64, version=-1, name='Subsystem: Lenovo Sky Lake-E PCI Express Root Port A', vendor=None, types=None, properties={}, regions=[]),
                   Capability(id=96, version=-1, name='MSI: Enable+ Count=1/2 Maskable+ 64bit-', vendor=None, types=None, properties={'Address': {'fee00038  Data': '0000'}, 'Masking': {'00000002  Pending': '00000000'}}, regions=[]),
@@ -1759,15 +1763,15 @@
                   Capability(id=664, version=1, name='Unknown', vendor=CapabilityVendor(id=7, rev=0, len=36), types=None, properties={}, regions=[]),
                   Capability(id=768, version=1, name='Unknown', vendor=CapabilityVendor(id=8, rev=0, len=56), types=None, properties={}, regions=[])],
  'Control': {'BusMaster': True, 'DisINTx': True, 'FastB2B': False, 'I/O': True, 'Mem': True, 'MemWINV': False, 'ParErr': False, 'SERR': False, 'SpecCycle': False, 'Stepping': False, 'VGASnoop': False},
- 'I/O behind bridge': 'f000-0fff [disabled] [16-bit]',
+ 'I/O behind bridge': BridgeRegion(prefetchable=True, type='i/o', start=0xf000, end=0xfff, size=None, disabled=True, bits=16),
  'IOMMU group': '7',
  'Interrupt': 'pin A routed to IRQ 29',
  'Kernel driver in use': 'pcieport',
  'Latency': ['0', 'Cache Line Size: 64 bytes'],
- 'Memory behind bridge': 'fff00000-000fffff [disabled] [32-bit]',
+ 'Memory behind bridge': BridgeRegion(prefetchable=True, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=32),
  'NUMA node': '0',
  'Physical Slot': '1',
- 'Prefetchable memory behind bridge': '00000000fff00000-00000000000fffff [disabled] [64-bit]',
+ 'Prefetchable memory behind bridge': BridgeRegion(prefetchable=False, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=64),
  'Secondary status': {'66MHz': False, '<MAbort': False, '<PERR': False, '<SERR': False, '<TAbort': False, '>TAbort': False, 'DEVSEL': 'fast', 'FastB2B': False, 'ParErr': False},
  'Status': {'66MHz': False, '<MAbort': False, '<PERR': False, '<TAbort': False, '>SERR': False, '>TAbort': False, 'Cap': True, 'DEVSEL': 'fast', 'FastB2B': False, 'INTx': False, 'ParErr': False, 'UDF': False},
  'Subsystem': 'Lenovo Sky Lake-E PCI Express Root Port A'}
@@ -2283,6 +2287,7 @@
 
 15:00.0 PCI bridge: Intel Corporation Sky Lake-E PCI Express Root Port A (rev 04) (prog-if 00 [Normal decode])
 {'BridgeCtl': {'>Reset': False, 'DiscTmrSERREn': False, 'DiscTmrStat': False, 'FastB2B': False, 'MAbort': False, 'NoISA': False, 'Parity': True, 'PriDiscTmr': False, 'SERR': True, 'SecDiscTmr': False, 'VGA': False, 'VGA16': True},
+ 'BridgeRegions': [BridgeRegion(prefetchable=True, type='i/o', start=0xf000, end=0xfff, size=None, disabled=True, bits=16), BridgeRegion(prefetchable=True, type='memory', start=0xd0400000, end=0xd08fffff, size=5242880, disabled=False, bits=32), BridgeRegion(prefetchable=False, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=64)],
  'Bus': ['primary=15', 'secondary=5a', 'subordinate=5a', 'sec-latency=0'],
  'Capabilities': [Capability(id=64, version=-1, name='Subsystem: Lenovo Sky Lake-E PCI Express Root Port A', vendor=None, types=None, properties={}, regions=[]),
                   Capability(id=96, version=-1, name='MSI: Enable+ Count=1/2 Maskable+ 64bit-', vendor=None, types=None, properties={'Address': {'fee00038  Data': '0000'}, 'Masking': {'00000002  Pending': '00000000'}}, regions=[]),
@@ -2354,15 +2359,15 @@
                   Capability(id=664, version=1, name='Unknown', vendor=CapabilityVendor(id=7, rev=0, len=36), types=None, properties={}, regions=[]),
                   Capability(id=768, version=1, name='Unknown', vendor=CapabilityVendor(id=8, rev=0, len=56), types=None, properties={}, regions=[])],
  'Control': {'BusMaster': True, 'DisINTx': True, 'FastB2B': False, 'I/O': True, 'Mem': True, 'MemWINV': False, 'ParErr': True, 'SERR': True, 'SpecCycle': False, 'Stepping': False, 'VGASnoop': False},
- 'I/O behind bridge': 'f000-0fff [disabled] [16-bit]',
+ 'I/O behind bridge': BridgeRegion(prefetchable=True, type='i/o', start=0xf000, end=0xfff, size=None, disabled=True, bits=16),
  'IOMMU group': '0',
  'Interrupt': 'pin A routed to IRQ 31',
  'Kernel driver in use': 'pcieport',
  'Latency': ['0', 'Cache Line Size: 64 bytes'],
- 'Memory behind bridge': 'd0400000-d08fffff [size=5M] [32-bit]',
+ 'Memory behind bridge': BridgeRegion(prefetchable=True, type='memory', start=0xd0400000, end=0xd08fffff, size=5242880, disabled=False, bits=32),
  'NUMA node': '0',
  'Physical Slot': '4',
- 'Prefetchable memory behind bridge': '00000000fff00000-00000000000fffff [disabled] [64-bit]',
+ 'Prefetchable memory behind bridge': BridgeRegion(prefetchable=False, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=64),
  'Secondary status': {'66MHz': False, '<MAbort': False, '<PERR': False, '<SERR': False, '<TAbort': False, '>TAbort': False, 'DEVSEL': 'fast', 'FastB2B': False, 'ParErr': False},
  'Status': {'66MHz': False, '<MAbort': False, '<PERR': False, '<TAbort': False, '>SERR': False, '>TAbort': False, 'Cap': True, 'DEVSEL': 'fast', 'FastB2B': False, 'INTx': False, 'ParErr': False, 'UDF': False},
  'Subsystem': 'Lenovo Sky Lake-E PCI Express Root Port A'}
@@ -2370,6 +2375,7 @@
 
 15:01.0 PCI bridge: Intel Corporation Sky Lake-E PCI Express Root Port B (rev 04) (prog-if 00 [Normal decode])
 {'BridgeCtl': {'>Reset': False, 'DiscTmrSERREn': False, 'DiscTmrStat': False, 'FastB2B': False, 'MAbort': False, 'NoISA': False, 'Parity': False, 'PriDiscTmr': False, 'SERR': True, 'SecDiscTmr': False, 'VGA': False, 'VGA16': True},
+ 'BridgeRegions': [BridgeRegion(prefetchable=True, type='i/o', start=0x8000, end=0x8fff, size=4096, disabled=False, bits=16), BridgeRegion(prefetchable=True, type='memory', start=0xb8000000, end=0xd01fffff, size=404750336, disabled=False, bits=32), BridgeRegion(prefetchable=False, type='memory', start=0x103fc0000000, end=0x103ffbffffff, size=1006632960, disabled=False, bits=32)],
  'Bus': ['primary=15', 'secondary=18', 'subordinate=59', 'sec-latency=0'],
  'Capabilities': [Capability(id=64, version=-1, name='Subsystem: Lenovo Sky Lake-E PCI Express Root Port B', vendor=None, types=None, properties={}, regions=[]),
                   Capability(id=96, version=-1, name='MSI: Enable+ Count=1/2 Maskable+ 64bit-', vendor=None, types=None, properties={'Address': {'fee00058  Data': '0000'}, 'Masking': {'00000002  Pending': '00000000'}}, regions=[]),
@@ -2441,15 +2447,15 @@
                   Capability(id=664, version=1, name='Unknown', vendor=CapabilityVendor(id=7, rev=0, len=36), types=None, properties={}, regions=[]),
                   Capability(id=768, version=1, name='Unknown', vendor=CapabilityVendor(id=8, rev=0, len=56), types=None, properties={}, regions=[])],
  'Control': {'BusMaster': True, 'DisINTx': True, 'FastB2B': False, 'I/O': True, 'Mem': True, 'MemWINV': False, 'ParErr': False, 'SERR': False, 'SpecCycle': False, 'Stepping': False, 'VGASnoop': False},
- 'I/O behind bridge': '8000-8fff [size=4K] [16-bit]',
+ 'I/O behind bridge': BridgeRegion(prefetchable=True, type='i/o', start=0x8000, end=0x8fff, size=4096, disabled=False, bits=16),
  'IOMMU group': '1',
  'Interrupt': 'pin A routed to IRQ 32',
  'Kernel driver in use': 'pcieport',
  'Latency': ['0', 'Cache Line Size: 64 bytes'],
- 'Memory behind bridge': 'b8000000-d01fffff [size=386M] [32-bit]',
+ 'Memory behind bridge': BridgeRegion(prefetchable=True, type='memory', start=0xb8000000, end=0xd01fffff, size=404750336, disabled=False, bits=32),
  'NUMA node': '0',
  'Physical Slot': '2',
- 'Prefetchable memory behind bridge': '103fc0000000-103ffbffffff [size=960M] [32-bit]',
+ 'Prefetchable memory behind bridge': BridgeRegion(prefetchable=False, type='memory', start=0x103fc0000000, end=0x103ffbffffff, size=1006632960, disabled=False, bits=32),
  'Secondary status': {'66MHz': False, '<MAbort': False, '<PERR': False, '<SERR': False, '<TAbort': False, '>TAbort': False, 'DEVSEL': 'fast', 'FastB2B': False, 'ParErr': False},
  'Status': {'66MHz': False, '<MAbort': False, '<PERR': False, '<TAbort': False, '>SERR': False, '>TAbort': False, 'Cap': True, 'DEVSEL': 'fast', 'FastB2B': False, 'INTx': False, 'ParErr': False, 'UDF': False},
  'Subsystem': 'Lenovo Sky Lake-E PCI Express Root Port B'}
@@ -2457,6 +2463,7 @@
 
 15:02.0 PCI bridge: Intel Corporation Sky Lake-E PCI Express Root Port C (rev 04) (prog-if 00 [Normal decode])
 {'BridgeCtl': {'>Reset': False, 'DiscTmrSERREn': False, 'DiscTmrStat': False, 'FastB2B': False, 'MAbort': False, 'NoISA': False, 'Parity': True, 'PriDiscTmr': False, 'SERR': True, 'SecDiscTmr': False, 'VGA': False, 'VGA16': True},
+ 'BridgeRegions': [BridgeRegion(prefetchable=True, type='i/o', start=0xf000, end=0xfff, size=None, disabled=True, bits=16), BridgeRegion(prefetchable=True, type='memory', start=0xd0900000, end=0xd09fffff, size=1048576, disabled=False, bits=32), BridgeRegion(prefetchable=False, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=64)],
  'Bus': ['primary=15', 'secondary=17', 'subordinate=17', 'sec-latency=0'],
  'Capabilities': [Capability(id=64, version=-1, name='Subsystem: Lenovo Sky Lake-E PCI Express Root Port C', vendor=None, types=None, properties={}, regions=[]),
                   Capability(id=96, version=-1, name='MSI: Enable+ Count=1/2 Maskable+ 64bit-', vendor=None, types=None, properties={'Address': {'fee00078  Data': '0000'}, 'Masking': {'00000002  Pending': '00000000'}}, regions=[]),
@@ -2528,15 +2535,15 @@
                   Capability(id=664, version=1, name='Unknown', vendor=CapabilityVendor(id=7, rev=0, len=36), types=None, properties={}, regions=[]),
                   Capability(id=768, version=1, name='Unknown', vendor=CapabilityVendor(id=8, rev=0, len=56), types=None, properties={}, regions=[])],
  'Control': {'BusMaster': True, 'DisINTx': True, 'FastB2B': False, 'I/O': True, 'Mem': True, 'MemWINV': False, 'ParErr': True, 'SERR': True, 'SpecCycle': False, 'Stepping': False, 'VGASnoop': False},
- 'I/O behind bridge': 'f000-0fff [disabled] [16-bit]',
+ 'I/O behind bridge': BridgeRegion(prefetchable=True, type='i/o', start=0xf000, end=0xfff, size=None, disabled=True, bits=16),
  'IOMMU group': '2',
  'Interrupt': 'pin A routed to IRQ 33',
  'Kernel driver in use': 'pcieport',
  'Latency': ['0', 'Cache Line Size: 64 bytes'],
- 'Memory behind bridge': 'd0900000-d09fffff [size=1M] [32-bit]',
+ 'Memory behind bridge': BridgeRegion(prefetchable=True, type='memory', start=0xd0900000, end=0xd09fffff, size=1048576, disabled=False, bits=32),
  'NUMA node': '0',
  'Physical Slot': '9',
- 'Prefetchable memory behind bridge': '00000000fff00000-00000000000fffff [disabled] [64-bit]',
+ 'Prefetchable memory behind bridge': BridgeRegion(prefetchable=False, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=64),
  'Secondary status': {'66MHz': False, '<MAbort': False, '<PERR': False, '<SERR': False, '<TAbort': False, '>TAbort': False, 'DEVSEL': 'fast', 'FastB2B': False, 'ParErr': False},
  'Status': {'66MHz': False, '<MAbort': False, '<PERR': False, '<TAbort': False, '>SERR': False, '>TAbort': False, 'Cap': True, 'DEVSEL': 'fast', 'FastB2B': False, 'INTx': False, 'ParErr': False, 'UDF': False},
  'Subsystem': 'Lenovo Sky Lake-E PCI Express Root Port C'}
@@ -2544,6 +2551,7 @@
 
 15:03.0 PCI bridge: Intel Corporation Sky Lake-E PCI Express Root Port D (rev 04) (prog-if 00 [Normal decode])
 {'BridgeCtl': {'>Reset': False, 'DiscTmrSERREn': False, 'DiscTmrStat': False, 'FastB2B': False, 'MAbort': False, 'NoISA': False, 'Parity': True, 'PriDiscTmr': False, 'SERR': True, 'SecDiscTmr': False, 'VGA': False, 'VGA16': True},
+ 'BridgeRegions': [BridgeRegion(prefetchable=True, type='i/o', start=0xf000, end=0xfff, size=None, disabled=True, bits=16), BridgeRegion(prefetchable=True, type='memory', start=0xd0a00000, end=0xd0afffff, size=1048576, disabled=False, bits=32), BridgeRegion(prefetchable=False, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=64)],
  'Bus': ['primary=15', 'secondary=16', 'subordinate=16', 'sec-latency=0'],
  'Capabilities': [Capability(id=64, version=-1, name='Subsystem: Lenovo Sky Lake-E PCI Express Root Port D', vendor=None, types=None, properties={}, regions=[]),
                   Capability(id=96, version=-1, name='MSI: Enable+ Count=1/2 Maskable+ 64bit-', vendor=None, types=None, properties={'Address': {'fee00098  Data': '0000'}, 'Masking': {'00000002  Pending': '00000000'}}, regions=[]),
@@ -2615,15 +2623,15 @@
                   Capability(id=664, version=1, name='Unknown', vendor=CapabilityVendor(id=7, rev=0, len=36), types=None, properties={}, regions=[]),
                   Capability(id=768, version=1, name='Unknown', vendor=CapabilityVendor(id=8, rev=0, len=56), types=None, properties={}, regions=[])],
  'Control': {'BusMaster': True, 'DisINTx': True, 'FastB2B': False, 'I/O': True, 'Mem': True, 'MemWINV': False, 'ParErr': True, 'SERR': True, 'SpecCycle': False, 'Stepping': False, 'VGASnoop': False},
- 'I/O behind bridge': 'f000-0fff [disabled] [16-bit]',
+ 'I/O behind bridge': BridgeRegion(prefetchable=True, type='i/o', start=0xf000, end=0xfff, size=None, disabled=True, bits=16),
  'IOMMU group': '3',
  'Interrupt': 'pin A routed to IRQ 34',
  'Kernel driver in use': 'pcieport',
  'Latency': ['0', 'Cache Line Size: 64 bytes'],
- 'Memory behind bridge': 'd0a00000-d0afffff [size=1M] [32-bit]',
+ 'Memory behind bridge': BridgeRegion(prefetchable=True, type='memory', start=0xd0a00000, end=0xd0afffff, size=1048576, disabled=False, bits=32),
  'NUMA node': '0',
  'Physical Slot': '10',
- 'Prefetchable memory behind bridge': '00000000fff00000-00000000000fffff [disabled] [64-bit]',
+ 'Prefetchable memory behind bridge': BridgeRegion(prefetchable=False, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=64),
  'Secondary status': {'66MHz': False, '<MAbort': False, '<PERR': False, '<SERR': False, '<TAbort': False, '>TAbort': False, 'DEVSEL': 'fast', 'FastB2B': False, 'ParErr': False},
  'Status': {'66MHz': False, '<MAbort': False, '<PERR': False, '<TAbort': False, '>SERR': False, '>TAbort': False, 'Cap': True, 'DEVSEL': 'fast', 'FastB2B': False, 'INTx': False, 'ParErr': False, 'UDF': False},
  'Subsystem': 'Lenovo Sky Lake-E PCI Express Root Port D'}
@@ -3408,6 +3416,7 @@
 
 a2:00.0 PCI bridge: Intel Corporation Sky Lake-E PCI Express Root Port A (rev 04) (prog-if 00 [Normal decode])
 {'BridgeCtl': {'>Reset': False, 'DiscTmrSERREn': False, 'DiscTmrStat': False, 'FastB2B': False, 'MAbort': False, 'NoISA': False, 'Parity': False, 'PriDiscTmr': False, 'SERR': True, 'SecDiscTmr': False, 'VGA': False, 'VGA16': True},
+ 'BridgeRegions': [BridgeRegion(prefetchable=True, type='i/o', start=0xf000, end=0xfff, size=None, disabled=True, bits=16), BridgeRegion(prefetchable=True, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=32), BridgeRegion(prefetchable=False, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=64)],
  'Bus': ['primary=a2', 'secondary=a3', 'subordinate=a3', 'sec-latency=0'],
  'Capabilities': [Capability(id=64, version=-1, name='Subsystem: Lenovo Sky Lake-E PCI Express Root Port A', vendor=None, types=None, properties={}, regions=[]),
                   Capability(id=96, version=-1, name='MSI: Enable+ Count=1/2 Maskable+ 64bit-', vendor=None, types=None, properties={'Address': {'fee00038  Data': '0000'}, 'Masking': {'00000002  Pending': '00000000'}}, regions=[]),
@@ -3479,15 +3488,15 @@ a2:00.0 PCI bridge: Intel Corporation Sky Lake-E PCI Express Root Port A (rev 04
                   Capability(id=664, version=1, name='Unknown', vendor=CapabilityVendor(id=7, rev=0, len=36), types=None, properties={}, regions=[]),
                   Capability(id=768, version=1, name='Unknown', vendor=CapabilityVendor(id=8, rev=0, len=56), types=None, properties={}, regions=[])],
  'Control': {'BusMaster': True, 'DisINTx': True, 'FastB2B': False, 'I/O': True, 'Mem': True, 'MemWINV': False, 'ParErr': False, 'SERR': False, 'SpecCycle': False, 'Stepping': False, 'VGASnoop': False},
- 'I/O behind bridge': 'f000-0fff [disabled] [16-bit]',
+ 'I/O behind bridge': BridgeRegion(prefetchable=True, type='i/o', start=0xf000, end=0xfff, size=None, disabled=True, bits=16),
  'IOMMU group': '17',
  'Interrupt': 'pin A routed to IRQ 36',
  'Kernel driver in use': 'pcieport',
  'Latency': ['0', 'Cache Line Size: 64 bytes'],
- 'Memory behind bridge': 'fff00000-000fffff [disabled] [32-bit]',
+ 'Memory behind bridge': BridgeRegion(prefetchable=True, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=32),
  'NUMA node': '1',
  'Physical Slot': '8',
- 'Prefetchable memory behind bridge': '00000000fff00000-00000000000fffff [disabled] [64-bit]',
+ 'Prefetchable memory behind bridge': BridgeRegion(prefetchable=False, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=64),
  'Secondary status': {'66MHz': False, '<MAbort': False, '<PERR': False, '<SERR': False, '<TAbort': False, '>TAbort': False, 'DEVSEL': 'fast', 'FastB2B': False, 'ParErr': False},
  'Status': {'66MHz': False, '<MAbort': False, '<PERR': False, '<TAbort': False, '>SERR': False, '>TAbort': False, 'Cap': True, 'DEVSEL': 'fast', 'FastB2B': False, 'INTx': False, 'ParErr': False, 'UDF': False},
  'Subsystem': 'Lenovo Sky Lake-E PCI Express Root Port A'}
@@ -4089,6 +4098,7 @@ a2:1e.6 System peripheral: Intel Corporation Sky Lake-E PCU Registers (rev 04)
 
 c1:00.0 PCI bridge: Intel Corporation Sky Lake-E PCI Express Root Port A (rev 04) (prog-if 00 [Normal decode])
 {'BridgeCtl': {'>Reset': False, 'DiscTmrSERREn': False, 'DiscTmrStat': False, 'FastB2B': False, 'MAbort': False, 'NoISA': False, 'Parity': True, 'PriDiscTmr': False, 'SERR': True, 'SecDiscTmr': False, 'VGA': False, 'VGA16': True},
+ 'BridgeRegions': [BridgeRegion(prefetchable=True, type='i/o', start=0xf000, end=0xfff, size=None, disabled=True, bits=16), BridgeRegion(prefetchable=True, type='memory', start=0xf0000000, end=0xf10fffff, size=17825792, disabled=False, bits=32), BridgeRegion(prefetchable=False, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=64)],
  'Bus': ['primary=c1', 'secondary=c2', 'subordinate=c2', 'sec-latency=0'],
  'Capabilities': [Capability(id=64, version=-1, name='Subsystem: Lenovo Sky Lake-E PCI Express Root Port A', vendor=None, types=None, properties={}, regions=[]),
                   Capability(id=96, version=-1, name='MSI: Enable+ Count=1/2 Maskable+ 64bit-', vendor=None, types=None, properties={'Address': {'fee00038  Data': '0000'}, 'Masking': {'00000002  Pending': '00000000'}}, regions=[]),
@@ -4160,15 +4170,15 @@ c1:00.0 PCI bridge: Intel Corporation Sky Lake-E PCI Express Root Port A (rev 04
                   Capability(id=664, version=1, name='Unknown', vendor=CapabilityVendor(id=7, rev=0, len=36), types=None, properties={}, regions=[]),
                   Capability(id=768, version=1, name='Unknown', vendor=CapabilityVendor(id=8, rev=0, len=56), types=None, properties={}, regions=[])],
  'Control': {'BusMaster': True, 'DisINTx': True, 'FastB2B': False, 'I/O': True, 'Mem': True, 'MemWINV': False, 'ParErr': True, 'SERR': True, 'SpecCycle': False, 'Stepping': False, 'VGASnoop': False},
- 'I/O behind bridge': 'f000-0fff [disabled] [16-bit]',
+ 'I/O behind bridge': BridgeRegion(prefetchable=True, type='i/o', start=0xf000, end=0xfff, size=None, disabled=True, bits=16),
  'IOMMU group': '15',
  'Interrupt': 'pin A routed to IRQ 38',
  'Kernel driver in use': 'pcieport',
  'Latency': ['0', 'Cache Line Size: 64 bytes'],
- 'Memory behind bridge': 'f0000000-f10fffff [size=17M] [32-bit]',
+ 'Memory behind bridge': BridgeRegion(prefetchable=True, type='memory', start=0xf0000000, end=0xf10fffff, size=17825792, disabled=False, bits=32),
  'NUMA node': '1',
  'Physical Slot': '6',
- 'Prefetchable memory behind bridge': '00000000fff00000-00000000000fffff [disabled] [64-bit]',
+ 'Prefetchable memory behind bridge': BridgeRegion(prefetchable=False, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=64),
  'Secondary status': {'66MHz': False, '<MAbort': True, '<PERR': False, '<SERR': False, '<TAbort': False, '>TAbort': False, 'DEVSEL': 'fast', 'FastB2B': False, 'ParErr': False},
  'Status': {'66MHz': False, '<MAbort': False, '<PERR': False, '<TAbort': False, '>SERR': False, '>TAbort': False, 'Cap': True, 'DEVSEL': 'fast', 'FastB2B': False, 'INTx': False, 'ParErr': False, 'UDF': False},
  'Subsystem': 'Lenovo Sky Lake-E PCI Express Root Port A'}
@@ -4742,6 +4752,7 @@ c2:00.0 Unassigned class [ff00]: Microsoft Corporation Device b101 (rev 01)
 
 e1:00.0 PCI bridge: Intel Corporation Sky Lake-E PCI Express Root Port A (rev 04) (prog-if 00 [Normal decode])
 {'BridgeCtl': {'>Reset': False, 'DiscTmrSERREn': False, 'DiscTmrStat': False, 'FastB2B': False, 'MAbort': False, 'NoISA': False, 'Parity': True, 'PriDiscTmr': False, 'SERR': True, 'SecDiscTmr': False, 'VGA': False, 'VGA16': True},
+ 'BridgeRegions': [BridgeRegion(prefetchable=True, type='i/o', start=0xf000, end=0xfff, size=None, disabled=True, bits=16), BridgeRegion(prefetchable=True, type='memory', start=0xfbd00000, end=0xfbefffff, size=2097152, disabled=False, bits=32), BridgeRegion(prefetchable=False, type='memory', start=0xf9000000, end=0xfbafffff, size=45088768, disabled=False, bits=32)],
  'Bus': ['primary=e1', 'secondary=e2', 'subordinate=e3', 'sec-latency=0'],
  'Capabilities': [Capability(id=64, version=-1, name='Subsystem: Lenovo Sky Lake-E PCI Express Root Port A', vendor=None, types=None, properties={}, regions=[]),
                   Capability(id=96, version=-1, name='MSI: Enable+ Count=1/2 Maskable+ 64bit-', vendor=None, types=None, properties={'Address': {'fee00038  Data': '0000'}, 'Masking': {'00000002  Pending': '00000000'}}, regions=[]),
@@ -4813,15 +4824,15 @@ e1:00.0 PCI bridge: Intel Corporation Sky Lake-E PCI Express Root Port A (rev 04
                   Capability(id=664, version=1, name='Unknown', vendor=CapabilityVendor(id=7, rev=0, len=36), types=None, properties={}, regions=[]),
                   Capability(id=768, version=1, name='Unknown', vendor=CapabilityVendor(id=8, rev=0, len=56), types=None, properties={}, regions=[])],
  'Control': {'BusMaster': True, 'DisINTx': True, 'FastB2B': False, 'I/O': True, 'Mem': True, 'MemWINV': False, 'ParErr': True, 'SERR': True, 'SpecCycle': False, 'Stepping': False, 'VGASnoop': False},
- 'I/O behind bridge': 'f000-0fff [disabled] [16-bit]',
+ 'I/O behind bridge': BridgeRegion(prefetchable=True, type='i/o', start=0xf000, end=0xfff, size=None, disabled=True, bits=16),
  'IOMMU group': '10',
  'Interrupt': 'pin A routed to IRQ 40',
  'Kernel driver in use': 'pcieport',
  'Latency': ['0', 'Cache Line Size: 64 bytes'],
- 'Memory behind bridge': 'fbd00000-fbefffff [size=2M] [32-bit]',
+ 'Memory behind bridge': BridgeRegion(prefetchable=True, type='memory', start=0xfbd00000, end=0xfbefffff, size=2097152, disabled=False, bits=32),
  'NUMA node': '1',
  'Physical Slot': '7',
- 'Prefetchable memory behind bridge': 'f9000000-fbafffff [size=43M] [32-bit]',
+ 'Prefetchable memory behind bridge': BridgeRegion(prefetchable=False, type='memory', start=0xf9000000, end=0xfbafffff, size=45088768, disabled=False, bits=32),
  'Secondary status': {'66MHz': False, '<MAbort': True, '<PERR': False, '<SERR': False, '<TAbort': False, '>TAbort': False, 'DEVSEL': 'fast', 'FastB2B': False, 'ParErr': False},
  'Status': {'66MHz': False, '<MAbort': False, '<PERR': False, '<TAbort': False, '>SERR': False, '>TAbort': False, 'Cap': True, 'DEVSEL': 'fast', 'FastB2B': False, 'INTx': False, 'ParErr': False, 'UDF': False},
  'Subsystem': 'Lenovo Sky Lake-E PCI Express Root Port A'}
@@ -5395,6 +5406,7 @@ e2:00.3 Ethernet controller: Intel Corporation Ethernet Controller X710 for 10Gb
 ---------------------------------------------------------------------------
 
 Regions
+---------------------------------------------------------------------------
 Region(rtype='I/O ports', region=4, address=0x780, size=32, bits=-1, disabled=False, virtual=False, prefetchable=None) 00:1f.4
 Region(rtype='I/O ports', region=2, address=0x2000, size=32, bits=-1, disabled=False, virtual=False, prefetchable=None) 02:00.0
 Region(rtype='I/O ports', region=4, address=0x3000, size=32, bits=-1, disabled=False, virtual=False, prefetchable=None) 00:11.5
@@ -5475,3 +5487,42 @@ Region(rtype='Memory', region=0, address=0x104ffff10000, size=16384, bits=64, di
 Region(rtype='Memory', region=0, address=0x104ffff14000, size=16384, bits=64, disabled=False, virtual=False, prefetchable=False) 80:04.2
 Region(rtype='Memory', region=0, address=0x104ffff18000, size=16384, bits=64, disabled=False, virtual=False, prefetchable=False) 80:04.1
 Region(rtype='Memory', region=0, address=0x104ffff1c000, size=16384, bits=64, disabled=False, virtual=False, prefetchable=False) 80:04.0
+---------------------------------------------------------------------------
+
+Bridge Regions
+---------------------------------------------------------------------------
+BridgeRegion(prefetchable=False, type='memory', start=0xa0000000, end=0xb20fffff, size=303038464, disabled=False, bits=32) 07:00.0
+BridgeRegion(prefetchable=False, type='memory', start=0xf9000000, end=0xfbafffff, size=45088768, disabled=False, bits=32) e1:00.0
+BridgeRegion(prefetchable=False, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=64) 00:1d.0
+BridgeRegion(prefetchable=False, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=64) 00:1d.2
+BridgeRegion(prefetchable=False, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=64) 0e:00.0
+BridgeRegion(prefetchable=False, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=64) 15:00.0
+BridgeRegion(prefetchable=False, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=64) 15:02.0
+BridgeRegion(prefetchable=False, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=64) 15:03.0
+BridgeRegion(prefetchable=False, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=64) a2:00.0
+BridgeRegion(prefetchable=False, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=64) c1:00.0
+BridgeRegion(prefetchable=False, type='memory', start=0x103fc0000000, end=0x103ffbffffff, size=1006632960, disabled=False, bits=32) 15:01.0
+BridgeRegion(prefetchable=True, type='i/o', start=0x2000, end=0x2fff, size=4096, disabled=False, bits=16) 00:1d.2
+BridgeRegion(prefetchable=True, type='i/o', start=0x5000, end=0x5fff, size=4096, disabled=False, bits=16) 07:00.0
+BridgeRegion(prefetchable=True, type='i/o', start=0x8000, end=0x8fff, size=4096, disabled=False, bits=16) 15:01.0
+BridgeRegion(prefetchable=True, type='i/o', start=0xf000, end=0xfff, size=None, disabled=True, bits=16) 00:1d.0
+BridgeRegion(prefetchable=True, type='i/o', start=0xf000, end=0xfff, size=None, disabled=True, bits=16) 0e:00.0
+BridgeRegion(prefetchable=True, type='i/o', start=0xf000, end=0xfff, size=None, disabled=True, bits=16) 15:00.0
+BridgeRegion(prefetchable=True, type='i/o', start=0xf000, end=0xfff, size=None, disabled=True, bits=16) 15:02.0
+BridgeRegion(prefetchable=True, type='i/o', start=0xf000, end=0xfff, size=None, disabled=True, bits=16) 15:03.0
+BridgeRegion(prefetchable=True, type='i/o', start=0xf000, end=0xfff, size=None, disabled=True, bits=16) a2:00.0
+BridgeRegion(prefetchable=True, type='i/o', start=0xf000, end=0xfff, size=None, disabled=True, bits=16) c1:00.0
+BridgeRegion(prefetchable=True, type='i/o', start=0xf000, end=0xfff, size=None, disabled=True, bits=16) e1:00.0
+BridgeRegion(prefetchable=True, type='memory', start=0x90100000, end=0x901fffff, size=1048576, disabled=False, bits=32) 00:1d.2
+BridgeRegion(prefetchable=True, type='memory', start=0xb3000000, end=0xb40fffff, size=17825792, disabled=False, bits=32) 07:00.0
+BridgeRegion(prefetchable=True, type='memory', start=0xb8000000, end=0xd01fffff, size=404750336, disabled=False, bits=32) 15:01.0
+BridgeRegion(prefetchable=True, type='memory', start=0xd0400000, end=0xd08fffff, size=5242880, disabled=False, bits=32) 15:00.0
+BridgeRegion(prefetchable=True, type='memory', start=0xd0900000, end=0xd09fffff, size=1048576, disabled=False, bits=32) 15:02.0
+BridgeRegion(prefetchable=True, type='memory', start=0xd0a00000, end=0xd0afffff, size=1048576, disabled=False, bits=32) 15:03.0
+BridgeRegion(prefetchable=True, type='memory', start=0xf0000000, end=0xf10fffff, size=17825792, disabled=False, bits=32) c1:00.0
+BridgeRegion(prefetchable=True, type='memory', start=0xfbd00000, end=0xfbefffff, size=2097152, disabled=False, bits=32) e1:00.0
+BridgeRegion(prefetchable=True, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=32) 00:1d.0
+BridgeRegion(prefetchable=True, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=32) 0e:00.0
+BridgeRegion(prefetchable=True, type='memory', start=0xfff00000, end=0xfffff, size=None, disabled=True, bits=32) a2:00.0
+---------------------------------------------------------------------------
+
