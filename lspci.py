@@ -68,6 +68,7 @@ class Capability:
     types: Optional[tuple[str]] = field(kw_only=True, default=None)
 
     properties: list = field(hash=False)
+    regions: Optional[list[Region]] = field(hash=False, default_factory=list)
 
 
 def convert_size_to_bytes(size: str) -> int:
@@ -157,9 +158,12 @@ def parse_region(line: str) -> Region:
     >>> parse_region('Region 0: Memory at 4017001000 (64-bit non-prefetchable) [virtual] [size=4K]')
     Region(rtype='Memory', region=0, address=0x4017001000, size=4096, bits=64, disabled=False, virtual=True, prefetchable=False)
 
+    >>> parse_region('Region 0: Memory at 0000004010000000 (64-bit non-prefetchable)')
+    Region(rtype='Memory', region=0, address=0x4010000000, size=None, bits=64, disabled=False, virtual=False, prefetchable=False)
+
     """
     pattern = re.compile(
-        r"Region (?P<region>\d+): (Memory at (?P<memory_address>[0-9a-fA-F]+) \(\d+-bit,? (non-)?prefetchable\)|I/O ports at (?P<io_address>[0-9a-fA-F]+))(\s*\[virtual])?(\s*\[disabled])?\s*\[size=(?P<size>\d+[KMG]?)]"
+        r"Region (?P<region>\d+): (Memory at (?P<memory_address>[0-9a-fA-F]+) \(\d+-bit,? (non-)?prefetchable\)|I/O ports at (?P<io_address>[0-9a-fA-F]+))(\s*\[virtual])?(\s*\[disabled])?\s*(\[size=(?P<size>\d+[KMG]?)])?"
     )
 
     m = pattern.match(line)
@@ -200,7 +204,10 @@ def parse_region(line: str) -> Region:
     else:
         virtual=False
 
-    size = convert_size_to_bytes(m.group("size"))
+    size = m.group("size")
+    if size:
+        size = convert_size_to_bytes(size)
+
     region_info = Region(
         rtype,
         region, address, size, bits,
@@ -373,6 +380,15 @@ def parse_flags(l):
     l = l.replace('D3 ', 'D3+ ')
     # `FirstFatal- NonFatalMsg- FatalMsg- IntMsg 0`
     l = l.replace('IntMsg ', 'IntMsg=')
+    l = l.replace('INT Msg #', 'IntMsg=')
+    l = l.replace('RP PIO Log ', 'RP-PIO-Log=')
+    l = l.replace('RP PIO ErrPtr:', 'RP-PIO-ErrPtr=')
+    l = l.replace('Trigger:', 'Trigger=')
+    l = l.replace('TriggerExt:', 'TriggerExt=')
+    l = l.replace('Reason:', 'Reason=')
+    # ``
+    l = l.replace('Slot #', 'Slot=#')
+    l = l.replace('PowerLimit ', 'PowerLimit=')
 
     flags = {}
     for f in l.split():
@@ -394,6 +410,12 @@ RE_VENDOR = re.compile(r"Vendor Specific Information:\s*(ID=(?P<id>[\da-fA-F]+))
 
 
 CAPS_FLAGS = {
+    'SltCap':  None,
+
+    'DpcCap': None,
+    'DpcCtl': None,
+    'DpcSta': None,
+
     'DevCap':  None, # Special cased
     'DevCtl':  None,
     'DevSta':  None,
@@ -444,6 +466,12 @@ CAPS_FLAGS = {
     'Flags': None,
     'Status': None,
 
+    'PRICtl': None,
+    'PRISta': None,
+
+    'PASIDCap': None,
+    'PASIDCtl': None,
+
     # subsub-capacity flags
     'AtomicOpsCap': None,
     'AtomicOpsCtl': None,
@@ -482,22 +510,22 @@ def parse_vendor(s):
 def parse_caps(p):
     """
     >>> parse_caps("Capabilities: [160 v1] Single Root I/O Virtualization (SR-IOV)")
-    Capability(id=352, version=1, name='Single Root I/O Virtualization (SR-IOV)', vendor=None, types=None, properties=[])
+    Capability(id=352, version=1, name='Single Root I/O Virtualization (SR-IOV)', vendor=None, types=None, properties=[], regions=[])
 
     >>> parse_caps("Capabilities: [40] Express (v2) Root Port (Slot-), MSI 00")
-    Capability(id=64, version=-1, name='Unknown', vendor=None, types=['Express (v2) Root Port (Slot-)', 'MSI 00'], properties=[])
+    Capability(id=64, version=-1, name='Unknown', vendor=None, types=['Express (v2) Root Port (Slot-)', 'MSI 00'], properties=[], regions=[])
 
     >>> parse_caps("Capabilities: [300 v1] Vendor Specific Information: ID=0008 Rev=0 Len=038 <?>")
-    Capability(id=768, version=1, name='Unknown', vendor=CapabilityVendor(id=8, rev=0, len=56), types=None, properties=[])
+    Capability(id=768, version=1, name='Unknown', vendor=CapabilityVendor(id=8, rev=0, len=56), types=None, properties=[], regions=[])
 
     >>> parse_caps("Capabilities: [1a0 v1] Transaction Processing Hints, Device specific mode supported, Steering table in TPH capability structure")
-    Capability(id=416, version=1, name='Unknown', vendor=None, types=['Transaction Processing Hints', 'Device specific mode supported', 'Steering table in TPH capability structure'], properties=[])
+    Capability(id=416, version=1, name='Unknown', vendor=None, types=['Transaction Processing Hints', 'Device specific mode supported', 'Steering table in TPH capability structure'], properties=[], regions=[])
 
     >>> parse_caps("Capabilities: [e0] Vendor Specific Information: Len=1c <?>")
-    Capability(id=224, version=-1, name='Unknown', vendor=CapabilityVendor(id=-1, rev=-1, len=28), types=None, properties=[])
+    Capability(id=224, version=-1, name='Unknown', vendor=CapabilityVendor(id=-1, rev=-1, len=28), types=None, properties=[], regions=[])
 
     >>> parse_caps('Capabilities: [40] Vendor Specific Information: Len=0c <?>')
-    Capability(id=64, version=-1, name='Unknown', vendor=CapabilityVendor(id=-1, rev=-1, len=12), types=None, properties=[])
+    Capability(id=64, version=-1, name='Unknown', vendor=CapabilityVendor(id=-1, rev=-1, len=12), types=None, properties=[], regions=[])
 
     """
     assert p.startswith("Capabilities: "), p
@@ -543,6 +571,10 @@ def parse_lspci_output(output):
                 properties = {}
                 for p in l[1:]:
                     if ': ' in p:
+                        if p.startswith('Region '):
+                            cap.regions.append(parse_region(p))
+                            continue
+
                         key, value = p.split(': ', 1)
 
                         bits = value.split(', ')
@@ -636,6 +668,10 @@ def main(args):
         pprint(details)
         for r in details.get('Regions', []):
             regions.append((r, name))
+
+    # 'I/O behind bridge': '0000f000-00000fff [disabled]',
+    # 'Memory behind bridge': 'bc300000-bc3fffff [size=1M]',
+    # 'Prefetchable memory behind bridge': '00000000fff00000-00000000000fffff [disabled]',
 
     print()
     print('-'*75)
