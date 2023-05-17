@@ -40,9 +40,15 @@ class HexInt(int):
 
 @dataclass(eq=True, order=True, unsafe_hash=True)
 class Region:
-    region: int
+    rtype: str
+    region: int = field(compare=False)
     address: HexInt
     size: int
+
+    bits: int
+    disabled: bool = field(kw_only=True, default=False)
+    virtual: bool = field(kw_only=True, default=False)
+    prefetchable: Optional[bool] = field(kw_only=True, default=None)
 
 
 @dataclass(eq=True, order=True, unsafe_hash=True)
@@ -108,19 +114,7 @@ def convert_size_to_bytes(size: str) -> int:
         return int(size)
 
 
-def parse_region(s):
-    """
-
-    >>> parse_region('Region 0: Memory at f9000000 (64-bit prefetchable) [size=8M]')
-
-    >>> parse_region('Region 3: Memory at fb800000 (64-bit prefetchable) [size=32K]')
-
-    >>> parse_region('Region 0: Memory at f0000000 (32-bit, non-prefetchable) [disabled] [size=16M]')
-
-    """
-
-
-def extract_region_info(line: str) -> Region:
+def parse_region(line: str) -> Region:
     """
     Extracts region information from the given line and returns a Region object.
 
@@ -130,36 +124,89 @@ def extract_region_info(line: str) -> Region:
     Returns:
         Region: A Region object representing the extracted region information.
 
-    >>> extract_region_info("Region 0: Memory at 90334000 (32-bit, non-prefetchable) [size=8K]")
-    Region(region=0, address=0x90334000, size=8192)
+    >>> parse_region("Region 0: Memory at 90334000 (32-bit, non-prefetchable) [size=8K]")
+    Region(rtype='Memory', region=0, address=0x90334000, size=8192, bits=32, disabled=False, virtual=False, prefetchable=False)
 
-    >>> extract_region_info("Region 1: Memory at 90339000 (32-bit, non-prefetchable) [size=256]")
-    Region(region=1, address=0x90339000, size=256)
+    >>> parse_region("Region 1: Memory at 90339000 (32-bit, non-prefetchable) [size=256]")
+    Region(rtype='Memory', region=1, address=0x90339000, size=256, bits=32, disabled=False, virtual=False, prefetchable=False)
 
-    >>> extract_region_info("Region 2: I/O ports at 3050 [size=8]")
-    Region(region=2, address=0x3050, size=8)
+    >>> parse_region("Region 2: I/O ports at 3050 [size=8]")
+    Region(rtype='I/O ports', region=2, address=0x3050, size=8, bits=-1, disabled=False, virtual=False, prefetchable=None)
 
-    >>> extract_region_info("Region 3: I/O ports at 3040 [size=4]")
-    Region(region=3, address=0x3040, size=4)
+    >>> parse_region("Region 3: I/O ports at 3040 [size=4]")
+    Region(rtype='I/O ports', region=3, address=0x3040, size=4, bits=-1, disabled=False, virtual=False, prefetchable=None)
 
-    >>> extract_region_info("Region 4: I/O ports at 3000 [size=32]")
-    Region(region=4, address=0x3000, size=32)
+    >>> parse_region("Region 4: I/O ports at 3000 [size=32]")
+    Region(rtype='I/O ports', region=4, address=0x3000, size=32, bits=-1, disabled=False, virtual=False, prefetchable=None)
 
-    >>> extract_region_info("Region 5: Memory at 90200000 (32-bit, non-prefetchable) [size=512K]")
-    Region(region=5, address=0x90200000, size=524288)
+    >>> parse_region("Region 4: I/O ports at efa0 [size=32]")
+    Region(rtype='I/O ports', region=4, address=0xefa0, size=32, bits=-1, disabled=False, virtual=False, prefetchable=None)
+
+    >>> parse_region("Region 5: Memory at 90200000 (32-bit, non-prefetchable) [size=512K]")
+    Region(rtype='Memory', region=5, address=0x90200000, size=524288, bits=32, disabled=False, virtual=False, prefetchable=False)
+
+    >>> parse_region('Region 0: Memory at f9000000 (64-bit prefetchable) [size=8M]')
+    Region(rtype='Memory', region=0, address=0xf9000000, size=8388608, bits=64, disabled=False, virtual=False, prefetchable=True)
+
+    >>> parse_region('Region 3: Memory at fb800000 (64-bit prefetchable) [size=32K]')
+    Region(rtype='Memory', region=3, address=0xfb800000, size=32768, bits=64, disabled=False, virtual=False, prefetchable=True)
+
+    >>> parse_region('Region 0: Memory at f0000000 (32-bit, non-prefetchable) [disabled] [size=16M]')
+    Region(rtype='Memory', region=0, address=0xf0000000, size=16777216, bits=32, disabled=True, virtual=False, prefetchable=False)
+
+    >>> parse_region('Region 0: Memory at 4017001000 (64-bit non-prefetchable) [virtual] [size=4K]')
+    Region(rtype='Memory', region=0, address=0x4017001000, size=4096, bits=64, disabled=False, virtual=True, prefetchable=False)
+
     """
     pattern = re.compile(
-        r"Region (?P<region>\d+): (Memory at (?P<memory_address>[0-9a-fA-F]+) \(\d+-bit, non-prefetchable\)|I/O ports at (?P<io_address>\d+)) \[size=(?P<size>\d+[KMG]?)]"
+        r"Region (?P<region>\d+): (Memory at (?P<memory_address>[0-9a-fA-F]+) \(\d+-bit,? (non-)?prefetchable\)|I/O ports at (?P<io_address>[0-9a-fA-F]+))(\s*\[virtual])?(\s*\[disabled])?\s*\[size=(?P<size>\d+[KMG]?)]"
     )
 
-    match = pattern.match(line)
-    if not match:
-        raise ValueError("Invalid line format")
+    m = pattern.match(line)
+    if not m:
+        raise ValueError("Invalid line format: "+repr(line))
 
-    region = int(match.group("region"))
-    address = HexInt(match.group("io_address") or match.group("memory_address"), 16)
-    size = convert_size_to_bytes(match.group("size"))
-    region_info = Region(region, address, size)
+    region = int(m.group("region"))
+    address = HexInt(m.group("io_address") or m.group("memory_address"), 16)
+
+    if 'Memory at' in line:
+        rtype='Memory'
+    elif 'I/O ports at' in line:
+        rtype='I/O ports'
+    else:
+        rtype=None
+
+    if '32-bit' in line:
+        bits=32
+    elif '64-bit' in line:
+        bits=64
+    else:
+        bits=-1
+
+    if 'non-prefetchable' in line:
+        prefetchable=False
+    elif 'prefetchable' in line:
+        prefetchable=True
+    else:
+        prefetchable=None
+
+    if '[disabled]' in line:
+        disabled=True
+    else:
+        disabled=False
+
+    if '[virtual]' in line:
+        virtual=True
+    else:
+        virtual=False
+
+    size = convert_size_to_bytes(m.group("size"))
+    region_info = Region(
+        rtype,
+        region, address, size, bits,
+        prefetchable=prefetchable,
+        disabled=disabled,
+        virtual=virtual)
     return region_info
 
 
@@ -343,7 +390,7 @@ def parse_flags(l):
 
 
 RE_CAPS = re.compile(r"Capabilities: \[([\da-fA-F]+)( v\d+)?\] (.*?)$")
-RE_VENDOR = re.compile(r"Vendor Specific Information: ID=(?P<id>[\da-fA-F]+) Rev=(?P<rev>\d+) Len=(?P<len>\w+) <\?>")
+RE_VENDOR = re.compile(r"Vendor Specific Information:\s*(ID=(?P<id>[\da-fA-F]+))?\s*(Rev=(?P<rev>\d+))?\s*Len=(?P<len>\w+) <\?>")
 
 
 CAPS_FLAGS = {
@@ -362,6 +409,10 @@ CAPS_FLAGS = {
     'LnkCap2': None,
     'LnkCtl2': None,
     'LnkSta2': None,
+
+    'L1SubCap': None,
+    'L1SubCtl1': None,
+    'L1SubCtl2': None,
 
     'IOVCap':  None,
     'IOVCtl':  None,
@@ -407,6 +458,27 @@ CAPS_FLAGS = {
 }
 
 
+def parse_vendor(s):
+    mv = RE_VENDOR.match(s)
+    assert mv, s
+
+    vid = -1
+    try:
+        vid = int(mv.group('id'), 16)
+    except TypeError:
+        pass
+
+    vrev = -1
+    try:
+        vrev = int(mv.group('rev'), 16)
+    except TypeError:
+        pass
+
+    vlen = int(mv.group('len'), 16)
+
+    return CapabilityVendor(id=vid, rev=vrev, len=vlen)
+
+
 def parse_caps(p):
     """
     >>> parse_caps("Capabilities: [160 v1] Single Root I/O Virtualization (SR-IOV)")
@@ -421,9 +493,17 @@ def parse_caps(p):
     >>> parse_caps("Capabilities: [1a0 v1] Transaction Processing Hints, Device specific mode supported, Steering table in TPH capability structure")
     Capability(id=416, version=1, name='Unknown', vendor=None, types=['Transaction Processing Hints', 'Device specific mode supported', 'Steering table in TPH capability structure'], properties=[])
 
+    >>> parse_caps("Capabilities: [e0] Vendor Specific Information: Len=1c <?>")
+    Capability(id=224, version=-1, name='Unknown', vendor=CapabilityVendor(id=-1, rev=-1, len=28), types=None, properties=[])
+
+    >>> parse_caps('Capabilities: [40] Vendor Specific Information: Len=0c <?>')
+    Capability(id=64, version=-1, name='Unknown', vendor=CapabilityVendor(id=-1, rev=-1, len=12), types=None, properties=[])
+
     """
     assert p.startswith("Capabilities: "), p
     m = RE_CAPS.match(p)
+    if not m:
+        raise SyntaxError(p)
     (cap, v, name) = m.groups()
     if not v:
         v = -1
@@ -434,15 +514,8 @@ def parse_caps(p):
     vendor = None
     types = None
     if name.startswith('Vendor Specific Information:'):
-        mv = RE_VENDOR.match(name)
-        assert mv, (name, p)
-        vendor = CapabilityVendor(
-                id=int(mv.group('id'), 16),
-                rev=int(mv.group('rev'), 16),
-                len=int(mv.group('len'), 16),
-            )
+        vendor = parse_vendor(name)
         name = 'Unknown'
-
     elif ', ' in name:
         types = name.split(', ')
         name = 'Unknown'
@@ -454,6 +527,7 @@ def parse_lspci_output(output):
     output = _fixup(output)
 
     device_lines = group_device_lines(output.splitlines())
+    devices = []
     for device, lines in device_lines:
         details = {}
         for l in lines:
@@ -467,7 +541,7 @@ def parse_lspci_output(output):
                 cap = parse_caps(l[0])
 
                 properties = {}
-                for p in l:
+                for p in l[1:]:
                     if ': ' in p:
                         key, value = p.split(': ', 1)
 
@@ -525,6 +599,12 @@ def parse_lspci_output(output):
                 details['Capabilities'].append(cap)
                 continue
 
+            if l.startswith('Region '):
+                if 'Regions' not in details:
+                    details['Regions'] = []
+                details['Regions'].append(parse_region(l))
+                continue
+
             assert isinstance(l, str), l
             assert ': ' in l, l
             name, value = l.split(': ', 1)
@@ -535,74 +615,7 @@ def parse_lspci_output(output):
                 value = parse_flags(value)
 
             details[name] = value
-        print(device)
-        pprint(details)
-        print()
-    sys.exit(1)
-    return device_lines
-
-    devices = []
-    current_device = None
-
-    lines = output.splitlines()
-
-    for device in current_devices:
-        devices[-1] = group
-        groups = []
-        while device[-1]:
-            line = devices[-1].pop(0)
-
-        indent = 0
-        last = current_device
-        while line[indent] == '\t':
-            indent += 1
-            assert isinstance(last, list), last
-            last = last[-1]
-
-        assert indent > 0 and line[0] == '\t', repr(line)
-        if ':' in line:
-            name, bits = line[indent:].split(':', 1)
-            assert bits[0] in (' ', '\t'), (name, bits, line)
-            last.append([name, indent, [bits[1:]]])
-        else:
-            assert indent == last[1]+1, (indent, last, line)
-            last[-1].append(line[indent:])
-
-    for d in devices:
-        print(d[0])
-        pprint(d[1:])
-        print()
-    return devices
-
-
-    for line in lines:
-        if not line.strip():
-            current_device = None
-            continue
-
-        if line != line.strip():
-            line = line.strip()
-
-
-        if line[2] == ':':
-            assert not current_device, current_device
-            current_device = Device(address=line.split()[0], description="", subsystem="", control="", status="", latency="", kernel_driver="")
-            devices.append(current_device)
-
-        elif not current_device:
-            print('Skipping (no device)', line)
-
-        if ":" not in line:
-            print('Skipping', line)
-            continue
-
-        key, value = line.split(":", 1)
-        key = key.strip().lower().replace(" ", "_")
-        value = value.strip()
-        if hasattr(current_device, key):
-            setattr(current_device, key, value)
-            continue
-
+        devices.append((device, details))
     return devices
 
 
@@ -615,12 +628,22 @@ def main(args):
 
     devices = parse_lspci_output(output)
 
-    print('-'*75)
-
+    regions = []
     for name, details in devices:
+        print()
         print()
         print(name)
         pprint(details)
+        for r in details.get('Regions', []):
+            regions.append((r, name))
+
+    print()
+    print('-'*75)
+    print()
+    print('Regions')
+    regions.sort()
+    for r, d in regions:
+        print(r, d.split(' ', 1)[0])
 
     return 0
 
