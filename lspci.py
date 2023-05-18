@@ -63,6 +63,10 @@ class BridgeRegion:
     disabled: bool
     bits: int
 
+    @property
+    def csize(self):
+        return self.end - self.start
+
 
 @dataclass(eq=True, order=True, unsafe_hash=True)
 class CapabilityVendor:
