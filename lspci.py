@@ -178,9 +178,12 @@ def parse_region(line: str) -> Region:
     >>> parse_region('Region 0: Memory at 0000004010000000 (64-bit non-prefetchable)')
     Region(rtype='Memory', region=0, address=0x4010000000, size=None, bits=64, disabled=False, virtual=False, prefetchable=False)
 
+    >>> parse_region('Region 0: Memory at <ignored> (low-1M, prefetchable) [disabled]')
+    Region(rtype='Memory', region=0, address=-1, size=None, bits=-1, disabled=True, virtual=False, prefetchable=True)
+
     """
     pattern = re.compile(
-        r"Region (?P<region>\d+): (Memory at (?P<memory_address>[0-9a-fA-F]+) \(\d+-bit,? (non-)?prefetchable\)|I/O ports at (?P<io_address>[0-9a-fA-F]+))(\s*\[virtual])?(\s*\[disabled])?\s*(\[size=(?P<size>\d+[KMG]?)])?"
+        r"Region (?P<region>\d+): (Memory at (?P<memory_address>([0-9a-fA-F]+)|(<ignored>)) \((low-1M,?\s*)?(\d+-bit,?\s*)?(non-)?prefetchable\)|I/O ports at (?P<io_address>[0-9a-fA-F]+))(\s*\[virtual])?(\s*\[disabled])?\s*(\[size=(?P<size>\d+[KMG]?)])?"
     )
 
     m = pattern.match(line)
@@ -188,7 +191,11 @@ def parse_region(line: str) -> Region:
         raise ValueError("Invalid line format: "+repr(line))
 
     region = int(m.group("region"))
-    address = HexInt(m.group("io_address") or m.group("memory_address"), 16)
+    saddress = m.group("io_address") or m.group("memory_address")
+    if saddress != '<ignored>':
+        address = HexInt(saddress, 16)
+    else:
+        address = -1
 
     if 'Memory at' in line:
         rtype='Memory'
@@ -244,6 +251,8 @@ RE_BEHIND = re.compile(
 
 def parse_behind_bridge(s):
     """
+    >>> parse_behind_bridge("I/O behind bridge: 0000f000-00000fff [disabled]")
+    BridgeRegion(prefetchable=True, type='i/o', start=0xf000, end=0xfff, size=None, disabled=True, bits=None)
 
     >>> parse_behind_bridge("I/O behind bridge: f000-0fff [disabled] [16-bit]")
     BridgeRegion(prefetchable=True, type='i/o', start=0xf000, end=0xfff, size=None, disabled=True, bits=16)
@@ -287,7 +296,11 @@ def parse_behind_bridge(s):
     if msize:
         msize = convert_size_to_bytes(msize)
 
-    bits = int(m.group('bits'))
+    bits = m.group('bits')
+    try:
+        bits = int(bits)
+    except TypeError:
+        pass
 
     return BridgeRegion(
             prefetchable=prefetchable,
@@ -344,6 +357,10 @@ def _fixup(s):
     # Convert ' Interrupt Message Number: '
     # to      ' Interrupt-Message-Number='
     s = s.replace(' Interrupt Message Number: ', ' Interrupt-Message-Number=')
+
+    # Convert 'L1SubCtl2:\n'
+    # to      'L1SubCtl2: Unsupported\n'
+    s = s.replace('L1SubCtl2:\n', 'L1SubCtl2: \n')
 
     return s
 
