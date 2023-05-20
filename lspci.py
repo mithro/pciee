@@ -11,6 +11,9 @@ from dataclasses import dataclass, field
 
 
 def twidth():
+    w = os.environ.get('WIDTH', None)
+    if w:
+        return int(w)
     t = os.get_terminal_size(0)
     return t.columns
 
@@ -62,6 +65,7 @@ def pmem(region, i=0):
 
     rend = [F]
 
+    print_header()
     for (istart, iend), d in region.items():
         if (istart, iend) == (0, 0):
             continue
