@@ -14,10 +14,166 @@ def twidth():
     t = os.get_terminal_size(0)
     return t.columns
 
+
 def pprint(*args, **kw):
     kw['width'] = twidth()
     kw['compact'] = False
     return _pprint(*args, **kw)
+
+
+def p(d, i=0):
+    if isinstance(d, dict):
+        if not d:
+            print('{}', end='')
+            return
+        print('{', end='\n')
+        for k in sorted(d):
+            if isinstance(k, tuple):
+                v = '('+hex(k[0])+', '+hex(k[1])+')'
+            else:
+                v = repr(k)
+
+            print((i+1)*' ', v, ':', end=' ')
+            p(d[k], i+1)
+            print(',', end='\n')
+        print(i*' ', '}', end='')
+    else:
+        print(repr(d), end='')
+
+
+F = 0xffffffffffff
+M = len('39c000000000')
+
+
+def pmem(region, i=0):
+    # '|',    == 1+1
+    # p1,     == 5+1
+    # hstart, == M+1
+    # hend,   == M+1
+    # p2,     == 0+1
+    # '|',    == 1+1
+    # hsize,  == M+1
+    # '|',    == 1+1
+    # p1,     == 5+1
+    S = 1+1 + 5+1 + M+1 + M+1 + 0+1 + 1+1 + M+1 + 1+1 + 5+1 + 1
+
+    def print_header():
+        print('|', lpad('Start', ' ', M), lpad('End', ' ', M), '      ', '|', lpad('Size', ' ', M), '|', "Device")
+
+    rend = [F]
+
+    for (istart, iend), d in region.items():
+        if (istart, iend) == (0, 0):
+            continue
+
+        isize = iend-istart+1
+
+        hstart = lpad(hex(istart)[2:], '0', M)
+        hend   = lpad(hex(iend)[2:], '0', M)
+        hsize  = lpad(hex(isize)[2:], ' ', M)
+
+        info = d.get((0, 0), [])
+
+        if 'DMI2' in repr(info) or 'Root Port' in repr(info):
+            print()
+            print()
+            print_header()
+            rend[0] = iend+1
+        elif istart >= rend[0]:
+            print()
+            print()
+            print_header()
+            rend[0] = F
+
+        p1 = ' '*i
+        p2 = ' '*(5-i)
+
+        sinfo = " && ".join(info)[:twidth()-S]
+
+        print('|', p1, hstart, hend, p2, '|', hsize, '|', p1, sinfo) #" && ".join(info))
+
+        if len(d) == 1:
+            continue
+
+        pmem(d, i+1)
+
+
+def lpad(s, n, l):
+    while len(s) < l:
+        s = n+s
+    return s
+
+
+def parents(start, end, regions):
+    """
+    >>> regions = {}
+    >>> a = (0, 1000)
+    >>> b = (2000, 3000)
+    >>> 
+    >>> parents(*a, regions)
+    {}
+    >>> parents(*b, regions)
+    {}
+    >>> list(regions.keys())
+    [(0, 1000), (2000, 3000)]
+    >>> parents(100, 200, regions)
+    {}
+    >>> list(regions.keys())
+    [(0, 1000), (2000, 3000)]
+    >>> list(sorted(regions[a].keys()))
+    [(100, 200)]
+    >>> parents(50, 75, regions)
+    {}
+    >>> list(sorted(regions[a].keys()))
+    [(50, 75), (100, 200)]
+    >>> parents(2000, 2100, regions)
+    {}
+    >>> list(regions.keys())
+    [(0, 1000), (2000, 3000)]
+    >>> list(sorted(regions[b].keys()))
+    [(2000, 2100)]
+    >>> parents(2000, 2001, regions)
+    {}
+    >>> list(sorted(regions[b].keys()))
+    [(2000, 2100)]
+    >>> parents(200, 300, regions)
+    {}
+    >>> parents(100, 150, regions)
+    {}
+    >>> p(regions)
+    {
+      (0x0, 0x3e8) : {
+       (0x32, 0x4b) : {},
+       (0x64, 0xc8) : {
+        (0x64, 0x96) : {},
+       },
+       (0xc8, 0x12c) : {},
+      },
+      (0x7d0, 0xbb8) : {
+       (0x7d0, 0x834) : {
+        (0x7d0, 0x7d1) : {},
+       },
+      },
+     }
+    """
+    assert end >= start, (start, end)
+
+    if (start, end) in regions:
+        return regions[(start, end)]
+
+    for (istart, iend) in regions.keys():
+        if start < istart:
+            continue
+        if start >= iend:
+            continue
+
+        assert end <= iend, ((hex(start), hex(end)), (hex(istart), hex(iend)))
+
+        return parents(start, end, regions[(istart, iend)])
+
+    if (start, end) not in regions:
+        regions[(start, end)] = {}
+    return regions[(start, end)]
 
 
 @dataclass
@@ -50,6 +206,19 @@ class Region:
     virtual: bool = field(kw_only=True, default=False)
     prefetchable: Optional[bool] = field(kw_only=True, default=None)
 
+    @property
+    def start(self):
+        return self.address
+
+    @property
+    def end(self):
+        assert self.size is not None, self
+        return HexInt(self.address + self.size - 1)
+
+    @property
+    def range(self):
+        return self.address, self.end
+
 
 @dataclass(eq=True, order=True, unsafe_hash=True)
 class BridgeRegion:
@@ -62,6 +231,10 @@ class BridgeRegion:
 
     disabled: bool
     bits: int
+
+    @property
+    def range(self):
+        return self.start, self.end
 
     @property
     def csize(self):
@@ -142,8 +315,13 @@ def parse_region(line: str) -> Region:
     Returns:
         Region: A Region object representing the extracted region information.
 
-    >>> parse_region("Region 0: Memory at 90334000 (32-bit, non-prefetchable) [size=8K]")
+    >>> p = parse_region("Region 0: Memory at 90334000 (32-bit, non-prefetchable) [size=8K]")
+    >>> p
     Region(rtype='Memory', region=0, address=0x90334000, size=8192, bits=32, disabled=False, virtual=False, prefetchable=False)
+    >>> p.end
+    0x90335fff
+    >>> p.range
+    (0x90334000, 0x90335fff)
 
     >>> parse_region("Region 1: Memory at 90339000 (32-bit, non-prefetchable) [size=256]")
     Region(rtype='Memory', region=1, address=0x90339000, size=256, bits=32, disabled=False, virtual=False, prefetchable=False)
@@ -169,8 +347,11 @@ def parse_region(line: str) -> Region:
     >>> parse_region('Region 3: Memory at fb800000 (64-bit prefetchable) [size=32K]')
     Region(rtype='Memory', region=3, address=0xfb800000, size=32768, bits=64, disabled=False, virtual=False, prefetchable=True)
 
-    >>> parse_region('Region 0: Memory at f0000000 (32-bit, non-prefetchable) [disabled] [size=16M]')
+    >>> p = parse_region('Region 0: Memory at f0000000 (32-bit, non-prefetchable) [disabled] [size=16M]')
+    >>> p
     Region(rtype='Memory', region=0, address=0xf0000000, size=16777216, bits=32, disabled=True, virtual=False, prefetchable=False)
+    >>> p.end
+    0xf0ffffff
 
     >>> parse_region('Region 0: Memory at 4017001000 (64-bit non-prefetchable) [virtual] [size=4K]')
     Region(rtype='Memory', region=0, address=0x4017001000, size=4096, bits=64, disabled=False, virtual=True, prefetchable=False)
@@ -766,6 +947,7 @@ def main(args):
     devices = parse_lspci_output(output)
 
     regions = []
+    enabled = []
     bridges = []
     for name, details in devices:
         print()
@@ -774,30 +956,55 @@ def main(args):
         pprint(details)
         for r in details.get('Regions', []):
             regions.append((r, name))
+            if not r.disabled:
+                enabled.append((r, name))
         for r in details.get('BridgeRegions', []):
             bridges.append((r, name))
+            if not r.disabled:
+                enabled.append((r, name))
 
     # 'I/O behind bridge': '0000f000-00000fff [disabled]',
     # 'Memory behind bridge': 'bc300000-bc3fffff [size=1M]',
     # 'Prefetchable memory behind bridge': '00000000fff00000-00000000000fffff [disabled]',
 
-    regions.sort()
-    bridges.sort()
+    print()
+    print('='*twidth())
 
     print()
-    print('-'*75)
-    print()
     print('Regions')
-    print('-'*75)
+    print('-'*twidth())
+    regions.sort()
     for r, d in regions:
         print(r, d.split(' ', 1)[0])
-    print('-'*75)
+    print('-'*twidth())
+
     print()
     print('Bridge Regions')
-    print('-'*75)
+    print('-'*twidth())
+    bridges.sort()
     for r, d in bridges:
         print(r, d.split(' ', 1)[0])
-    print('-'*75)
+    print('-'*twidth())
+    print()
+
+    print()
+    print('Enabled Regions (device & bridge)')
+    print('-'*twidth())
+    enabled.sort(key=lambda x: (x[0].start, F-x[0].end, x[1]))
+    for r, d in enabled:
+        print(r.range, r.__class__.__name__[0], d)
+    print('-'*twidth())
+
+    tree = {}
+    for r, n in enabled:
+        d = parents(r.start, r.end, tree)
+        if (0, 0) not in d:
+            d[(0,0)] = []
+        d[(0,0)].append(n)
+
+    pmem(tree)
+    print()
+    print('='*twidth())
     print()
 
     return 0
