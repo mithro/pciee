@@ -62,10 +62,11 @@ def pmem(region, i=0):
 
     def print_header():
         print('|', lpad('Start', ' ', M), lpad('End', ' ', M), '      ', '|', lpad('Size', ' ', M), '|', "Device")
+    if i == 0:
+        print_header()
 
     rend = [F]
 
-    print_header()
     for (istart, iend), d in region.items():
         if (istart, iend) == (0, 0):
             continue
