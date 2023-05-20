@@ -10786,13 +10786,11 @@ Enabled Regions (device & bridge)
 
 |        Start          End        |         Size | Device
 |  000000002000 000000002fff       |         1000 |  00:1c.0 PCI bridge: Intel Corporation C610/X99 series chipset PCI Express Root Port #1 (rev d5) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |   000000002000 0000000020ff      |          100 |   00:1c.0/1c:00.0 Serial Attached SCSI controller: Broadcom / LSI SAS3008 PCI-Express Fusion-MPT SAS-3 (rev 02)
 
 
 |        Start          End        |         Size | Device
 |  000000003000 000000003fff       |         1000 |  00:1c.7 PCI bridge: Intel Corporation C610/X99 series chipset PCI Express Root Port #8 (rev d5) (prog-if 00 [Normal decode]) && 00:1c.7/1d:00.0 PCI bridge: ASPEED Technology, Inc. AST1150 PCI-to-PCI Bridge (rev 03) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |   000000003000 00000000307f      |           80 |   00:1c.7/1d:00.0/1e:00.0 VGA compatible controller: ASPEED Technology, Inc. ASPEED Graphics Family (rev 30) (prog-if 00 [VGA controller])
 
 
@@ -10813,17 +10811,14 @@ Enabled Regions (device & bridge)
 
 |        Start          End        |         Size | Device
 |  00000000f000 00000000ffff       |         1000 |  80:01.0 PCI bridge: Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D PCI Express Root Port 1 (rev 01) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |   00000000f000 00000000f07f      |           80 |   80:01.0/82:00.0 VGA compatible controller: NVIDIA Corporation TU117GL [T1000 8GB] (rev a1) (prog-if 00 [VGA controller])
 
 
 |        Start          End        |         Size | Device
 |  000090000000 000092ffffff       |      3000000 |  00:02.0 PCI bridge: Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D PCI Express Root Port 2 (rev 01) (prog-if 00 [Normal decode]) && 00:02.0/0b:00.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |   000090000000 000090ffffff      |      1000000 |   00:02.0/0b:00.0/0c:04.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa) (prog-if 00 [Normal decode]) && 00:02.0/0b:00.0/0c:04.0/0d:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
 |   000091000000 000091ffffff      |      1000000 |   00:02.0/0b:00.0/0c:08.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa) (prog-if 00 [Normal decode]) && 00:02.0/0b:00.0/0c:08.0/0e:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
 |   000092000000 0000922fffff      |       300000 |   00:02.0/0b:00.0/0c:0c.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |    000092000000 0000921fffff     |       200000 |    00:02.0/0b:00.0/0c:0c.0/0f:00.0 PCI bridge: PLX Technology, Inc. Device 8733 (rev ba) (prog-if 00 [Normal decode]) && 00:02.0/0b:00.0/0c:0c.0/0f:00.0/10:08.0 PCI bridge: PLX Technology, Inc. Device 8733 (rev ba) (prog-if 00 [Normal decode])
 |    000092200000 00009223ffff     |        40000 |    00:02.0/0b:00.0/0c:0c.0/0f:00.0 PCI bridge: PLX Technology, Inc. Device 8733 (rev ba) (prog-if 00 [Normal decode])
 |    000092240000 000092241fff     |         2000 |    00:02.0/0b:00.0/0c:0c.0/0f:00.1 System peripheral: PLX Technology, Inc. PEX PCI Express Switch DMA interface (rev ba)
@@ -10834,25 +10829,18 @@ Enabled Regions (device & bridge)
 
 |        Start          End        |         Size | Device
 |  0000c0000000 0000c24fffff       |      2500000 |  00:03.0 PCI bridge: Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D PCI Express Root Port 3 (rev 01) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |   0000c0000000 0000c23fffff      |      2400000 |   00:03.0/12:00.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |    0000c0000000 0000c0ffffff     |      1000000 |    00:03.0/12:00.0/13:08.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa) (prog-if 00 [Normal decode]) && 00:03.0/12:00.0/13:08.0/15:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
 |    0000c1000000 0000c1ffffff     |      1000000 |    00:03.0/12:00.0/13:04.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa) (prog-if 00 [Normal decode]) && 00:03.0/12:00.0/13:04.0/14:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
 |    0000c2000000 0000c23fffff     |       400000 |    00:03.0/12:00.0/13:0c.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa) (prog-if 00 [Normal decode]) && 00:03.0/12:00.0/13:0c.0/16:00.0 PCI bridge: ASMedia Technology Inc. ASM2824 PCIe Gen3 Packet Switch (rev 01) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |     0000c2000000 0000c20fffff    |       100000 |     00:03.0/12:00.0/13:0c.0/16:00.0/17:0c.0 PCI bridge: ASMedia Technology Inc. ASM2824 PCIe Gen3 Packet Switch (rev 01) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |      0000c2000000 0000c2003fff   |         4000 |      00:03.0/12:00.0/13:0c.0/16:00.0/17:0c.0/1b:00.0 Non-Volatile memory controller: Realtek Semiconductor Co., Ltd. RTS5763DL NVMe SSD Controller (rev 01) (prog-if 02 [NVM Express])
 |      0000c2004000 0000c2005fff   |         2000 |      00:03.0/12:00.0/13:0c.0/16:00.0/17:0c.0/1b:00.0 Non-Volatile memory controller: Realtek Semiconductor Co., Ltd. RTS5763DL NVMe SSD Controller (rev 01) (prog-if 02 [NVM Express])
 |     0000c2100000 0000c21fffff    |       100000 |     00:03.0/12:00.0/13:0c.0/16:00.0/17:08.0 PCI bridge: ASMedia Technology Inc. ASM2824 PCIe Gen3 Packet Switch (rev 01) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |      0000c2100000 0000c2103fff   |         4000 |      00:03.0/12:00.0/13:0c.0/16:00.0/17:08.0/1a:00.0 Non-Volatile memory controller: Phison Electronics Corporation PS5013 E13 NVMe Controller (rev 01) (prog-if 02 [NVM Express])
 |     0000c2200000 0000c22fffff    |       100000 |     00:03.0/12:00.0/13:0c.0/16:00.0/17:04.0 PCI bridge: ASMedia Technology Inc. ASM2824 PCIe Gen3 Packet Switch (rev 01) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |      0000c2200000 0000c2203fff   |         4000 |      00:03.0/12:00.0/13:0c.0/16:00.0/17:04.0/19:00.0 Non-Volatile memory controller: Phison Electronics Corporation E12 NVMe Controller (rev 01) (prog-if 02 [NVM Express])
 |     0000c2300000 0000c23fffff    |       100000 |     00:03.0/12:00.0/13:0c.0/16:00.0/17:00.0 PCI bridge: ASMedia Technology Inc. ASM2824 PCIe Gen3 Packet Switch (rev 01) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |      0000c2300000 0000c2303fff   |         4000 |      00:03.0/12:00.0/13:0c.0/16:00.0/17:00.0/18:00.0 Non-Volatile memory controller: MAXIO Technology (Hangzhou) Ltd. NVMe SSD Controller MAP1202 (rev 01) (prog-if 02 [NVM Express])
 
 
@@ -10870,54 +10858,41 @@ Enabled Regions (device & bridge)
 
 |        Start          End        |         Size | Device
 |  0000c6000000 0000c70fffff       |      1100000 |  00:1c.7 PCI bridge: Intel Corporation C610/X99 series chipset PCI Express Root Port #8 (rev d5) (prog-if 00 [Normal decode]) && 00:1c.7/1d:00.0 PCI bridge: ASPEED Technology, Inc. AST1150 PCI-to-PCI Bridge (rev 03) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |   0000c6000000 0000c6ffffff      |      1000000 |   00:1c.7/1d:00.0/1e:00.0 VGA compatible controller: ASPEED Technology, Inc. ASPEED Graphics Family (rev 30) (prog-if 00 [VGA controller])
 |   0000c7000000 0000c701ffff      |        20000 |   00:1c.7/1d:00.0/1e:00.0 VGA compatible controller: ASPEED Technology, Inc. ASPEED Graphics Family (rev 30) (prog-if 00 [VGA controller])
 
 
 |        Start          End        |         Size | Device
 |  0000c7200000 0000c79fffff       |       800000 |  00:01.0 PCI bridge: Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D PCI Express Root Port 1 (rev 01) (prog-if 00 [Normal decode]) && 00:01.0/01:00.0 PCI bridge: PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |   0000c7200000 0000c72fffff      |       100000 |   00:01.0/01:00.0/02:07.0 PCI bridge: PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |    0000c7210000 0000c7213fff     |         4000 |    00:01.0/01:00.0/02:07.0/0a:00.0 Non-Volatile memory controller: Intel Corporation NVMe Datacenter SSD [3DNAND, Beta Rock Controller] (prog-if 02 [NVM Express])
 |   0000c7300000 0000c73fffff      |       100000 |   00:01.0/01:00.0/02:06.0 PCI bridge: PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |    0000c7310000 0000c7313fff     |         4000 |    00:01.0/01:00.0/02:06.0/09:00.0 Non-Volatile memory controller: Intel Corporation NVMe Datacenter SSD [3DNAND, Beta Rock Controller] (prog-if 02 [NVM Express])
 |   0000c7400000 0000c74fffff      |       100000 |   00:01.0/01:00.0/02:05.0 PCI bridge: PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |    0000c7410000 0000c7413fff     |         4000 |    00:01.0/01:00.0/02:05.0/08:00.0 Non-Volatile memory controller: Intel Corporation NVMe Datacenter SSD [3DNAND, Beta Rock Controller] (prog-if 02 [NVM Express])
 |   0000c7500000 0000c75fffff      |       100000 |   00:01.0/01:00.0/02:04.0 PCI bridge: PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |    0000c7510000 0000c7513fff     |         4000 |    00:01.0/01:00.0/02:04.0/07:00.0 Non-Volatile memory controller: Intel Corporation NVMe Datacenter SSD [3DNAND, Beta Rock Controller] (prog-if 02 [NVM Express])
 |   0000c7600000 0000c76fffff      |       100000 |   00:01.0/01:00.0/02:03.0 PCI bridge: PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |    0000c7610000 0000c7613fff     |         4000 |    00:01.0/01:00.0/02:03.0/06:00.0 Non-Volatile memory controller: Intel Corporation NVMe Datacenter SSD [3DNAND, Beta Rock Controller] (prog-if 02 [NVM Express])
 |   0000c7700000 0000c77fffff      |       100000 |   00:01.0/01:00.0/02:02.0 PCI bridge: PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |    0000c7710000 0000c7713fff     |         4000 |    00:01.0/01:00.0/02:02.0/05:00.0 Non-Volatile memory controller: Intel Corporation NVMe Datacenter SSD [3DNAND, Beta Rock Controller] (prog-if 02 [NVM Express])
 |   0000c7800000 0000c78fffff      |       100000 |   00:01.0/01:00.0/02:01.0 PCI bridge: PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |    0000c7800000 0000c7803fff     |         4000 |    00:01.0/01:00.0/02:01.0/04:00.0 Non-Volatile memory controller: Union Memory (Shenzhen) AM630 PCIe 4.0 x4 NVMe SSD Controller (rev 03) (prog-if 02 [NVM Express])
 |   0000c7900000 0000c79fffff      |       100000 |   00:01.0/01:00.0/02:00.0 PCI bridge: PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |    0000c7910000 0000c7913fff     |         4000 |    00:01.0/01:00.0/02:00.0/03:00.0 Non-Volatile memory controller: Intel Corporation NVMe Datacenter SSD [3DNAND, Beta Rock Controller] (prog-if 02 [NVM Express])
 
 
 |        Start          End        |         Size | Device
 |  0000c7a00000 0000c7bfffff       |       200000 |  00:1c.0 PCI bridge: Intel Corporation C610/X99 series chipset PCI Express Root Port #1 (rev d5) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |   0000c7b00000 0000c7b3ffff      |        40000 |   00:1c.0/1c:00.0 Serial Attached SCSI controller: Broadcom / LSI SAS3008 PCI-Express Fusion-MPT SAS-3 (rev 02)
 |   0000c7b40000 0000c7b4ffff      |        10000 |   00:1c.0/1c:00.0 Serial Attached SCSI controller: Broadcom / LSI SAS3008 PCI-Express Fusion-MPT SAS-3 (rev 02)
 
 
 |        Start          End        |         Size | Device
 |  0000c8000000 0000caffffff       |      3000000 |  80:03.0 PCI bridge: Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D PCI Express Root Port 3 (rev 01) (prog-if 00 [Normal decode]) && 80:03.0/8d:00.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |   0000c8000000 0000c8ffffff      |      1000000 |   80:03.0/8d:00.0/8e:04.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa) (prog-if 00 [Normal decode]) && 80:03.0/8d:00.0/8e:04.0/8f:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
 |   0000c9000000 0000c9ffffff      |      1000000 |   80:03.0/8d:00.0/8e:08.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa) (prog-if 00 [Normal decode]) && 80:03.0/8d:00.0/8e:08.0/90:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
 |   0000ca000000 0000ca2fffff      |       300000 |   80:03.0/8d:00.0/8e:0c.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |    0000ca000000 0000ca1fffff     |       200000 |    80:03.0/8d:00.0/8e:0c.0/91:00.0 PCI bridge: PLX Technology, Inc. Device 8733 (rev ca) (prog-if 00 [Normal decode]) && 80:03.0/8d:00.0/8e:0c.0/91:00.0/92:08.0 PCI bridge: PLX Technology, Inc. Device 8733 (rev ca) (prog-if 00 [Normal decode])
 |    0000ca200000 0000ca23ffff     |        40000 |    80:03.0/8d:00.0/8e:0c.0/91:00.0 PCI bridge: PLX Technology, Inc. Device 8733 (rev ca) (prog-if 00 [Normal decode])
 |    0000ca240000 0000ca241fff     |         2000 |    80:03.0/8d:00.0/8e:0c.0/91:00.1 System peripheral: PLX Technology, Inc. PEX PCI Express Switch DMA interface (rev ca)
@@ -10928,25 +10903,18 @@ Enabled Regions (device & bridge)
 
 |        Start          End        |         Size | Device
 |  0000f4000000 0000f64fffff       |      2500000 |  80:02.0 PCI bridge: Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D PCI Express Root Port 2 (rev 01) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |   0000f4000000 0000f63fffff      |      2400000 |   80:02.0/83:00.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |    0000f4000000 0000f4ffffff     |      1000000 |    80:02.0/83:00.0/84:0c.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa) (prog-if 00 [Normal decode]) && 80:02.0/83:00.0/84:0c.0/8c:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
 |    0000f5000000 0000f5ffffff     |      1000000 |    80:02.0/83:00.0/84:08.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa) (prog-if 00 [Normal decode]) && 80:02.0/83:00.0/84:08.0/8b:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
 |    0000f6000000 0000f63fffff     |       400000 |    80:02.0/83:00.0/84:04.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa) (prog-if 00 [Normal decode]) && 80:02.0/83:00.0/84:04.0/85:00.0 PCI bridge: ASMedia Technology Inc. ASM2824 PCIe Gen3 Packet Switch (rev 01) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |     0000f6000000 0000f60fffff    |       100000 |     80:02.0/83:00.0/84:04.0/85:00.0/86:0c.0 PCI bridge: ASMedia Technology Inc. ASM2824 PCIe Gen3 Packet Switch (rev 01) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |      0000f6000000 0000f6003fff   |         4000 |      80:02.0/83:00.0/84:04.0/85:00.0/86:0c.0/8a:00.0 Non-Volatile memory controller: Phison Electronics Corporation PS5013 E13 NVMe Controller (rev 01) (prog-if 02 [NVM Express])
 |     0000f6100000 0000f61fffff    |       100000 |     80:02.0/83:00.0/84:04.0/85:00.0/86:08.0 PCI bridge: ASMedia Technology Inc. ASM2824 PCIe Gen3 Packet Switch (rev 01) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |      0000f6100000 0000f6103fff   |         4000 |      80:02.0/83:00.0/84:04.0/85:00.0/86:08.0/89:00.0 Non-Volatile memory controller: Samsung Electronics Co Ltd NVMe SSD Controller SM981/PM981/PM983 (prog-if 02 [NVM Express])
 |     0000f6200000 0000f62fffff    |       100000 |     80:02.0/83:00.0/84:04.0/85:00.0/86:04.0 PCI bridge: ASMedia Technology Inc. ASM2824 PCIe Gen3 Packet Switch (rev 01) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |      0000f6200000 0000f6203fff   |         4000 |      80:02.0/83:00.0/84:04.0/85:00.0/86:04.0/88:00.0 Non-Volatile memory controller: Realtek Semiconductor Co., Ltd. RTS5763DL NVMe SSD Controller (rev 01) (prog-if 02 [NVM Express])
 |      0000f6204000 0000f6205fff   |         2000 |      80:02.0/83:00.0/84:04.0/85:00.0/86:04.0/88:00.0 Non-Volatile memory controller: Realtek Semiconductor Co., Ltd. RTS5763DL NVMe SSD Controller (rev 01) (prog-if 02 [NVM Express])
 |     0000f6300000 0000f63fffff    |       100000 |     80:02.0/83:00.0/84:04.0/85:00.0/86:00.0 PCI bridge: ASMedia Technology Inc. ASM2824 PCIe Gen3 Packet Switch (rev 01) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |      0000f6300000 0000f6303fff   |         4000 |      80:02.0/83:00.0/84:04.0/85:00.0/86:00.0/87:00.0 Non-Volatile memory controller: Phison Electronics Corporation PS5013 E13 NVMe Controller (rev 01) (prog-if 02 [NVM Express])
 
 
@@ -10956,14 +10924,12 @@ Enabled Regions (device & bridge)
 
 |        Start          End        |         Size | Device
 |  0000fa000000 0000fb0fffff       |      1100000 |  80:01.0 PCI bridge: Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D PCI Express Root Port 1 (rev 01) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |   0000fa000000 0000faffffff      |      1000000 |   80:01.0/82:00.0 VGA compatible controller: NVIDIA Corporation TU117GL [T1000 8GB] (rev a1) (prog-if 00 [VGA controller])
 |   0000fb080000 0000fb083fff      |         4000 |   80:01.0/82:00.1 Audio device: NVIDIA Corporation Device 10fa (rev a1)
 
 
 |        Start          End        |         Size | Device
 |  020000000000 020000ffffff       |      1000000 |  00:01.0 PCI bridge: Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D PCI Express Root Port 1 (rev 01) (prog-if 00 [Normal decode]) && 00:01.0/01:00.0 PCI bridge: PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |   020000000000 0200001fffff      |       200000 |   00:01.0/01:00.0/02:00.0 PCI bridge: PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch (prog-if 00 [Normal decode])
 |   020000200000 0200003fffff      |       200000 |   00:01.0/01:00.0/02:01.0 PCI bridge: PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch (prog-if 00 [Normal decode])
 |   020000400000 0200005fffff      |       200000 |   00:01.0/01:00.0/02:02.0 PCI bridge: PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch (prog-if 00 [Normal decode])
@@ -10976,27 +10942,21 @@ Enabled Regions (device & bridge)
 
 |        Start          End        |         Size | Device
 |  02e000000000 02ec01ffffff       |    c02000000 |  00:03.0 PCI bridge: Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D PCI Express Root Port 3 (rev 01) (prog-if 00 [Normal decode]) && 00:03.0/12:00.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |   02e000000000 02e401ffffff      |    402000000 |   00:03.0/12:00.0/13:08.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |    02e000000000 02e3ffffffff     |    400000000 |    00:03.0/12:00.0/13:08.0/15:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
 |    02e400000000 02e401ffffff     |      2000000 |    00:03.0/12:00.0/13:08.0/15:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
 |   02e800000000 02ec01ffffff      |    402000000 |   00:03.0/12:00.0/13:04.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |    02e800000000 02ebffffffff     |    400000000 |    00:03.0/12:00.0/13:04.0/14:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
 |    02ec00000000 02ec01ffffff     |      2000000 |    00:03.0/12:00.0/13:04.0/14:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
 
 
 |        Start          End        |         Size | Device
 |  02f000000000 02fc01ffffff       |    c02000000 |  00:02.0 PCI bridge: Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D PCI Express Root Port 2 (rev 01) (prog-if 00 [Normal decode]) && 00:02.0/0b:00.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |   02f000000000 02f401ffffff      |    402000000 |   00:02.0/0b:00.0/0c:08.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |    02f000000000 02f3ffffffff     |    400000000 |    00:02.0/0b:00.0/0c:08.0/0e:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
 |    02f400000000 02f401ffffff     |      2000000 |    00:02.0/0b:00.0/0c:08.0/0e:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
 |   02f402000000 02f4021fffff      |       200000 |   00:02.0/0b:00.0/0c:0c.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa) (prog-if 00 [Normal decode]) && 00:02.0/0b:00.0/0c:0c.0/0f:00.0 PCI bridge: PLX Technology, Inc. Device 8733 (rev ba) (prog-if 00 [Normal decode]) && 00:02.0/0b:00.0/0c:0c.0/0f:00.0/10:08.0 PCI bridge: PLX Technology, Inc. Device 8733 (rev ba) (prog-if 00 [Normal
 |   02f800000000 02fc01ffffff      |    402000000 |   00:02.0/0b:00.0/0c:04.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |    02f800000000 02fbffffffff     |    400000000 |    00:02.0/0b:00.0/0c:04.0/0d:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
 |    02fc00000000 02fc01ffffff     |      2000000 |    00:02.0/0b:00.0/0c:04.0/0d:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
 
@@ -11016,7 +10976,6 @@ Enabled Regions (device & bridge)
 
 |        Start          End        |         Size | Device
 |  030000000000 0300008fffff       |       900000 |  80:00.0 PCI bridge: Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D PCI Express Root Port 0 (rev 01) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |   030000000000 0300001fffff      |       200000 |   80:00.0/81:00.0 Ethernet controller: Intel Corporation Ethernet Controller 10-Gigabit X540-AT2 (rev 01)
 |   030000200000 0300003fffff      |       200000 |   80:00.0/81:00.1 Ethernet controller: Intel Corporation Ethernet Controller 10-Gigabit X540-AT2 (rev 01)
 |   030000400000 030000403fff      |         4000 |   80:00.0/81:00.0 Ethernet controller: Intel Corporation Ethernet Controller 10-Gigabit X540-AT2 (rev 01)
@@ -11025,34 +10984,27 @@ Enabled Regions (device & bridge)
 
 |        Start          End        |         Size | Device
 |  03e000000000 03ec01ffffff       |    c02000000 |  80:03.0 PCI bridge: Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D PCI Express Root Port 3 (rev 01) (prog-if 00 [Normal decode]) && 80:03.0/8d:00.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |   03e000000000 03e401ffffff      |    402000000 |   80:03.0/8d:00.0/8e:08.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |    03e000000000 03e3ffffffff     |    400000000 |    80:03.0/8d:00.0/8e:08.0/90:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
 |    03e400000000 03e401ffffff     |      2000000 |    80:03.0/8d:00.0/8e:08.0/90:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
 |   03e402000000 03e4021fffff      |       200000 |   80:03.0/8d:00.0/8e:0c.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa) (prog-if 00 [Normal decode]) && 80:03.0/8d:00.0/8e:0c.0/91:00.0 PCI bridge: PLX Technology, Inc. Device 8733 (rev ca) (prog-if 00 [Normal decode]) && 80:03.0/8d:00.0/8e:0c.0/91:00.0/92:08.0 PCI bridge: PLX Technology, Inc. Device 8733 (rev ca) (prog-if 00 [Normal
 |   03e800000000 03ec01ffffff      |    402000000 |   80:03.0/8d:00.0/8e:04.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |    03e800000000 03ebffffffff     |    400000000 |    80:03.0/8d:00.0/8e:04.0/8f:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
 |    03ec00000000 03ec01ffffff     |      2000000 |    80:03.0/8d:00.0/8e:04.0/8f:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
 
 
 |        Start          End        |         Size | Device
 |  03f000000000 03fc01ffffff       |    c02000000 |  80:02.0 PCI bridge: Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D PCI Express Root Port 2 (rev 01) (prog-if 00 [Normal decode]) && 80:02.0/83:00.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |   03f000000000 03f401ffffff      |    402000000 |   80:02.0/83:00.0/84:0c.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |    03f000000000 03f3ffffffff     |    400000000 |    80:02.0/83:00.0/84:0c.0/8c:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
 |    03f400000000 03f401ffffff     |      2000000 |    80:02.0/83:00.0/84:0c.0/8c:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
 |   03f800000000 03fc01ffffff      |    402000000 |   80:02.0/83:00.0/84:08.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |    03f800000000 03fbffffffff     |    400000000 |    80:02.0/83:00.0/84:08.0/8b:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
 |    03fc00000000 03fc01ffffff     |      2000000 |    80:02.0/83:00.0/84:08.0/8b:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
 
 
 |        Start          End        |         Size | Device
 |  03fc10000000 03fc21ffffff       |     12000000 |  80:01.0 PCI bridge: Intel Corporation Xeon E7 v4/Xeon E5 v4/Xeon E3 v4/Xeon D PCI Express Root Port 1 (rev 01) (prog-if 00 [Normal decode])
-|        Start          End        |         Size | Device
 |   03fc10000000 03fc1fffffff      |     10000000 |   80:01.0/82:00.0 VGA compatible controller: NVIDIA Corporation TU117GL [T1000 8GB] (rev a1) (prog-if 00 [VGA controller])
 |   03fc20000000 03fc21ffffff      |      2000000 |   80:01.0/82:00.0 VGA compatible controller: NVIDIA Corporation TU117GL [T1000 8GB] (rev a1) (prog-if 00 [VGA controller])
 
