@@ -1,0 +1,97 @@
+00:00.0 root_port
+
+00:01.0 root_port, slot 1, device present, speed 8GT/s, width x8
+ └─01:00.0 upstream_port, "CPU1 SLOT2", PMC-Sierra Inc. (11f8) PM8533 PFX 48xG3 PCIe Fanout Switch (8533)
+    ├─02:00.0 downstream_port, slot 1, power: On, attn: on, speed 8GT/s, width x4
+    │  └─03:00.0 endpoint, Intel Corporation (8086) NVMe Datacenter SSD [3DNAND, Beta Rock Controller] (0a54)
+    ├─02:01.0 downstream_port, slot 2, power: On, attn: on, speed 8GT/s, width x4
+    │  └─04:00.0 endpoint, Union Memory (Shenzhen) (1cc4) AM630 PCIe 4.0 x4 NVMe SSD Controller (6303)
+    ├─02:02.0 downstream_port, slot 3, power: On, attn: on, speed 8GT/s, width x4
+    │  └─05:00.0 endpoint, Intel Corporation (8086) NVMe Datacenter SSD [3DNAND, Beta Rock Controller] (0a54)
+    ├─02:03.0 downstream_port, slot 4, power: On, attn: on, speed 8GT/s, width x4
+    │  └─06:00.0 endpoint, Intel Corporation (8086) NVMe Datacenter SSD [3DNAND, Beta Rock Controller] (0a54)
+    ├─02:04.0 downstream_port, slot 5, power: On, attn: on, speed 8GT/s, width x4
+    │  └─07:00.0 endpoint, Intel Corporation (8086) NVMe Datacenter SSD [3DNAND, Beta Rock Controller] (0a54)
+    ├─02:05.0 downstream_port, slot 6, power: On, attn: on, speed 8GT/s, width x4
+    │  └─08:00.0 endpoint, Intel Corporation (8086) NVMe Datacenter SSD [3DNAND, Beta Rock Controller] (0a54)
+    ├─02:06.0 downstream_port, slot 7, power: On, attn: on, speed 8GT/s, width x4
+    │  └─09:00.0 endpoint, Intel Corporation (8086) NVMe Datacenter SSD [3DNAND, Beta Rock Controller] (0a54)
+    └─02:07.0 downstream_port, slot 8, power: On, attn: on, speed 8GT/s, width x4
+       └─0a:00.0 endpoint, Intel Corporation (8086) NVMe Datacenter SSD [3DNAND, Beta Rock Controller] (0a54)
+
+00:02.0 root_port, slot 2, device present, speed 8GT/s, width x16
+ └─0b:00.0 upstream_port, "CPU1 SLOT6", PLX Technology, Inc. (10b5), device 9765
+    ├─0c:04.0 downstream_port, slot 4, device present, speed 8GT/s, width x16
+    │  └─0d:00.0 endpoint, NVIDIA Corporation (10de) GV100GL [Tesla V100 SXM2 16GB] (1db1)
+    ├─0c:08.0 downstream_port, slot 8, device present, speed 8GT/s, width x16
+    │  └─0e:00.0 endpoint, NVIDIA Corporation (10de) GV100GL [Tesla V100 SXM2 16GB] (1db1)
+    └─0c:0c.0 downstream_port, slot 12, device present, speed 8GT/s, width x16
+       ├─0f:00.0 upstream_port, PLX Technology, Inc. (10b5), device 8733
+       │  └─10:08.0 downstream_port, slot 72, power: Off, attn: on
+       ├─0f:00.1 endpoint, PLX Technology, Inc. (10b5) PEX PCI Express Switch DMA interface (87d0)
+       ├─0f:00.2 endpoint, PLX Technology, Inc. (10b5) PEX PCI Express Switch DMA interface (87d0)
+       ├─0f:00.3 endpoint, PLX Technology, Inc. (10b5) PEX PCI Express Switch DMA interface (87d0)
+       └─0f:00.4 endpoint, PLX Technology, Inc. (10b5) PEX PCI Express Switch DMA interface (87d0)
+
+00:03.0 root_port, slot 3, device present, speed 8GT/s, width x16
+ └─12:00.0 upstream_port, "CPU1 SLOT5", PLX Technology, Inc. (10b5), device 9765
+    ├─13:04.0 downstream_port, slot 4, device present, speed 8GT/s, width x16
+    │  └─14:00.0 endpoint, NVIDIA Corporation (10de) GV100GL [Tesla V100 SXM2 16GB] (1db1)
+    ├─13:08.0 downstream_port, slot 8, device present, speed 8GT/s, width x16
+    │  └─15:00.0 endpoint, NVIDIA Corporation (10de) GV100GL [Tesla V100 SXM2 16GB] (1db1)
+    └─13:0c.0 downstream_port, slot 12, device present, speed 8GT/s, width x8
+       └─16:00.0 upstream_port, ASMedia Technology Inc. (1b21) ASM2824 PCIe Gen3 Packet Switch (2824)
+          ├─17:00.0 downstream_port, slot 0, device present, speed 8GT/s, width x4
+          │  └─18:00.0 endpoint, MAXIO Technology (Hangzhou) Ltd. (1e4b) NVMe SSD Controller MAP1202 (1202)
+          ├─17:04.0 downstream_port, slot 0, device present, speed 8GT/s, width x4
+          │  └─19:00.0 endpoint, Phison Electronics Corporation (1987) E12 NVMe Controller (5012)
+          ├─17:08.0 downstream_port, slot 0, device present, speed 8GT/s, width x4
+          │  └─1a:00.0 endpoint, Phison Electronics Corporation (1987) PS5013 E13 NVMe Controller (5013)
+          └─17:0c.0 downstream_port, slot 0, device present, speed 8GT/s, width x4
+             └─1b:00.0 endpoint, Realtek Semiconductor Co., Ltd. (10ec) RTS5763DL NVMe SSD Controller (5762)
+
+00:1c.0 root_port, slot 0, device present, speed 5GT/s, width x4
+ └─1c:00.0 endpoint, Broadcom / LSI (1000) SAS3008 PCI-Express Fusion-MPT SAS-3 (0097)
+
+00:1c.7 root_port, slot 0, device present, speed 2.5GT/s, width x1
+ └─1d:00.0 pci_bridge
+    └─1e:00.0 PCI, ASPEED Technology, Inc. (1a03) ASPEED Graphics Family (2000)
+
+80:00.0 root_port, speed 5GT/s, width x4
+ ├─81:00.0 endpoint, Intel Corporation (8086) Ethernet Controller 10-Gigabit X540-AT2 (1528)
+ └─81:00.1 endpoint, Intel Corporation (8086) Ethernet Controller 10-Gigabit X540-AT2 (1528)
+
+80:01.0 root_port, slot 5, device present, speed 2.5GT/s, width x8
+ ├─82:00.0 legacy_endpoint, "CPU2 SLOT1"
+ └─82:00.1 endpoint, NVIDIA Corporation (10de), device 10fa
+
+80:02.0 root_port, slot 6, device present, speed 8GT/s, width x16
+ └─83:00.0 upstream_port, "CPU2 SLOT4", PLX Technology, Inc. (10b5), device 9765
+    ├─84:04.0 downstream_port, slot 4, device present, speed 8GT/s, width x8
+    │  └─85:00.0 upstream_port, ASMedia Technology Inc. (1b21) ASM2824 PCIe Gen3 Packet Switch (2824)
+    │     ├─86:00.0 downstream_port, slot 0, device present, speed 8GT/s, width x4
+    │     │  └─87:00.0 endpoint, Phison Electronics Corporation (1987) PS5013 E13 NVMe Controller (5013)
+    │     ├─86:04.0 downstream_port, slot 0, device present, speed 8GT/s, width x4
+    │     │  └─88:00.0 endpoint, Realtek Semiconductor Co., Ltd. (10ec) RTS5763DL NVMe SSD Controller (5762)
+    │     ├─86:08.0 downstream_port, slot 0, device present, speed 8GT/s, width x4
+    │     │  └─89:00.0 endpoint, Samsung Electronics Co Ltd (144d) NVMe SSD Controller SM981/PM981/PM983 (a808)
+    │     └─86:0c.0 downstream_port, slot 0, device present, speed 8GT/s, width x4
+    │        └─8a:00.0 endpoint, Phison Electronics Corporation (1987) PS5013 E13 NVMe Controller (5013)
+    ├─84:08.0 downstream_port, slot 8, device present, speed 8GT/s, width x16
+    │  └─8b:00.0 endpoint, NVIDIA Corporation (10de) GV100GL [Tesla V100 SXM2 16GB] (1db1)
+    └─84:0c.0 downstream_port, slot 12, device present, speed 8GT/s, width x16
+       └─8c:00.0 endpoint, NVIDIA Corporation (10de) GV100GL [Tesla V100 SXM2 16GB] (1db1)
+
+80:03.0 root_port, slot 4, device present, speed 8GT/s, width x16
+ └─8d:00.0 upstream_port, "CPU2 SLOT3", PLX Technology, Inc. (10b5), device 9765
+    ├─8e:04.0 downstream_port, slot 4, device present, speed 8GT/s, width x16
+    │  └─8f:00.0 endpoint, NVIDIA Corporation (10de) GV100GL [Tesla V100 SXM2 16GB] (1db1)
+    ├─8e:08.0 downstream_port, slot 8, device present, speed 8GT/s, width x16
+    │  └─90:00.0 endpoint, NVIDIA Corporation (10de) GV100GL [Tesla V100 SXM2 16GB] (1db1)
+    └─8e:0c.0 downstream_port, slot 12, device present, speed 8GT/s, width x16
+       ├─91:00.0 upstream_port, PLX Technology, Inc. (10b5), device 8733
+       │  └─92:08.0 downstream_port, slot 72, power: Off, attn: on
+       ├─91:00.1 endpoint, PLX Technology, Inc. (10b5) PEX PCI Express Switch DMA interface (87d0)
+       ├─91:00.2 endpoint, PLX Technology, Inc. (10b5) PEX PCI Express Switch DMA interface (87d0)
+       ├─91:00.3 endpoint, PLX Technology, Inc. (10b5) PEX PCI Express Switch DMA interface (87d0)
+       └─91:00.4 endpoint, PLX Technology, Inc. (10b5) PEX PCI Express Switch DMA interface (87d0)
