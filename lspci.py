@@ -710,9 +710,9 @@ RE_VENDOR = re.compile(r"Vendor Specific Information:\s*(ID=(?P<id>[\da-fA-F]+))
 CAPS_FLAGS = {
     'SltCap':  None,
 
-    'DpcCap': None,
-    'DpcCtl': None,
-    'DpcSta': None,
+    'DpcCap':  None,
+    'DpcCtl':  None,
+    'DpcSta':  None,
 
     'DevCap':  None, # Special cased
     'DevCtl':  None,
@@ -730,19 +730,19 @@ CAPS_FLAGS = {
     'LnkCtl2': None,
     'LnkSta2': None,
 
-    'L1SubCap': None,
+    'L1SubCap':  None,
     'L1SubCtl1': None,
     'L1SubCtl2': None,
 
-    'IOVCap':  None,
-    'IOVCtl':  None,
-    'IOVSta':  None,
+    'IOVCap':   None,
+    'IOVCtl':   None,
+    'IOVSta':   None,
 
-    'AFCap': None,
-    'AFCtrl': None,
+    'AFCap':    None,
+    'AFCtrl':   None,
     'AFStatus': None,
 
-    'PTMCap': None,
+    'PTMCap':     None,
     'PTMControl': None,
 
     'ATSCap':  None,
@@ -772,7 +772,7 @@ CAPS_FLAGS = {
 
     'UESvrt':  None,
 
-    'Flags': None,
+    'Flags':  None,
     'Status': None,
 
     'PRICtl': None,
