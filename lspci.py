@@ -9,6 +9,20 @@ from typing import Optional
 from pprint import pprint as _pprint
 from dataclasses import dataclass, field
 
+# Each non-bridge PCI device function can implement up to 6 BARs, each of which
+# can respond to different addresses in I/O port and memory-mapped address
+# space.
+
+
+# Nvidia GPU BARs
+# BAR0: MMIO registers
+# BAR1: VRAM aperture
+# BAR2: RAMIN aperture
+# BAR2: NV3 indirect memory access
+# BAR3: RAMIN aperture
+# BAR5: G80 indirect memory access
+# BAR6: PCI ROM aperture
+
 
 def twidth():
     w = os.environ.get('WIDTH', None)
@@ -206,10 +220,32 @@ class Region:
     address: HexInt
     size: int
 
-    bits: int
-    disabled: bool = field(kw_only=True, default=False)
-    virtual: bool = field(kw_only=True, default=False)
-    prefetchable: Optional[bool] = field(kw_only=True, default=None)
+    flags: Optional[list] = field(compare=False, default_factory=list)
+    props: Optional[list] = field(compare=False, default_factory=list)
+
+    @property
+    def bits(self):
+        if '64-bit' in self.props:
+            return 64
+        if '32-bit' in self.props:
+            return 32
+        return -1
+
+    @property
+    def disabled(self):
+        return 'disabled' in self.flags
+
+    @property
+    def virtual(self):
+        return 'virtual' in self.flags
+
+    @property
+    def prefetchable(self):
+        if 'prefetchable' in self.props:
+            return True
+        if 'non-prefetchable' in self.props:
+            return False
+        return None
 
     @property
     def start(self):
@@ -314,6 +350,26 @@ def convert_size_to_bytes(size: str) -> int:
         return int(size)
 
 
+RE_REGION = re.compile(
+    "^"
+    # 'Expansion ROM at'
+    # 'Memory at'
+    # 'I/O ports at'
+    "(?P<type>.*?) at"
+    # ' 000c0000'
+    # ' 90334000'
+    # ' <ignored>'
+    r"\s*(?P<address>([0-9a-fA-F]+)|(<ignored>))"
+    # ' (32-bit, non-prefetchable)'
+    r"\s*(\((?P<props>[^)]+)\))?"
+    # ' [virtual] [disabled]'
+    r"(?P<flags>(\s*\[[^\]]+])*?)"
+    # ' [size=8K]'
+    # ' [size=256]'
+    r"\s*(\[size=(?P<size>[^\]]+)])?"
+    "$")
+
+
 def parse_region(line: str) -> Region:
     """
     Extracts region information from the given line and returns a Region object.
@@ -326,97 +382,102 @@ def parse_region(line: str) -> Region:
 
     >>> p = parse_region("Region 0: Memory at 90334000 (32-bit, non-prefetchable) [size=8K]")
     >>> p
-    Region(rtype='Memory', region=0, address=0x90334000, size=8192, bits=32, disabled=False, virtual=False, prefetchable=False)
+    Region(rtype='Memory', region=0, address=0x90334000, size=8192, flags=[], props=['32-bit', 'non-prefetchable'])
     >>> p.end
     0x90335fff
     >>> p.range
     (0x90334000, 0x90335fff)
+    >>> p.disabled
+    False
+    >>> p.prefetchable
+    False
+    >>> p.bits
+    32
 
     >>> parse_region("Region 1: Memory at 90339000 (32-bit, non-prefetchable) [size=256]")
-    Region(rtype='Memory', region=1, address=0x90339000, size=256, bits=32, disabled=False, virtual=False, prefetchable=False)
+    Region(rtype='Memory', region=1, address=0x90339000, size=256, flags=[], props=['32-bit', 'non-prefetchable'])
 
     >>> parse_region("Region 2: I/O ports at 3050 [size=8]")
-    Region(rtype='I/O ports', region=2, address=0x3050, size=8, bits=-1, disabled=False, virtual=False, prefetchable=None)
+    Region(rtype='I/O ports', region=2, address=0x3050, size=8, flags=[], props=[])
 
     >>> parse_region("Region 3: I/O ports at 3040 [size=4]")
-    Region(rtype='I/O ports', region=3, address=0x3040, size=4, bits=-1, disabled=False, virtual=False, prefetchable=None)
+    Region(rtype='I/O ports', region=3, address=0x3040, size=4, flags=[], props=[])
 
     >>> parse_region("Region 4: I/O ports at 3000 [size=32]")
-    Region(rtype='I/O ports', region=4, address=0x3000, size=32, bits=-1, disabled=False, virtual=False, prefetchable=None)
+    Region(rtype='I/O ports', region=4, address=0x3000, size=32, flags=[], props=[])
 
     >>> parse_region("Region 4: I/O ports at efa0 [size=32]")
-    Region(rtype='I/O ports', region=4, address=0xefa0, size=32, bits=-1, disabled=False, virtual=False, prefetchable=None)
+    Region(rtype='I/O ports', region=4, address=0xefa0, size=32, flags=[], props=[])
 
     >>> parse_region("Region 5: Memory at 90200000 (32-bit, non-prefetchable) [size=512K]")
-    Region(rtype='Memory', region=5, address=0x90200000, size=524288, bits=32, disabled=False, virtual=False, prefetchable=False)
+    Region(rtype='Memory', region=5, address=0x90200000, size=524288, flags=[], props=['32-bit', 'non-prefetchable'])
 
     >>> parse_region('Region 0: Memory at f9000000 (64-bit prefetchable) [size=8M]')
-    Region(rtype='Memory', region=0, address=0xf9000000, size=8388608, bits=64, disabled=False, virtual=False, prefetchable=True)
+    Region(rtype='Memory', region=0, address=0xf9000000, size=8388608, flags=[], props=['64-bit', 'prefetchable'])
 
     >>> parse_region('Region 3: Memory at fb800000 (64-bit prefetchable) [size=32K]')
-    Region(rtype='Memory', region=3, address=0xfb800000, size=32768, bits=64, disabled=False, virtual=False, prefetchable=True)
+    Region(rtype='Memory', region=3, address=0xfb800000, size=32768, flags=[], props=['64-bit', 'prefetchable'])
 
     >>> p = parse_region('Region 0: Memory at f0000000 (32-bit, non-prefetchable) [disabled] [size=16M]')
     >>> p
-    Region(rtype='Memory', region=0, address=0xf0000000, size=16777216, bits=32, disabled=True, virtual=False, prefetchable=False)
+    Region(rtype='Memory', region=0, address=0xf0000000, size=16777216, flags=['disabled'], props=['32-bit', 'non-prefetchable'])
     >>> p.end
     0xf0ffffff
+    >>> p.disabled
+    True
 
     >>> parse_region('Region 0: Memory at 4017001000 (64-bit non-prefetchable) [virtual] [size=4K]')
-    Region(rtype='Memory', region=0, address=0x4017001000, size=4096, bits=64, disabled=False, virtual=True, prefetchable=False)
+    Region(rtype='Memory', region=0, address=0x4017001000, size=4096, flags=['virtual'], props=['64-bit', 'non-prefetchable'])
 
     >>> parse_region('Region 0: Memory at 0000004010000000 (64-bit non-prefetchable)')
-    Region(rtype='Memory', region=0, address=0x4010000000, size=None, bits=64, disabled=False, virtual=False, prefetchable=False)
+    Region(rtype='Memory', region=0, address=0x4010000000, size=None, flags=[], props=['64-bit', 'non-prefetchable'])
 
     >>> parse_region('Region 0: Memory at <ignored> (low-1M, prefetchable) [disabled]')
-    Region(rtype='Memory', region=0, address=-1, size=None, bits=-1, disabled=True, virtual=False, prefetchable=True)
+    Region(rtype='Memory', region=0, address=-1, size=None, flags=['disabled'], props=['low-1M', 'prefetchable'])
+
+    >>> parse_region("Expansion ROM at 000c0000 [virtual] [disabled] [size=128K]")
+    Region(rtype='Expansion ROM', region=None, address=0xc0000, size=131072, flags=['virtual', 'disabled'], props=[])
+    >>> parse_region("Expansion ROM at c7200000 [disabled] [size=64K]")
+    Region(rtype='Expansion ROM', region=None, address=0xc7200000, size=65536, flags=['disabled'], props=[])
+    >>> parse_region("Expansion ROM at c7a00000 [disabled] [size=1M]")
+    Region(rtype='Expansion ROM', region=None, address=0xc7a00000, size=1048576, flags=['disabled'], props=[])
+    >>> parse_region("Expansion ROM at fb000000 [virtual] [disabled] [size=512K]")
+    Region(rtype='Expansion ROM', region=None, address=0xfb000000, size=524288, flags=['virtual', 'disabled'], props=[])
 
     """
-    pattern = re.compile(
-        r"Region (?P<region>\d+): (Memory at (?P<memory_address>([0-9a-fA-F]+)|(<ignored>)) \((low-1M,?\s*)?(\d+-bit,?\s*)?(non-)?prefetchable\)|I/O ports at (?P<io_address>[0-9a-fA-F]+))(\s*\[virtual])?(\s*\[disabled])?\s*(\[size=(?P<size>\d+[KMG]?)])?"
-    )
+    if ': ' in line:
+        sregion, line = line.split(': ', 1)
+        assert sregion.startswith('Region '), (sregion, line)
+        if sregion[-1] == 'E':
+            region = None
+        else:
+            region = int(sregion[-1])
+    else:
+        region = None
 
-    m = pattern.match(line)
-    if not m:
-        raise ValueError("Invalid line format: "+repr(line))
+    m = RE_REGION.match(line)
 
-    region = int(m.group("region"))
-    saddress = m.group("io_address") or m.group("memory_address")
+    rtype = m.group('type')
+
+    saddress = m.group('address')
     if saddress != '<ignored>':
         address = HexInt(saddress, 16)
     else:
         address = -1
 
-    if 'Memory at' in line:
-        rtype='Memory'
-    elif 'I/O ports at' in line:
-        rtype='I/O ports'
-    else:
-        rtype=None
+    # properties inside the brackets
+    props = m.group('props') or ''
+    if ',' in props:
+        props = props.replace(',', '')
+    props = props.split()
 
-    if '32-bit' in line:
-        bits=32
-    elif '64-bit' in line:
-        bits=64
-    else:
-        bits=-1
-
-    if 'non-prefetchable' in line:
-        prefetchable=False
-    elif 'prefetchable' in line:
-        prefetchable=True
-    else:
-        prefetchable=None
-
-    if '[disabled]' in line:
-        disabled=True
-    else:
-        disabled=False
-
-    if '[virtual]' in line:
-        virtual=True
-    else:
-        virtual=False
+    # flags inside square brackets
+    sflags = m.group('flags').strip() or ''
+    flags = []
+    for f in sflags.split():
+        assert f[0] == '[', (f, sflags, line)
+        assert f[-1] == ']', (f, sflags, line)
+        flags.append(f[1:-1])
 
     size = m.group("size")
     if size:
@@ -424,10 +485,10 @@ def parse_region(line: str) -> Region:
 
     region_info = Region(
         rtype,
-        region, address, size, bits,
-        prefetchable=prefetchable,
-        disabled=disabled,
-        virtual=virtual)
+        region, address, size,
+        flags=flags,
+        props=props,
+    )
     return region_info
 
 
@@ -520,8 +581,9 @@ def _fixup(s):
     s = s.replace('Read-only fields:', 'Read only fields:\t')
 
     # Convert 'Expansion ROM at d0800000 [disabled] [size=256K]`
-    # to      'Expansion ROM: d0800000 [disabled] [size=256K]`
-    s = s.replace('Expansion ROM at ', 'Expansion ROM: ')
+    # to      'Region E: Expansion ROM at d0800000 [disabled] [size=256K]`
+    s = s.replace('Expansion ROM at ', 'Region E: Expansion ROM at ')
+
     # Convert 'Region 0: Memory at 90330000 (32-bit, non-prefetchable) [disabled] [size=16K]'
     # to      'Region 0: Memory at 90330000 (32-bit non-prefetchable) [disabled] [size=16K]'
     s = s.replace('bit, ', 'bit ')
@@ -940,9 +1002,12 @@ def parse_lspci_output(output):
                 details['Capabilities'].append(cap)
                 continue
 
+            if 'Regions' not in details:
+                details['Regions'] = []
             if l.startswith('Region '):
-                if 'Regions' not in details:
-                    details['Regions'] = []
+                details['Regions'].append(parse_region(l))
+                continue
+            if l.startswith('Expansion ROM '):
                 details['Regions'].append(parse_region(l))
                 continue
 
