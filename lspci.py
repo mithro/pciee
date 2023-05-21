@@ -243,7 +243,11 @@ class BridgeRegion:
 
     @property
     def csize(self):
-        return self.end - self.start
+        s = self.end - self.start + 1
+        if s < 0:
+            assert self.disabled, self
+            s = 0
+        return s
 
 
 @dataclass(eq=True, order=True, unsafe_hash=True)
@@ -464,8 +468,14 @@ def parse_behind_bridge(s):
     >>> parse_behind_bridge("Memory behind bridge: f0000000-f10fffff [size=17M] [32-bit]")
     BridgeRegion(prefetchable=True, type='memory', start=0xf0000000, end=0xf10fffff, size=17825792, disabled=False, bits=32)
 
-    >>> parse_behind_bridge("Prefetchable memory behind bridge: f9000000-fbafffff [size=43M] [32-bit]")
+    >>> b = parse_behind_bridge("Prefetchable memory behind bridge: f9000000-fbafffff [size=43M] [32-bit]")
+    >>> b
     BridgeRegion(prefetchable=False, type='memory', start=0xf9000000, end=0xfbafffff, size=45088768, disabled=False, bits=32)
+    >>> b.csize
+    45088768
+
+    >>> parse_behind_bridge("I/O behind bridge: 0000f000-00000fff [disabled]")
+    BridgeRegion(prefetchable=True, type='i/o', start=0xf000, end=0xfff, size=None, disabled=True, bits=None)
 
     """
     m = RE_BEHIND.search(s)
@@ -685,6 +695,10 @@ def parse_flags(l):
         name = f[:-1]
         value = {'-': False, '+': True}[f[-1]]
         assert name not in flags, (name, flags, l)
+
+        if name.endswith(':'):
+            name = name[:-1]
+
         flags[name] = value
     return flags
 
@@ -723,6 +737,17 @@ CAPS_FLAGS = {
     'IOVCap':  None,
     'IOVCtl':  None,
     'IOVSta':  None,
+
+    'AFCap': None,
+    'AFCtrl': None,
+    'AFStatus': None,
+
+    'PTMCap': None,
+    'PTMControl': None,
+
+    'ATSCap':  None,
+    'ATSCtl':  None,
+    'ATSSta':  None,
 
     'ACSCap':  None,
     'ACSCtl':  None,
@@ -1007,6 +1032,7 @@ def main(args):
             d[(0,0)] = []
         d[(0,0)].append(n)
 
+    print()
     pmem(tree)
     print()
     print('='*twidth())
