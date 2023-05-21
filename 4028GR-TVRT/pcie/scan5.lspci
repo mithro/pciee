@@ -58,12 +58,12 @@
 00:01.0/01:00.0/02:07.0 PCI bridge: PMC-Sierra Inc. PM8533 PFX 48xG3 PCIe Fanout Switch
 00:01.0/01:00.0/02:00.0/03:00.0 Non-Volatile memory controller: Intel Corporation NVMe Datacenter SSD [3DNAND, Beta Rock Controller]
 00:01.0/01:00.0/02:01.0/04:00.0 Non-Volatile memory controller: Union Memory (Shenzhen) AM630 PCIe 4.0 x4 NVMe SSD Controller (rev 03)
-
-
+00:01.0/01:00.0/02:02.0/05:00.0 Non-Volatile memory controller: Intel Corporation NVMe Datacenter SSD [3DNAND, Beta Rock Controller]
+00:01.0/01:00.0/02:03.0/06:00.0 Non-Volatile memory controller: Intel Corporation NVMe Datacenter SSD [3DNAND, Beta Rock Controller]
 00:01.0/01:00.0/02:04.0/07:00.0 Non-Volatile memory controller: Intel Corporation NVMe Datacenter SSD [3DNAND, Beta Rock Controller]
-
-
-
+00:01.0/01:00.0/02:05.0/08:00.0 Non-Volatile memory controller: Intel Corporation NVMe Datacenter SSD [3DNAND, Beta Rock Controller]
+00:01.0/01:00.0/02:06.0/09:00.0 Non-Volatile memory controller: Intel Corporation NVMe Datacenter SSD [3DNAND, Beta Rock Controller]
+00:01.0/01:00.0/02:07.0/0a:00.0 Non-Volatile memory controller: Intel Corporation NVMe Datacenter SSD [3DNAND, Beta Rock Controller]
 -----------------------------------------
 00:02.0/0b:00.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa)
 00:02.0/0b:00.0/0c:04.0 PCI bridge: PLX Technology, Inc. Device 9765 (rev aa)
