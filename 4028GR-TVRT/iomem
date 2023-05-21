@@ -3,70 +3,64 @@
 000a0000-000bffff : PCI Bus 0000:00
 000c0000-000c59ff : Video ROM
 000f0000-000fffff : System ROM
-00100000-6fdbc017 : System RAM
-6fdbc018-6fddbc57 : System RAM
-6fddbc58-6fddc017 : System RAM
-6fddc018-6fde4057 : System RAM
-6fde4058-6fde5017 : System RAM
-6fde5018-6fe2ae57 : System RAM
-6fe2ae58-6fe2b017 : System RAM
-6fe2b018-6fe32257 : System RAM
-6fe32258-6fe33017 : System RAM
-6fe33018-6fe3a257 : System RAM
-6fe3a258-76e6cfff : System RAM
-76e6d000-76f4efff : Reserved
-76f4f000-78f9ffff : System RAM
-78fa0000-797b5fff : Reserved
-  7917d018-7917d018 : APEI ERST
-  7917d01c-7917d021 : APEI ERST
-  7917d028-7917d039 : APEI ERST
-  7917d040-7917d04c : APEI ERST
-  7917d050-7917f04f : APEI ERST
-797b6000-798b4fff : System RAM
-798b5000-79e2efff : ACPI Non-volatile Storage
-79e2f000-7bdbbfff : Reserved
+00100000-6fd97017 : System RAM
+6fd97018-6fdb6c57 : System RAM
+6fdb6c58-6fdb7017 : System RAM
+6fdb7018-6fdbf057 : System RAM
+6fdbf058-6fdc0017 : System RAM
+6fdc0018-6fe05e57 : System RAM
+6fe05e58-6fe06017 : System RAM
+6fe06018-6fe0d257 : System RAM
+6fe0d258-6fe0e017 : System RAM
+6fe0e018-6fe15257 : System RAM
+6fe15258-6fe16017 : System RAM
+6fe16018-6fe1d257 : System RAM
+6fe1d258-6fe1e017 : System RAM
+6fe1e018-6fe25257 : System RAM
+6fe25258-6fe26017 : System RAM
+6fe26018-6fe2d257 : System RAM
+6fe2d258-6fe2e017 : System RAM
+6fe2e018-6fe35257 : System RAM
+6fe35258-6fe36017 : System RAM
+6fe36018-6fe3d257 : System RAM
+6fe3d258-76df3fff : System RAM
+76df4000-76ed5fff : Reserved
+76ed6000-78f9bfff : System RAM
+78f9c000-797b1fff : Reserved
+  79179018-79179018 : APEI ERST
+  7917901c-79179021 : APEI ERST
+  79179028-79179039 : APEI ERST
+  79179040-7917904c : APEI ERST
+  79179050-7917b04f : APEI ERST
+797b2000-798b0fff : System RAM
+798b1000-79e2afff : ACPI Non-volatile Storage
+79e2b000-7bdbbfff : Reserved
 7bdbc000-7bdbcfff : System RAM
 7bdbd000-7be42fff : Reserved
 7be43000-7bffffff : System RAM
 7c000000-8fffffff : Reserved
   80000000-8fffffff : PCI MMCONFIG 0000 [bus 00-ff]
 90000000-c7ffbfff : PCI Bus 0000:00
-  90000000-90ffffff : PCI Bus 0000:01
-    90000000-90ffffff : PCI Bus 0000:02
-      90000000-901fffff : PCI Bus 0000:03
-        90000000-90003fff : 0000:03:00.0
-          90000000-90003fff : nvme
-      90200000-903fffff : PCI Bus 0000:04
-        90200000-90203fff : 0000:04:00.0
-          90200000-90203fff : nvme
-      90400000-905fffff : PCI Bus 0000:05
-      90600000-907fffff : PCI Bus 0000:06
-      90800000-909fffff : PCI Bus 0000:07
-        90800000-90803fff : 0000:07:00.0
-          90800000-90803fff : nvme
-      90a00000-90bfffff : PCI Bus 0000:08
-      90c00000-90dfffff : PCI Bus 0000:09
-      90e00000-90ffffff : PCI Bus 0000:0a
-  91000000-93ffffff : PCI Bus 0000:0b
-    91000000-93ffffff : PCI Bus 0000:0c
-      91000000-91ffffff : PCI Bus 0000:0d
-        91000000-91ffffff : 0000:0d:00.0
+  90000000-92ffffff : PCI Bus 0000:0b
+    90000000-92ffffff : PCI Bus 0000:0c
+      90000000-90ffffff : PCI Bus 0000:0d
+        90000000-90ffffff : 0000:0d:00.0
+          90000000-90ffffff : nvidia
+      91000000-91ffffff : PCI Bus 0000:0e
+        91000000-91ffffff : 0000:0e:00.0
           91000000-91ffffff : nvidia
-      92000000-92ffffff : PCI Bus 0000:0e
-        92000000-92ffffff : 0000:0e:00.0
-          92000000-92ffffff : nvidia
-      93000000-932fffff : PCI Bus 0000:0f
-        93000000-931fffff : PCI Bus 0000:10
-          93000000-931fffff : PCI Bus 0000:11
-        93200000-9323ffff : 0000:0f:00.0
-        93240000-93241fff : 0000:0f:00.1
-          93240000-93241fff : plx_dma
-        93242000-93243fff : 0000:0f:00.2
-          93242000-93243fff : plx_dma
-        93244000-93245fff : 0000:0f:00.3
-          93244000-93245fff : plx_dma
-        93246000-93247fff : 0000:0f:00.4
-          93246000-93247fff : plx_dma
+      92000000-922fffff : PCI Bus 0000:0f
+        92000000-921fffff : PCI Bus 0000:10
+          92000000-921fffff : PCI Bus 0000:11
+        92200000-9223ffff : 0000:0f:00.0
+        92240000-92241fff : 0000:0f:00.1
+          92240000-92241fff : plx_dma
+        92242000-92243fff : 0000:0f:00.2
+          92242000-92243fff : plx_dma
+        92244000-92245fff : 0000:0f:00.3
+          92244000-92245fff : plx_dma
+        92246000-92247fff : 0000:0f:00.4
+          92246000-92247fff : plx_dma
   c0000000-c24fffff : PCI Bus 0000:12
     c0000000-c23fffff : PCI Bus 0000:13
       c0000000-c0ffffff : PCI Bus 0000:15
@@ -107,12 +101,45 @@
     c6000000-c70fffff : PCI Bus 0000:1e
       c6000000-c6ffffff : 0000:1e:00.0
       c7000000-c701ffff : 0000:1e:00.0
-  c7500000-c76fffff : PCI Bus 0000:1c
-    c7500000-c75fffff : 0000:1c:00.0
-    c7600000-c763ffff : 0000:1c:00.0
-      c7600000-c763ffff : mpt3sas
-    c7640000-c764ffff : 0000:1c:00.0
-      c7640000-c764ffff : mpt3sas
+  c7200000-c79fffff : PCI Bus 0000:01
+    c7200000-c79fffff : PCI Bus 0000:02
+      c7200000-c72fffff : PCI Bus 0000:0a
+        c7200000-c720ffff : 0000:0a:00.0
+        c7210000-c7213fff : 0000:0a:00.0
+          c7210000-c7213fff : nvme
+      c7300000-c73fffff : PCI Bus 0000:09
+        c7300000-c730ffff : 0000:09:00.0
+        c7310000-c7313fff : 0000:09:00.0
+          c7310000-c7313fff : nvme
+      c7400000-c74fffff : PCI Bus 0000:08
+        c7400000-c740ffff : 0000:08:00.0
+        c7410000-c7413fff : 0000:08:00.0
+          c7410000-c7413fff : nvme
+      c7500000-c75fffff : PCI Bus 0000:07
+        c7500000-c750ffff : 0000:07:00.0
+        c7510000-c7513fff : 0000:07:00.0
+          c7510000-c7513fff : nvme
+      c7600000-c76fffff : PCI Bus 0000:06
+        c7600000-c760ffff : 0000:06:00.0
+        c7610000-c7613fff : 0000:06:00.0
+          c7610000-c7613fff : nvme
+      c7700000-c77fffff : PCI Bus 0000:05
+        c7700000-c770ffff : 0000:05:00.0
+        c7710000-c7713fff : 0000:05:00.0
+          c7710000-c7713fff : nvme
+      c7800000-c78fffff : PCI Bus 0000:04
+        c7800000-c7803fff : 0000:04:00.0
+          c7800000-c7803fff : nvme
+      c7900000-c79fffff : PCI Bus 0000:03
+        c7900000-c790ffff : 0000:03:00.0
+        c7910000-c7913fff : 0000:03:00.0
+          c7910000-c7913fff : nvme
+  c7a00000-c7bfffff : PCI Bus 0000:1c
+    c7a00000-c7afffff : 0000:1c:00.0
+    c7b00000-c7b3ffff : 0000:1c:00.0
+      c7b00000-c7b3ffff : mpt3sas
+    c7b40000-c7b4ffff : 0000:1c:00.0
+      c7b40000-c7b4ffff : mpt3sas
 c7ffc000-c7ffcfff : dmar1
 c8000000-fbffbfff : PCI Bus 0000:80
   c8000000-caffffff : PCI Bus 0000:8d
@@ -187,10 +214,10 @@ fee00000-feefffff : pnp 00:01
 ff000000-ffffffff : Reserved
   ff000000-ffffffff : pnp 00:01
 100000000-1007fffffff : System RAM
-  f99da00000-f99ec02187 : Kernel code
-  f99ee00000-f99f908fff : Kernel rodata
-  f99fa00000-f99fdf50bf : Kernel data
-  f9a0135000-f9a05fffff : Kernel bss
+  97a4c00000-97a5e02187 : Kernel code
+  97a6000000-97a6b08fff : Kernel rodata
+  97a6c00000-97a6ff50bf : Kernel data
+  97a7335000-97a77fffff : Kernel bss
 20000000000-2ffffffffff : PCI Bus 0000:00
   20000000000-20000ffffff : PCI Bus 0000:01
     20000000000-20000ffffff : PCI Bus 0000:02
