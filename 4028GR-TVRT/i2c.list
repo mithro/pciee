@@ -1,0 +1,17 @@
+i2c-0	smbus     	SMBus I801 adapter at 7060      	SMBus adapter
+i2c-1	smbus     	SMBus I801 adapter at 7040      	SMBus adapter
+i2c-2	smbus     	SMBus I801 adapter at 7020      	SMBus adapter
+i2c-3	smbus     	SMBus I801 adapter at 0580      	SMBus adapter
+i2c-4	i2c       	AST i2c bit bus                 	I2C adapter
+i2c-5	i2c       	NVIDIA i2c adapter 2 at d:00.0  	I2C adapter
+i2c-6	i2c       	NVIDIA i2c adapter 2 at e:00.0  	I2C adapter
+i2c-7	i2c       	NVIDIA i2c adapter 2 at 14:00.0 	I2C adapter
+i2c-8	i2c       	NVIDIA i2c adapter 2 at 15:00.0 	I2C adapter
+i2c-9	i2c       	NVIDIA i2c adapter 3 at 82:00.0 	I2C adapter
+i2c-10	i2c       	NVIDIA i2c adapter 4 at 82:00.0 	I2C adapter
+i2c-11	i2c       	NVIDIA i2c adapter 5 at 82:00.0 	I2C adapter
+i2c-12	i2c       	NVIDIA i2c adapter 6 at 82:00.0 	I2C adapter
+i2c-13	i2c       	NVIDIA i2c adapter 2 at 8b:00.0 	I2C adapter
+i2c-14	i2c       	NVIDIA i2c adapter 2 at 8c:00.0 	I2C adapter
+i2c-15	i2c       	NVIDIA i2c adapter 2 at 8f:00.0 	I2C adapter
+i2c-16	i2c       	NVIDIA i2c adapter 2 at 90:00.0 	I2C adapter
