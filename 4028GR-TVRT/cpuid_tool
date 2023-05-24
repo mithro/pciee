@@ -1,0 +1,33 @@
+Writing decoded CPU report to `'
+CPUID is present
+CPU Info:
+------------------
+  vendor_str : `GenuineIntel'
+  vendor id  : 0
+  brand_str  : `Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz'
+  family     : 6 (06h)
+  model      : 15 (0Fh)
+  stepping   : 1 (01h)
+  ext_family : 6 (06h)
+  ext_model  : 79 (4Fh)
+  num_cores  : 14
+  num_logical: 28
+  tot_logical: 56
+  L1 D cache : 32 KB
+  L1 I cache : 32 KB
+  L2 cache   : 256 KB
+  L3 cache   : 35840 KB
+  L4 cache   : -1 KB
+  L1D assoc. : 8-way
+  L1I assoc. : 8-way
+  L2 assoc.  : 8-way
+  L3 assoc.  : 20-way
+  L4 assoc.  : -1-way
+  L1D line sz: 64 bytes
+  L1I line sz: 64 bytes
+  L2 line sz : 64 bytes
+  L3 line sz : 64 bytes
+  L4 line sz : -1 bytes
+  SSE units  : 128 bits (non-authoritative)
+  code name  : `Broadwell-E (Xeon)'
+  features   : fpu vme de pse tsc msr pae mce cx8 apic mtrr sep pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe pni pclmul dts64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 syscall xd movbe popcnt aes xsave osxsave avx rdtscp lm lahf_lm abm constant_tsc fma3 f16c rdrand x2apic avx2 bmi1 bmi2 hle rtm rdseed adx
