@@ -1,0 +1,1147 @@
+{'00:': {'01:': None,
+         '02:': {'03:': {'devices': {'03:00.0': ('030000', ('1a03', 'ASPEED Technology, Inc.'), ('2000', 'ASPEED Graphics Family'))}},
+                 'devices': {'02:00.0': ('060400', ('1a03', 'ASPEED Technology, Inc.'), ('1150', 'AST1150 PCI-to-PCI Bridge'))}},
+         'devices': {'00:00.0': ('060000', ('8086', 'Intel Corporation'), ('2020', 'Sky Lake-E DMI3 Registers')),
+                     '00:04.0': ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')),
+                     '00:04.1': ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')),
+                     '00:04.2': ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')),
+                     '00:04.3': ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')),
+                     '00:04.4': ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')),
+                     '00:04.5': ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')),
+                     '00:04.6': ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')),
+                     '00:04.7': ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')),
+                     '00:05.0': ('088000', ('8086', 'Intel Corporation'), ('2024', 'Sky Lake-E MM/Vt-d Configuration Registers')),
+                     '00:05.1': ('088000', ('8086', 'Intel Corporation'), ('2022', '??? - Unknown device?')),
+                     '00:05.2': ('088000', ('8086', 'Intel Corporation'), ('2025', 'Sky Lake-E RAS')),
+                     '00:05.4': ('080020', ('8086', 'Intel Corporation'), ('2026', 'Sky Lake-E IOAPIC')),
+                     '00:05.6': ('110100', ('8086', 'Intel Corporation'), ('2027', '??? - Unknown device?')),
+                     '00:07.0': ('088000', ('8086', 'Intel Corporation'), ('2028', '??? - Unknown device?')),
+                     '00:07.4': ('088000', ('8086', 'Intel Corporation'), ('202c', '??? - Unknown device?')),
+                     '00:07.7': ('088000', ('8086', 'Intel Corporation'), ('202d', '??? - Unknown device?')),
+                     '00:08.0': ('088000', ('8086', 'Intel Corporation'), ('2014', 'Sky Lake-E Ubox Registers')),
+                     '00:08.1': ('110100', ('8086', 'Intel Corporation'), ('2015', 'Sky Lake-E Ubox Registers')),
+                     '00:08.2': ('088000', ('8086', 'Intel Corporation'), ('2016', 'Sky Lake-E Ubox Registers')),
+                     '00:11.0': ('ff0000', ('8086', 'Intel Corporation'), ('a1ec', 'C620 Series Chipset Family MROM 0')),
+                     '00:11.5': ('010601', ('8086', 'Intel Corporation'), ('a1d2', 'C620 Series Chipset Family SSATA Controller [AHCI mode]')),
+                     '00:14.0': ('0c0330', ('8086', 'Intel Corporation'), ('a1af', 'C620 Series Chipset Family USB 3.0 xHCI Controller')),
+                     '00:14.2': ('118000', ('8086', 'Intel Corporation'), ('a1b1', 'C620 Series Chipset Family Thermal Subsystem')),
+                     '00:16.0': ('078000', ('8086', 'Intel Corporation'), ('a1ba', 'C620 Series Chipset Family MEI Controller #1')),
+                     '00:16.1': ('078000', ('8086', 'Intel Corporation'), ('a1bb', 'C620 Series Chipset Family MEI Controller #2')),
+                     '00:16.4': ('078000', ('8086', 'Intel Corporation'), ('a1be', 'C620 Series Chipset Family MEI Controller #3')),
+                     '00:17.0': ('010601', ('8086', 'Intel Corporation'), ('a182', 'C620 Series Chipset Family SATA Controller [AHCI mode]')),
+                     '00:1d.0': ('060400', ('8086', 'Intel Corporation'), ('a198', 'C620 Series Chipset Family PCI Express Root Port #9')),
+                     '00:1d.1': ('060400', ('8086', 'Intel Corporation'), ('a199', 'C620 Series Chipset Family PCI Express Root Port #10')),
+                     '00:1f.0': ('060100', ('8086', 'Intel Corporation'), ('a1c1', 'C621 Series Chipset LPC/eSPI Controller')),
+                     '00:1f.2': ('058000', ('8086', 'Intel Corporation'), ('a1a1', 'C620 Series Chipset Family Power Management Controller')),
+                     '00:1f.4': ('0c0500', ('8086', 'Intel Corporation'), ('a1a3', 'C620 Series Chipset Family SMBus')),
+                     '00:1f.5': ('0c8000', ('8086', 'Intel Corporation'), ('a1a4', 'C620 Series Chipset Family SPI Controller'))}},
+ '17:': {'18:': {'devices': {'18:00.0': ('010802', ('8086', 'Intel Corporation'), ('0a54', 'NVMe Datacenter SSD [3DNAND, Beta Rock Controller]'))}},
+         '19:': {'devices': {'19:00.0': ('010802', ('8086', 'Intel Corporation'), ('0a54', 'NVMe Datacenter SSD [3DNAND, Beta Rock Controller]'))}},
+         '1a:': {'devices': {'1a:00.0': ('010802', ('1987', 'Phison Electronics Corporation'), ('5013', 'PS5013 E13 NVMe Controller'))}},
+         '1b:': {'devices': {'1b:00.0': ('010802', ('2646', 'Kingston Technology Company, Inc.'), ('500f', '??? - Unknown device?'))}},
+         'devices': {'17:00.0': ('060400', ('8086', 'Intel Corporation'), ('2030', 'Sky Lake-E PCI Express Root Port A')),
+                     '17:01.0': ('060400', ('8086', 'Intel Corporation'), ('2031', 'Sky Lake-E PCI Express Root Port B')),
+                     '17:02.0': ('060400', ('8086', 'Intel Corporation'), ('2032', 'Sky Lake-E PCI Express Root Port C')),
+                     '17:03.0': ('060400', ('8086', 'Intel Corporation'), ('2033', 'Sky Lake-E PCI Express Root Port D')),
+                     '17:05.0': ('088000', ('8086', 'Intel Corporation'), ('2034', 'Sky Lake-E VT-d')),
+                     '17:05.2': ('088000', ('8086', 'Intel Corporation'), ('2035', 'Sky Lake-E RAS Configuration Registers')),
+                     '17:05.4': ('080020', ('8086', 'Intel Corporation'), ('2036', 'Sky Lake-E IOxAPIC Configuration Registers')),
+                     '17:05.6': ('110100', ('8086', 'Intel Corporation'), ('2037', '??? - Unknown device?')),
+                     '17:07.0': ('088000', ('8086', 'Intel Corporation'), ('2038', '??? - Unknown device?')),
+                     '17:07.1': ('088000', ('8086', 'Intel Corporation'), ('2039', '??? - Unknown device?')),
+                     '17:07.2': ('088000', ('8086', 'Intel Corporation'), ('203a', '??? - Unknown device?')),
+                     '17:07.3': ('088000', ('8086', 'Intel Corporation'), ('203b', '??? - Unknown device?')),
+                     '17:07.4': ('088000', ('8086', 'Intel Corporation'), ('203c', '??? - Unknown device?')),
+                     '17:07.7': ('088000', ('8086', 'Intel Corporation'), ('203d', '??? - Unknown device?')),
+                     '17:08.0': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '17:08.1': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '17:08.2': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '17:08.3': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '17:08.4': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '17:08.5': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '17:08.6': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '17:08.7': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '17:09.0': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '17:09.1': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '17:09.2': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '17:09.3': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '17:09.4': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '17:09.5': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '17:09.6': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '17:09.7': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '17:0a.0': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '17:0a.1': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '17:0a.2': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '17:0a.3': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '17:0a.4': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '17:0a.5': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '17:0a.6': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '17:0a.7': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '17:0b.0': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '17:0b.1': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '17:0b.2': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '17:0b.3': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '17:0e.0': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '17:0e.1': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '17:0e.2': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '17:0e.3': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '17:0e.4': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '17:0e.5': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '17:0e.6': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '17:0e.7': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '17:0f.0': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '17:0f.1': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '17:0f.2': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '17:0f.3': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '17:0f.4': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '17:0f.5': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '17:0f.6': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '17:0f.7': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '17:10.0': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '17:10.1': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '17:10.2': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '17:10.3': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '17:10.4': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '17:10.5': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '17:10.6': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '17:10.7': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '17:11.0': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '17:11.1': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '17:11.2': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '17:11.3': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '17:14.0': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '17:14.1': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '17:14.2': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '17:14.3': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '17:14.4': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '17:14.5': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '17:14.6': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '17:14.7': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '17:15.0': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '17:15.1': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '17:15.2': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '17:15.3': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '17:15.4': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '17:15.5': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '17:15.6': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '17:15.7': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '17:16.0': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '17:16.1': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '17:16.2': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '17:16.3': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '17:16.4': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '17:16.5': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '17:16.6': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '17:16.7': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '17:17.0': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '17:17.1': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '17:17.2': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '17:17.3': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '17:1d.0': ('088000', ('8086', 'Intel Corporation'), ('2054', 'Sky Lake-E CHA Registers')),
+                     '17:1d.1': ('088000', ('8086', 'Intel Corporation'), ('2055', 'Sky Lake-E CHA Registers')),
+                     '17:1d.2': ('088000', ('8086', 'Intel Corporation'), ('2056', 'Sky Lake-E CHA Registers')),
+                     '17:1d.3': ('088000', ('8086', 'Intel Corporation'), ('2057', 'Sky Lake-E CHA Registers')),
+                     '17:1e.0': ('088000', ('8086', 'Intel Corporation'), ('2080', 'Sky Lake-E PCU Registers')),
+                     '17:1e.1': ('088000', ('8086', 'Intel Corporation'), ('2081', 'Sky Lake-E PCU Registers')),
+                     '17:1e.2': ('088000', ('8086', 'Intel Corporation'), ('2082', 'Sky Lake-E PCU Registers')),
+                     '17:1e.3': ('088000', ('8086', 'Intel Corporation'), ('2083', 'Sky Lake-E PCU Registers')),
+                     '17:1e.4': ('088000', ('8086', 'Intel Corporation'), ('2084', 'Sky Lake-E PCU Registers')),
+                     '17:1e.5': ('088000', ('8086', 'Intel Corporation'), ('2085', 'Sky Lake-E PCU Registers')),
+                     '17:1e.6': ('088000', ('8086', 'Intel Corporation'), ('2086', 'Sky Lake-E PCU Registers')),
+                     '17:1f.0': ('088000', ('8086', 'Intel Corporation'), ('2078', 'Sky Lake-E PCU Registers')),
+                     '17:1f.1': ('088000', ('8086', 'Intel Corporation'), ('2079', '??? - Unknown device?')),
+                     '17:1f.2': ('088000', ('8086', 'Intel Corporation'), ('207a', 'Sky Lake-E PCU Registers')),
+                     '17:1f.3': ('088000', ('8086', 'Intel Corporation'), ('207b', '??? - Unknown device?')),
+                     '17:1f.4': ('088000', ('8086', 'Intel Corporation'), ('207c', '??? - Unknown device?')),
+                     '17:1f.5': ('088000', ('8086', 'Intel Corporation'), ('207d', '??? - Unknown device?')),
+                     '17:1f.6': ('088000', ('8086', 'Intel Corporation'), ('207e', '??? - Unknown device?')),
+                     '17:1f.7': ('088000', ('8086', 'Intel Corporation'), ('207f', '??? - Unknown device?'))}},
+ '3a:': {'3b:': {'devices': {'3b:00.0': ('010700', ('1000', 'Broadcom / LSI'), ('0097', 'SAS3008 PCI-Express Fusion-MPT SAS-3'))}},
+         'devices': {'3a:00.0': ('060400', ('8086', 'Intel Corporation'), ('2030', 'Sky Lake-E PCI Express Root Port A')),
+                     '3a:05.0': ('088000', ('8086', 'Intel Corporation'), ('2034', 'Sky Lake-E VT-d')),
+                     '3a:05.2': ('088000', ('8086', 'Intel Corporation'), ('2035', 'Sky Lake-E RAS Configuration Registers')),
+                     '3a:05.4': ('080020', ('8086', 'Intel Corporation'), ('2036', 'Sky Lake-E IOxAPIC Configuration Registers')),
+                     '3a:05.6': ('110100', ('8086', 'Intel Corporation'), ('2037', '??? - Unknown device?')),
+                     '3a:07.0': ('088000', ('8086', 'Intel Corporation'), ('2038', '??? - Unknown device?')),
+                     '3a:07.1': ('088000', ('8086', 'Intel Corporation'), ('2039', '??? - Unknown device?')),
+                     '3a:07.2': ('088000', ('8086', 'Intel Corporation'), ('203a', '??? - Unknown device?')),
+                     '3a:07.3': ('088000', ('8086', 'Intel Corporation'), ('203b', '??? - Unknown device?')),
+                     '3a:07.4': ('088000', ('8086', 'Intel Corporation'), ('203c', '??? - Unknown device?')),
+                     '3a:07.7': ('088000', ('8086', 'Intel Corporation'), ('203d', '??? - Unknown device?')),
+                     '3a:08.0': ('088000', ('8086', 'Intel Corporation'), ('2066', 'Sky Lake-E Integrated Memory Controller')),
+                     '3a:08.1': ('088000', ('8086', 'Intel Corporation'), ('2067', '??? - Unknown device?')),
+                     '3a:09.0': ('088000', ('8086', 'Intel Corporation'), ('2066', 'Sky Lake-E Integrated Memory Controller')),
+                     '3a:09.1': ('088000', ('8086', 'Intel Corporation'), ('2067', '??? - Unknown device?')),
+                     '3a:0a.0': ('088000', ('8086', 'Intel Corporation'), ('2040', 'Sky Lake-E Integrated Memory Controller')),
+                     '3a:0a.1': ('088000', ('8086', 'Intel Corporation'), ('2041', 'Sky Lake-E Integrated Memory Controller')),
+                     '3a:0a.2': ('088000', ('8086', 'Intel Corporation'), ('2042', 'Sky Lake-E Integrated Memory Controller')),
+                     '3a:0a.3': ('088000', ('8086', 'Intel Corporation'), ('2043', 'Sky Lake-E Integrated Memory Controller')),
+                     '3a:0a.4': ('088000', ('8086', 'Intel Corporation'), ('2044', 'Sky Lake-E Integrated Memory Controller')),
+                     '3a:0a.5': ('088000', ('8086', 'Intel Corporation'), ('2045', 'Sky Lake-E LM Channel 1')),
+                     '3a:0a.6': ('088000', ('8086', 'Intel Corporation'), ('2046', 'Sky Lake-E LMS Channel 1')),
+                     '3a:0a.7': ('088000', ('8086', 'Intel Corporation'), ('2047', 'Sky Lake-E LMDP Channel 1')),
+                     '3a:0b.0': ('088000', ('8086', 'Intel Corporation'), ('2048', 'Sky Lake-E DECS Channel 2')),
+                     '3a:0b.1': ('088000', ('8086', 'Intel Corporation'), ('2049', 'Sky Lake-E LM Channel 2')),
+                     '3a:0b.2': ('088000', ('8086', 'Intel Corporation'), ('204a', 'Sky Lake-E LMS Channel 2')),
+                     '3a:0b.3': ('088000', ('8086', 'Intel Corporation'), ('204b', 'Sky Lake-E LMDP Channel 2')),
+                     '3a:0c.0': ('088000', ('8086', 'Intel Corporation'), ('2040', 'Sky Lake-E Integrated Memory Controller')),
+                     '3a:0c.1': ('088000', ('8086', 'Intel Corporation'), ('2041', 'Sky Lake-E Integrated Memory Controller')),
+                     '3a:0c.2': ('088000', ('8086', 'Intel Corporation'), ('2042', 'Sky Lake-E Integrated Memory Controller')),
+                     '3a:0c.3': ('088000', ('8086', 'Intel Corporation'), ('2043', 'Sky Lake-E Integrated Memory Controller')),
+                     '3a:0c.4': ('088000', ('8086', 'Intel Corporation'), ('2044', 'Sky Lake-E Integrated Memory Controller')),
+                     '3a:0c.5': ('088000', ('8086', 'Intel Corporation'), ('2045', 'Sky Lake-E LM Channel 1')),
+                     '3a:0c.6': ('088000', ('8086', 'Intel Corporation'), ('2046', 'Sky Lake-E LMS Channel 1')),
+                     '3a:0c.7': ('088000', ('8086', 'Intel Corporation'), ('2047', 'Sky Lake-E LMDP Channel 1')),
+                     '3a:0d.0': ('088000', ('8086', 'Intel Corporation'), ('2048', 'Sky Lake-E DECS Channel 2')),
+                     '3a:0d.1': ('088000', ('8086', 'Intel Corporation'), ('2049', 'Sky Lake-E LM Channel 2')),
+                     '3a:0d.2': ('088000', ('8086', 'Intel Corporation'), ('204a', 'Sky Lake-E LMS Channel 2')),
+                     '3a:0d.3': ('088000', ('8086', 'Intel Corporation'), ('204b', 'Sky Lake-E LMDP Channel 2'))}},
+ '5d:': {'5e:': {'devices': {'5e:00.0': ('020000', ('8086', 'Intel Corporation'), ('1563', 'Ethernet Controller 10G X550T')),
+                             '5e:00.1': ('020000', ('8086', 'Intel Corporation'), ('1563', 'Ethernet Controller 10G X550T'))}},
+         '5f:': {'devices': {'5f:00.0': ('020000', ('15b3', 'Mellanox Technologies'), ('1015', 'MT27710 Family [ConnectX-4 Lx]')),
+                             '5f:00.1': ('020000', ('15b3', 'Mellanox Technologies'), ('1015', 'MT27710 Family [ConnectX-4 Lx]'))}},
+         'devices': {'5d:00.0': ('060400', ('8086', 'Intel Corporation'), ('2030', 'Sky Lake-E PCI Express Root Port A')),
+                     '5d:02.0': ('060400', ('8086', 'Intel Corporation'), ('2032', 'Sky Lake-E PCI Express Root Port C')),
+                     '5d:05.0': ('088000', ('8086', 'Intel Corporation'), ('2034', 'Sky Lake-E VT-d')),
+                     '5d:05.2': ('088000', ('8086', 'Intel Corporation'), ('2035', 'Sky Lake-E RAS Configuration Registers')),
+                     '5d:05.4': ('080020', ('8086', 'Intel Corporation'), ('2036', 'Sky Lake-E IOxAPIC Configuration Registers')),
+                     '5d:05.6': ('110100', ('8086', 'Intel Corporation'), ('2037', '??? - Unknown device?')),
+                     '5d:07.0': ('088000', ('8086', 'Intel Corporation'), ('2038', '??? - Unknown device?')),
+                     '5d:07.1': ('088000', ('8086', 'Intel Corporation'), ('2039', '??? - Unknown device?')),
+                     '5d:07.2': ('088000', ('8086', 'Intel Corporation'), ('203a', '??? - Unknown device?')),
+                     '5d:07.3': ('088000', ('8086', 'Intel Corporation'), ('203b', '??? - Unknown device?')),
+                     '5d:07.4': ('088000', ('8086', 'Intel Corporation'), ('203c', '??? - Unknown device?')),
+                     '5d:07.7': ('088000', ('8086', 'Intel Corporation'), ('203d', '??? - Unknown device?')),
+                     '5d:0e.0': ('110100', ('8086', 'Intel Corporation'), ('2058', 'Sky Lake-E KTI 0')),
+                     '5d:0e.1': ('088000', ('8086', 'Intel Corporation'), ('2059', 'Sky Lake-E UPI Registers')),
+                     '5d:0e.2': ('088000', ('8086', 'Intel Corporation'), ('205a', '??? - Unknown device?')),
+                     '5d:0e.3': ('088000', ('8086', 'Intel Corporation'), ('205b', '??? - Unknown device?')),
+                     '5d:0f.0': ('110100', ('8086', 'Intel Corporation'), ('2058', 'Sky Lake-E KTI 0')),
+                     '5d:0f.1': ('088000', ('8086', 'Intel Corporation'), ('2059', 'Sky Lake-E UPI Registers')),
+                     '5d:0f.2': ('088000', ('8086', 'Intel Corporation'), ('205a', '??? - Unknown device?')),
+                     '5d:10.0': ('110100', ('8086', 'Intel Corporation'), ('2058', 'Sky Lake-E KTI 0')),
+                     '5d:10.1': ('088000', ('8086', 'Intel Corporation'), ('2059', 'Sky Lake-E UPI Registers')),
+                     '5d:10.2': ('088000', ('8086', 'Intel Corporation'), ('205a', '??? - Unknown device?')),
+                     '5d:10.3': ('088000', ('8086', 'Intel Corporation'), ('205b', '??? - Unknown device?')),
+                     '5d:12.0': ('110100', ('8086', 'Intel Corporation'), ('204c', 'Sky Lake-E M3KTI Registers')),
+                     '5d:12.1': ('110100', ('8086', 'Intel Corporation'), ('204d', 'Sky Lake-E M3KTI Registers')),
+                     '5d:12.2': ('088000', ('8086', 'Intel Corporation'), ('204e', 'Sky Lake-E M3KTI Registers')),
+                     '5d:12.3': ('088000', ('8086', 'Intel Corporation'), ('204f', '??? - Unknown device?')),
+                     '5d:12.4': ('110100', ('8086', 'Intel Corporation'), ('204c', 'Sky Lake-E M3KTI Registers')),
+                     '5d:12.5': ('110100', ('8086', 'Intel Corporation'), ('204d', 'Sky Lake-E M3KTI Registers')),
+                     '5d:12.6': ('088000', ('8086', 'Intel Corporation'), ('204e', 'Sky Lake-E M3KTI Registers')),
+                     '5d:12.7': ('088000', ('8086', 'Intel Corporation'), ('204f', '??? - Unknown device?')),
+                     '5d:15.0': ('088000', ('8086', 'Intel Corporation'), ('2018', 'Sky Lake-E M2PCI Registers')),
+                     '5d:15.3': ('088000', ('8086', 'Intel Corporation'), ('2019', '??? - Unknown device?')),
+                     '5d:16.0': ('088000', ('8086', 'Intel Corporation'), ('2018', 'Sky Lake-E M2PCI Registers')),
+                     '5d:16.3': ('088000', ('8086', 'Intel Corporation'), ('2019', '??? - Unknown device?')),
+                     '5d:16.4': ('088000', ('8086', 'Intel Corporation'), ('2018', 'Sky Lake-E M2PCI Registers')),
+                     '5d:16.7': ('088000', ('8086', 'Intel Corporation'), ('2019', '??? - Unknown device?')),
+                     '5d:17.0': ('088000', ('8086', 'Intel Corporation'), ('2018', 'Sky Lake-E M2PCI Registers')),
+                     '5d:17.3': ('088000', ('8086', 'Intel Corporation'), ('2019', '??? - Unknown device?'))}},
+ '80:': {'devices': {'80:04.0': ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')),
+                     '80:04.1': ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')),
+                     '80:04.2': ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')),
+                     '80:04.3': ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')),
+                     '80:04.4': ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')),
+                     '80:04.5': ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')),
+                     '80:04.6': ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')),
+                     '80:04.7': ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')),
+                     '80:05.0': ('088000', ('8086', 'Intel Corporation'), ('2024', 'Sky Lake-E MM/Vt-d Configuration Registers')),
+                     '80:05.1': ('088000', ('8086', 'Intel Corporation'), ('2022', '??? - Unknown device?')),
+                     '80:05.2': ('088000', ('8086', 'Intel Corporation'), ('2025', 'Sky Lake-E RAS')),
+                     '80:05.4': ('080020', ('8086', 'Intel Corporation'), ('2026', 'Sky Lake-E IOAPIC')),
+                     '80:05.6': ('110100', ('8086', 'Intel Corporation'), ('2027', '??? - Unknown device?')),
+                     '80:07.0': ('088000', ('8086', 'Intel Corporation'), ('2028', '??? - Unknown device?')),
+                     '80:07.4': ('088000', ('8086', 'Intel Corporation'), ('202c', '??? - Unknown device?')),
+                     '80:07.7': ('088000', ('8086', 'Intel Corporation'), ('202d', '??? - Unknown device?')),
+                     '80:08.0': ('088000', ('8086', 'Intel Corporation'), ('2014', 'Sky Lake-E Ubox Registers')),
+                     '80:08.1': ('110100', ('8086', 'Intel Corporation'), ('2015', 'Sky Lake-E Ubox Registers')),
+                     '80:08.2': ('088000', ('8086', 'Intel Corporation'), ('2016', 'Sky Lake-E Ubox Registers'))}},
+ '85:': {'devices': {'85:05.0': ('088000', ('8086', 'Intel Corporation'), ('2034', 'Sky Lake-E VT-d')),
+                     '85:05.2': ('088000', ('8086', 'Intel Corporation'), ('2035', 'Sky Lake-E RAS Configuration Registers')),
+                     '85:05.4': ('080020', ('8086', 'Intel Corporation'), ('2036', 'Sky Lake-E IOxAPIC Configuration Registers')),
+                     '85:05.6': ('110100', ('8086', 'Intel Corporation'), ('2037', '??? - Unknown device?')),
+                     '85:07.0': ('088000', ('8086', 'Intel Corporation'), ('2038', '??? - Unknown device?')),
+                     '85:07.1': ('088000', ('8086', 'Intel Corporation'), ('2039', '??? - Unknown device?')),
+                     '85:07.2': ('088000', ('8086', 'Intel Corporation'), ('203a', '??? - Unknown device?')),
+                     '85:07.3': ('088000', ('8086', 'Intel Corporation'), ('203b', '??? - Unknown device?')),
+                     '85:07.4': ('088000', ('8086', 'Intel Corporation'), ('203c', '??? - Unknown device?')),
+                     '85:07.7': ('088000', ('8086', 'Intel Corporation'), ('203d', '??? - Unknown device?')),
+                     '85:08.0': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '85:08.1': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '85:08.2': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '85:08.3': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '85:08.4': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '85:08.5': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '85:08.6': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '85:08.7': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '85:09.0': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '85:09.1': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '85:09.2': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '85:09.3': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '85:09.4': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '85:09.5': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '85:09.6': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '85:09.7': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '85:0a.0': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '85:0a.1': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '85:0a.2': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '85:0a.3': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '85:0a.4': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '85:0a.5': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '85:0a.6': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '85:0a.7': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '85:0b.0': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '85:0b.1': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '85:0b.2': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '85:0b.3': ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')),
+                     '85:0e.0': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '85:0e.1': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '85:0e.2': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '85:0e.3': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '85:0e.4': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '85:0e.5': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '85:0e.6': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '85:0e.7': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '85:0f.0': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '85:0f.1': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '85:0f.2': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '85:0f.3': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '85:0f.4': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '85:0f.5': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '85:0f.6': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '85:0f.7': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '85:10.0': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '85:10.1': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '85:10.2': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '85:10.3': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '85:10.4': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '85:10.5': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '85:10.6': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '85:10.7': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '85:11.0': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '85:11.1': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '85:11.2': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '85:11.3': ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')),
+                     '85:14.0': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '85:14.1': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '85:14.2': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '85:14.3': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '85:14.4': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '85:14.5': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '85:14.6': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '85:14.7': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '85:15.0': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '85:15.1': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '85:15.2': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '85:15.3': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '85:15.4': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '85:15.5': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '85:15.6': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '85:15.7': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '85:16.0': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '85:16.1': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '85:16.2': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '85:16.3': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '85:16.4': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '85:16.5': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '85:16.6': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '85:16.7': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '85:17.0': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '85:17.1': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '85:17.2': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '85:17.3': ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')),
+                     '85:1d.0': ('088000', ('8086', 'Intel Corporation'), ('2054', 'Sky Lake-E CHA Registers')),
+                     '85:1d.1': ('088000', ('8086', 'Intel Corporation'), ('2055', 'Sky Lake-E CHA Registers')),
+                     '85:1d.2': ('088000', ('8086', 'Intel Corporation'), ('2056', 'Sky Lake-E CHA Registers')),
+                     '85:1d.3': ('088000', ('8086', 'Intel Corporation'), ('2057', 'Sky Lake-E CHA Registers')),
+                     '85:1e.0': ('088000', ('8086', 'Intel Corporation'), ('2080', 'Sky Lake-E PCU Registers')),
+                     '85:1e.1': ('088000', ('8086', 'Intel Corporation'), ('2081', 'Sky Lake-E PCU Registers')),
+                     '85:1e.2': ('088000', ('8086', 'Intel Corporation'), ('2082', 'Sky Lake-E PCU Registers')),
+                     '85:1e.3': ('088000', ('8086', 'Intel Corporation'), ('2083', 'Sky Lake-E PCU Registers')),
+                     '85:1e.4': ('088000', ('8086', 'Intel Corporation'), ('2084', 'Sky Lake-E PCU Registers')),
+                     '85:1e.5': ('088000', ('8086', 'Intel Corporation'), ('2085', 'Sky Lake-E PCU Registers')),
+                     '85:1e.6': ('088000', ('8086', 'Intel Corporation'), ('2086', 'Sky Lake-E PCU Registers')),
+                     '85:1f.0': ('088000', ('8086', 'Intel Corporation'), ('2078', 'Sky Lake-E PCU Registers')),
+                     '85:1f.1': ('088000', ('8086', 'Intel Corporation'), ('2079', '??? - Unknown device?')),
+                     '85:1f.2': ('088000', ('8086', 'Intel Corporation'), ('207a', 'Sky Lake-E PCU Registers')),
+                     '85:1f.3': ('088000', ('8086', 'Intel Corporation'), ('207b', '??? - Unknown device?')),
+                     '85:1f.4': ('088000', ('8086', 'Intel Corporation'), ('207c', '??? - Unknown device?')),
+                     '85:1f.5': ('088000', ('8086', 'Intel Corporation'), ('207d', '??? - Unknown device?')),
+                     '85:1f.6': ('088000', ('8086', 'Intel Corporation'), ('207e', '??? - Unknown device?')),
+                     '85:1f.7': ('088000', ('8086', 'Intel Corporation'), ('207f', '??? - Unknown device?'))}},
+ 'ae:': {'af:': {'b0:': {'b1:': {'devices': {'b1:00.0': ('010802',
+                                                         ('8086', 'Intel Corporation'),
+                                                         ('0a54', 'NVMe Datacenter SSD [3DNAND, Beta Rock Controller]'))}},
+                         'b2:': {'devices': {'b2:00.0': ('010802',
+                                                         ('8086', 'Intel Corporation'),
+                                                         ('0a54', 'NVMe Datacenter SSD [3DNAND, Beta Rock Controller]'))}},
+                         'b3:': {'devices': {'b3:00.0': ('010802', ('8086', 'Intel Corporation'), ('f1aa', '??? - Unknown device?'))}},
+                         'b4:': {'devices': {'b4:00.0': ('010802', ('c0a9', 'Micron/Crucial Technology'), ('540a', 'P2 NVMe PCIe SSD'))}},
+                         'b5:': None,
+                         'b6:': None,
+                         'b7:': None,
+                         'b8:': None,
+                         'devices': {'b0:08.0': ('060400',
+                                                 ('10b5', 'PLX Technology, Inc.'),
+                                                 ('8749', 'PEX 8749 48-Lane, 18-Port PCI Express Gen 3 (8.0 GT/s) Multi-Root Switch with DMA')),
+                                     'b0:09.0': ('060400',
+                                                 ('10b5', 'PLX Technology, Inc.'),
+                                                 ('8749', 'PEX 8749 48-Lane, 18-Port PCI Express Gen 3 (8.0 GT/s) Multi-Root Switch with DMA')),
+                                     'b0:0a.0': ('060400',
+                                                 ('10b5', 'PLX Technology, Inc.'),
+                                                 ('8749', 'PEX 8749 48-Lane, 18-Port PCI Express Gen 3 (8.0 GT/s) Multi-Root Switch with DMA')),
+                                     'b0:0b.0': ('060400',
+                                                 ('10b5', 'PLX Technology, Inc.'),
+                                                 ('8749', 'PEX 8749 48-Lane, 18-Port PCI Express Gen 3 (8.0 GT/s) Multi-Root Switch with DMA')),
+                                     'b0:10.0': ('060400',
+                                                 ('10b5', 'PLX Technology, Inc.'),
+                                                 ('8749', 'PEX 8749 48-Lane, 18-Port PCI Express Gen 3 (8.0 GT/s) Multi-Root Switch with DMA')),
+                                     'b0:11.0': ('060400',
+                                                 ('10b5', 'PLX Technology, Inc.'),
+                                                 ('8749', 'PEX 8749 48-Lane, 18-Port PCI Express Gen 3 (8.0 GT/s) Multi-Root Switch with DMA')),
+                                     'b0:12.0': ('060400',
+                                                 ('10b5', 'PLX Technology, Inc.'),
+                                                 ('8749', 'PEX 8749 48-Lane, 18-Port PCI Express Gen 3 (8.0 GT/s) Multi-Root Switch with DMA')),
+                                     'b0:13.0': ('060400',
+                                                 ('10b5', 'PLX Technology, Inc.'),
+                                                 ('8749', 'PEX 8749 48-Lane, 18-Port PCI Express Gen 3 (8.0 GT/s) Multi-Root Switch with DMA'))}},
+                 'devices': {'af:00.0': ('060400',
+                                         ('10b5', 'PLX Technology, Inc.'),
+                                         ('8749', 'PEX 8749 48-Lane, 18-Port PCI Express Gen 3 (8.0 GT/s) Multi-Root Switch with DMA'))}},
+         'devices': {'ae:00.0': ('060400', ('8086', 'Intel Corporation'), ('2030', 'Sky Lake-E PCI Express Root Port A')),
+                     'ae:05.0': ('088000', ('8086', 'Intel Corporation'), ('2034', 'Sky Lake-E VT-d')),
+                     'ae:05.2': ('088000', ('8086', 'Intel Corporation'), ('2035', 'Sky Lake-E RAS Configuration Registers')),
+                     'ae:05.4': ('080020', ('8086', 'Intel Corporation'), ('2036', 'Sky Lake-E IOxAPIC Configuration Registers')),
+                     'ae:05.6': ('110100', ('8086', 'Intel Corporation'), ('2037', '??? - Unknown device?')),
+                     'ae:07.0': ('088000', ('8086', 'Intel Corporation'), ('2038', '??? - Unknown device?')),
+                     'ae:07.1': ('088000', ('8086', 'Intel Corporation'), ('2039', '??? - Unknown device?')),
+                     'ae:07.2': ('088000', ('8086', 'Intel Corporation'), ('203a', '??? - Unknown device?')),
+                     'ae:07.3': ('088000', ('8086', 'Intel Corporation'), ('203b', '??? - Unknown device?')),
+                     'ae:07.4': ('088000', ('8086', 'Intel Corporation'), ('203c', '??? - Unknown device?')),
+                     'ae:07.7': ('088000', ('8086', 'Intel Corporation'), ('203d', '??? - Unknown device?')),
+                     'ae:08.0': ('088000', ('8086', 'Intel Corporation'), ('2066', 'Sky Lake-E Integrated Memory Controller')),
+                     'ae:08.1': ('088000', ('8086', 'Intel Corporation'), ('2067', '??? - Unknown device?')),
+                     'ae:09.0': ('088000', ('8086', 'Intel Corporation'), ('2066', 'Sky Lake-E Integrated Memory Controller')),
+                     'ae:09.1': ('088000', ('8086', 'Intel Corporation'), ('2067', '??? - Unknown device?')),
+                     'ae:0a.0': ('088000', ('8086', 'Intel Corporation'), ('2040', 'Sky Lake-E Integrated Memory Controller')),
+                     'ae:0a.1': ('088000', ('8086', 'Intel Corporation'), ('2041', 'Sky Lake-E Integrated Memory Controller')),
+                     'ae:0a.2': ('088000', ('8086', 'Intel Corporation'), ('2042', 'Sky Lake-E Integrated Memory Controller')),
+                     'ae:0a.3': ('088000', ('8086', 'Intel Corporation'), ('2043', 'Sky Lake-E Integrated Memory Controller')),
+                     'ae:0a.4': ('088000', ('8086', 'Intel Corporation'), ('2044', 'Sky Lake-E Integrated Memory Controller')),
+                     'ae:0a.5': ('088000', ('8086', 'Intel Corporation'), ('2045', 'Sky Lake-E LM Channel 1')),
+                     'ae:0a.6': ('088000', ('8086', 'Intel Corporation'), ('2046', 'Sky Lake-E LMS Channel 1')),
+                     'ae:0a.7': ('088000', ('8086', 'Intel Corporation'), ('2047', 'Sky Lake-E LMDP Channel 1')),
+                     'ae:0b.0': ('088000', ('8086', 'Intel Corporation'), ('2048', 'Sky Lake-E DECS Channel 2')),
+                     'ae:0b.1': ('088000', ('8086', 'Intel Corporation'), ('2049', 'Sky Lake-E LM Channel 2')),
+                     'ae:0b.2': ('088000', ('8086', 'Intel Corporation'), ('204a', 'Sky Lake-E LMS Channel 2')),
+                     'ae:0b.3': ('088000', ('8086', 'Intel Corporation'), ('204b', 'Sky Lake-E LMDP Channel 2')),
+                     'ae:0c.0': ('088000', ('8086', 'Intel Corporation'), ('2040', 'Sky Lake-E Integrated Memory Controller')),
+                     'ae:0c.1': ('088000', ('8086', 'Intel Corporation'), ('2041', 'Sky Lake-E Integrated Memory Controller')),
+                     'ae:0c.2': ('088000', ('8086', 'Intel Corporation'), ('2042', 'Sky Lake-E Integrated Memory Controller')),
+                     'ae:0c.3': ('088000', ('8086', 'Intel Corporation'), ('2043', 'Sky Lake-E Integrated Memory Controller')),
+                     'ae:0c.4': ('088000', ('8086', 'Intel Corporation'), ('2044', 'Sky Lake-E Integrated Memory Controller')),
+                     'ae:0c.5': ('088000', ('8086', 'Intel Corporation'), ('2045', 'Sky Lake-E LM Channel 1')),
+                     'ae:0c.6': ('088000', ('8086', 'Intel Corporation'), ('2046', 'Sky Lake-E LMS Channel 1')),
+                     'ae:0c.7': ('088000', ('8086', 'Intel Corporation'), ('2047', 'Sky Lake-E LMDP Channel 1')),
+                     'ae:0d.0': ('088000', ('8086', 'Intel Corporation'), ('2048', 'Sky Lake-E DECS Channel 2')),
+                     'ae:0d.1': ('088000', ('8086', 'Intel Corporation'), ('2049', 'Sky Lake-E LM Channel 2')),
+                     'ae:0d.2': ('088000', ('8086', 'Intel Corporation'), ('204a', 'Sky Lake-E LMS Channel 2')),
+                     'ae:0d.3': ('088000', ('8086', 'Intel Corporation'), ('204b', 'Sky Lake-E LMDP Channel 2'))}},
+ 'd7:': {'d8:': {'d9:': {'da:': None, 'devices': {'d9:08.0': ('060400', ('10b5', 'PLX Technology, Inc.'), ('8733', '??? - Unknown device?'))}},
+                 'devices': {'d8:00.0': ('060400', ('10b5', 'PLX Technology, Inc.'), ('8733', '??? - Unknown device?')),
+                             'd8:00.1': ('088000', ('10b5', 'PLX Technology, Inc.'), ('87d0', 'PEX PCI Express Switch DMA interface')),
+                             'd8:00.2': ('088000', ('10b5', 'PLX Technology, Inc.'), ('87d0', 'PEX PCI Express Switch DMA interface')),
+                             'd8:00.3': ('088000', ('10b5', 'PLX Technology, Inc.'), ('87d0', 'PEX PCI Express Switch DMA interface')),
+                             'd8:00.4': ('088000', ('10b5', 'PLX Technology, Inc.'), ('87d0', 'PEX PCI Express Switch DMA interface'))}},
+         'devices': {'d7:00.0': ('060400', ('8086', 'Intel Corporation'), ('2030', 'Sky Lake-E PCI Express Root Port A')),
+                     'd7:05.0': ('088000', ('8086', 'Intel Corporation'), ('2034', 'Sky Lake-E VT-d')),
+                     'd7:05.2': ('088000', ('8086', 'Intel Corporation'), ('2035', 'Sky Lake-E RAS Configuration Registers')),
+                     'd7:05.4': ('080020', ('8086', 'Intel Corporation'), ('2036', 'Sky Lake-E IOxAPIC Configuration Registers')),
+                     'd7:05.6': ('110100', ('8086', 'Intel Corporation'), ('2037', '??? - Unknown device?')),
+                     'd7:07.0': ('088000', ('8086', 'Intel Corporation'), ('2038', '??? - Unknown device?')),
+                     'd7:07.1': ('088000', ('8086', 'Intel Corporation'), ('2039', '??? - Unknown device?')),
+                     'd7:07.2': ('088000', ('8086', 'Intel Corporation'), ('203a', '??? - Unknown device?')),
+                     'd7:07.3': ('088000', ('8086', 'Intel Corporation'), ('203b', '??? - Unknown device?')),
+                     'd7:07.4': ('088000', ('8086', 'Intel Corporation'), ('203c', '??? - Unknown device?')),
+                     'd7:07.7': ('088000', ('8086', 'Intel Corporation'), ('203d', '??? - Unknown device?')),
+                     'd7:0e.0': ('110100', ('8086', 'Intel Corporation'), ('2058', 'Sky Lake-E KTI 0')),
+                     'd7:0e.1': ('088000', ('8086', 'Intel Corporation'), ('2059', 'Sky Lake-E UPI Registers')),
+                     'd7:0e.2': ('088000', ('8086', 'Intel Corporation'), ('205a', '??? - Unknown device?')),
+                     'd7:0e.3': ('088000', ('8086', 'Intel Corporation'), ('205b', '??? - Unknown device?')),
+                     'd7:0f.0': ('110100', ('8086', 'Intel Corporation'), ('2058', 'Sky Lake-E KTI 0')),
+                     'd7:0f.1': ('088000', ('8086', 'Intel Corporation'), ('2059', 'Sky Lake-E UPI Registers')),
+                     'd7:0f.2': ('088000', ('8086', 'Intel Corporation'), ('205a', '??? - Unknown device?')),
+                     'd7:10.0': ('110100', ('8086', 'Intel Corporation'), ('2058', 'Sky Lake-E KTI 0')),
+                     'd7:10.1': ('088000', ('8086', 'Intel Corporation'), ('2059', 'Sky Lake-E UPI Registers')),
+                     'd7:10.2': ('088000', ('8086', 'Intel Corporation'), ('205a', '??? - Unknown device?')),
+                     'd7:10.3': ('088000', ('8086', 'Intel Corporation'), ('205b', '??? - Unknown device?')),
+                     'd7:12.0': ('110100', ('8086', 'Intel Corporation'), ('204c', 'Sky Lake-E M3KTI Registers')),
+                     'd7:12.1': ('110100', ('8086', 'Intel Corporation'), ('204d', 'Sky Lake-E M3KTI Registers')),
+                     'd7:12.2': ('088000', ('8086', 'Intel Corporation'), ('204e', 'Sky Lake-E M3KTI Registers')),
+                     'd7:12.3': ('088000', ('8086', 'Intel Corporation'), ('204f', '??? - Unknown device?')),
+                     'd7:12.4': ('110100', ('8086', 'Intel Corporation'), ('204c', 'Sky Lake-E M3KTI Registers')),
+                     'd7:12.5': ('110100', ('8086', 'Intel Corporation'), ('204d', 'Sky Lake-E M3KTI Registers')),
+                     'd7:12.6': ('088000', ('8086', 'Intel Corporation'), ('204e', 'Sky Lake-E M3KTI Registers')),
+                     'd7:12.7': ('088000', ('8086', 'Intel Corporation'), ('204f', '??? - Unknown device?')),
+                     'd7:15.0': ('088000', ('8086', 'Intel Corporation'), ('2018', 'Sky Lake-E M2PCI Registers')),
+                     'd7:15.3': ('088000', ('8086', 'Intel Corporation'), ('2019', '??? - Unknown device?')),
+                     'd7:16.0': ('088000', ('8086', 'Intel Corporation'), ('2018', 'Sky Lake-E M2PCI Registers')),
+                     'd7:16.3': ('088000', ('8086', 'Intel Corporation'), ('2019', '??? - Unknown device?')),
+                     'd7:16.4': ('088000', ('8086', 'Intel Corporation'), ('2018', 'Sky Lake-E M2PCI Registers')),
+                     'd7:16.7': ('088000', ('8086', 'Intel Corporation'), ('2019', '??? - Unknown device?')),
+                     'd7:17.0': ('088000', ('8086', 'Intel Corporation'), ('2018', 'Sky Lake-E M2PCI Registers')),
+                     'd7:17.3': ('088000', ('8086', 'Intel Corporation'), ('2019', '??? - Unknown device?'))}}}
+
+   00:00.0 ('060000', ('8086', 'Intel Corporation'), ('2020', 'Sky Lake-E DMI3 Registers')) ?/8.0 x0/x4
+   00:04.0 ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')) ?/? x0/x?
+     0x0000383ffff1c000 0x0000383ffff1ffff 0x0000000000140204
+   00:04.1 ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')) ?/? x0/x?
+     0x0000383ffff18000 0x0000383ffff1bfff 0x0000000000140204
+   00:04.2 ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')) ?/? x0/x?
+     0x0000383ffff14000 0x0000383ffff17fff 0x0000000000140204
+   00:04.3 ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')) ?/? x0/x?
+     0x0000383ffff10000 0x0000383ffff13fff 0x0000000000140204
+   00:04.4 ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')) ?/? x0/x?
+     0x0000383ffff0c000 0x0000383ffff0ffff 0x0000000000140204
+   00:04.5 ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')) ?/? x0/x?
+     0x0000383ffff08000 0x0000383ffff0bfff 0x0000000000140204
+   00:04.6 ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')) ?/? x0/x?
+     0x0000383ffff04000 0x0000383ffff07fff 0x0000000000140204
+   00:04.7 ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')) ?/? x0/x?
+     0x0000383ffff00000 0x0000383ffff03fff 0x0000000000140204
+   00:05.0 ('088000', ('8086', 'Intel Corporation'), ('2024', 'Sky Lake-E MM/Vt-d Configuration Registers')) ?/? x0/x?
+   00:05.1 ('088000', ('8086', 'Intel Corporation'), ('2022', '??? - Unknown device?')) ?/? x0/x?
+   00:05.2 ('088000', ('8086', 'Intel Corporation'), ('2025', 'Sky Lake-E RAS')) ?/? x0/x?
+   00:05.4 ('080020', ('8086', 'Intel Corporation'), ('2026', 'Sky Lake-E IOAPIC')) ?/? x0/x?
+     0x000000009d21a000 0x000000009d21afff 0x0000000000040200
+   00:05.6 ('110100', ('8086', 'Intel Corporation'), ('2027', '??? - Unknown device?')) ?/? x0/x?
+   00:07.0 ('088000', ('8086', 'Intel Corporation'), ('2028', '??? - Unknown device?')) ?/? x0/x?
+   00:07.4 ('088000', ('8086', 'Intel Corporation'), ('202c', '??? - Unknown device?')) ?/? x0/x?
+   00:07.7 ('088000', ('8086', 'Intel Corporation'), ('202d', '??? - Unknown device?')) ?/? x0/x?
+   00:08.0 ('088000', ('8086', 'Intel Corporation'), ('2014', 'Sky Lake-E Ubox Registers')) ?/? x0/x?
+   00:08.1 ('110100', ('8086', 'Intel Corporation'), ('2015', 'Sky Lake-E Ubox Registers')) ?/? x?/x?
+   00:08.2 ('088000', ('8086', 'Intel Corporation'), ('2016', 'Sky Lake-E Ubox Registers')) ?/? x0/x?
+   00:11.0 ('ff0000', ('8086', 'Intel Corporation'), ('a1ec', 'C620 Series Chipset Family MROM 0')) ?/? x?/x?
+   00:11.5 ('010601', ('8086', 'Intel Corporation'), ('a1d2', 'C620 Series Chipset Family SSATA Controller [AHCI mode]')) ?/? x?/x?
+     0x0000000000000800 0x0000000000000807 0x0000000000040101
+     0x0000000000000810 0x0000000000000813 0x0000000000040101
+     0x0000000000000820 0x000000000000083f 0x0000000000040101
+     0x000000009d180000 0x000000009d1fffff 0x0000000000040200
+     0x000000009d216000 0x000000009d217fff 0x0000000000040200
+     0x000000009d219000 0x000000009d2190ff 0x0000000000040200
+   00:14.0 ('0c0330', ('8086', 'Intel Corporation'), ('a1af', 'C620 Series Chipset Family USB 3.0 xHCI Controller')) ?/? x?/x?
+     0x000000009d200000 0x000000009d20ffff 0x0000000000140204
+   00:14.2 ('118000', ('8086', 'Intel Corporation'), ('a1b1', 'C620 Series Chipset Family Thermal Subsystem')) ?/? x?/x?
+     0x0000383ffff23000 0x0000383ffff23fff 0x0000000000140204
+   00:16.0 ('078000', ('8086', 'Intel Corporation'), ('a1ba', 'C620 Series Chipset Family MEI Controller #1')) ?/? x?/x?
+     0x0000383ffff22000 0x0000383ffff22fff 0x0000000000140204
+   00:16.1 ('078000', ('8086', 'Intel Corporation'), ('a1bb', 'C620 Series Chipset Family MEI Controller #2')) ?/? x?/x?
+     0x0000383ffff21000 0x0000383ffff21fff 0x0000000000140204
+   00:16.4 ('078000', ('8086', 'Intel Corporation'), ('a1be', 'C620 Series Chipset Family MEI Controller #3')) ?/? x?/x?
+     0x0000383ffff20000 0x0000383ffff20fff 0x0000000000140204
+   00:17.0 ('010601', ('8086', 'Intel Corporation'), ('a182', 'C620 Series Chipset Family SATA Controller [AHCI mode]')) ?/? x?/x?
+     0x0000000000000840 0x0000000000000847 0x0000000000040101
+     0x0000000000000850 0x0000000000000853 0x0000000000040101
+     0x0000000000000860 0x000000000000087f 0x0000000000040101
+     0x000000009d100000 0x000000009d17ffff 0x0000000000040200
+     0x000000009d214000 0x000000009d215fff 0x0000000000040200
+     0x000000009d218000 0x000000009d2180ff 0x0000000000040200
+
+-----
+
+   00:1d.0 ('060400', ('8086', 'Intel Corporation'), ('a198', 'C620 Series Chipset Family PCI Express Root Port #9')) 2.5/8.0 x0/x1
+    ->  ('01:', '01:')
+
+-----
+
+   00:1d.1 ('060400', ('8086', 'Intel Corporation'), ('a199', 'C620 Series Chipset Family PCI Express Root Port #10')) 5.0/8.0 x1/x1
+    ->  ('02:', '03:')
+     0x0000000000002000 0x0000000000002fff 0x0000000000000100
+     0x000000009c000000 0x000000009d0fffff 0x0000000000000200
+   00:1f.0 ('060100', ('8086', 'Intel Corporation'), ('a1c1', 'C621 Series Chipset LPC/eSPI Controller')) ?/? x?/x?
+   00:1f.2 ('058000', ('8086', 'Intel Corporation'), ('a1a1', 'C620 Series Chipset Family Power Management Controller')) ?/? x?/x?
+     0x000000009d210000 0x000000009d213fff 0x0000000000040200
+   00:1f.4 ('0c0500', ('8086', 'Intel Corporation'), ('a1a3', 'C620 Series Chipset Family SMBus')) ?/? x?/x?
+     0x0000000000003fe0 0x0000000000003fff 0x0000000000040101
+     0x000000009d7fb000 0x000000009d7fb0ff 0x0000000000140204
+   00:1f.5 ('0c8000', ('8086', 'Intel Corporation'), ('a1a4', 'C620 Series Chipset Family SPI Controller')) ?/? x?/x?
+     0x00000000fe010000 0x00000000fe010fff 0x0000000000040200
+   02:00.0 ('060400', ('1a03', 'ASPEED Technology, Inc.'), ('1150', 'AST1150 PCI-to-PCI Bridge')) 5.0/5.0 x1/x1
+    ->  ('03:', '03:')
+     0x0000000000002000 0x0000000000002fff 0x0000000000000101
+     0x000000009c000000 0x000000009d0fffff 0x0000000000000200
+   03:00.0 ('030000', ('1a03', 'ASPEED Technology, Inc.'), ('2000', 'ASPEED Graphics Family')) ?/? x?/x?
+     0x0000000000002000 0x000000000000207f 0x0000000000040101
+     0x00000000000c0000 0x00000000000dffff 0x0000000000000212
+     0x000000009c000000 0x000000009cffffff 0x0000000000040200
+     0x000000009d000000 0x000000009d01ffff 0x0000000000040200
+
+-----
+
+   17:00.0 ('060400', ('8086', 'Intel Corporation'), ('2030', 'Sky Lake-E PCI Express Root Port A')) 8.0/8.0 x4/x4
+    ->  ('18:', '18:')
+     0x00000000aae00000 0x00000000aaefffff 0x0000000000000200
+
+-----
+
+   17:01.0 ('060400', ('8086', 'Intel Corporation'), ('2031', 'Sky Lake-E PCI Express Root Port B')) 8.0/8.0 x4/x4
+    ->  ('19:', '19:')
+     0x00000000aad00000 0x00000000aadfffff 0x0000000000000200
+
+-----
+
+   17:02.0 ('060400', ('8086', 'Intel Corporation'), ('2032', 'Sky Lake-E PCI Express Root Port C')) 8.0/8.0 x4/x4
+    ->  ('1a:', '1a:')
+     0x00000000aac00000 0x00000000aacfffff 0x0000000000000200
+
+-----
+
+   17:03.0 ('060400', ('8086', 'Intel Corporation'), ('2033', 'Sky Lake-E PCI Express Root Port D')) 8.0/8.0 x4/x4
+    ->  ('1b:', '1b:')
+     0x00000000aab00000 0x00000000aabfffff 0x0000000000000200
+   17:05.0 ('088000', ('8086', 'Intel Corporation'), ('2034', 'Sky Lake-E VT-d')) ?/? x0/x?
+   17:05.2 ('088000', ('8086', 'Intel Corporation'), ('2035', 'Sky Lake-E RAS Configuration Registers')) ?/? x0/x?
+   17:05.4 ('080020', ('8086', 'Intel Corporation'), ('2036', 'Sky Lake-E IOxAPIC Configuration Registers')) ?/? x0/x?
+     0x00000000aaf00000 0x00000000aaf00fff 0x0000000000040200
+   17:05.6 ('110100', ('8086', 'Intel Corporation'), ('2037', '??? - Unknown device?')) ?/? x0/x?
+   17:07.0 ('088000', ('8086', 'Intel Corporation'), ('2038', '??? - Unknown device?')) ?/? x0/x?
+   17:07.1 ('088000', ('8086', 'Intel Corporation'), ('2039', '??? - Unknown device?')) ?/? x0/x?
+   17:07.2 ('088000', ('8086', 'Intel Corporation'), ('203a', '??? - Unknown device?')) ?/? x0/x?
+   17:07.3 ('088000', ('8086', 'Intel Corporation'), ('203b', '??? - Unknown device?')) ?/? x0/x?
+   17:07.4 ('088000', ('8086', 'Intel Corporation'), ('203c', '??? - Unknown device?')) ?/? x0/x?
+   17:07.7 ('088000', ('8086', 'Intel Corporation'), ('203d', '??? - Unknown device?')) ?/? x0/x?
+   17:08.0 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:08.1 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:08.2 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:08.3 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:08.4 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:08.5 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:08.6 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:08.7 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:09.0 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:09.1 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:09.2 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:09.3 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:09.4 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:09.5 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:09.6 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:09.7 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:0a.0 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:0a.1 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:0a.2 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:0a.3 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:0a.4 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:0a.5 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:0a.6 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:0a.7 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:0b.0 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:0b.1 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:0b.2 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:0b.3 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:0e.0 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:0e.1 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:0e.2 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:0e.3 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:0e.4 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:0e.5 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:0e.6 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:0e.7 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:0f.0 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:0f.1 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:0f.2 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:0f.3 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:0f.4 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:0f.5 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:0f.6 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:0f.7 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:10.0 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:10.1 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:10.2 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:10.3 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:10.4 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:10.5 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:10.6 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:10.7 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:11.0 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:11.1 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:11.2 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:11.3 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:14.0 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   17:14.1 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   17:14.2 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   17:14.3 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   17:14.4 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   17:14.5 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   17:14.6 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   17:14.7 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   17:15.0 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   17:15.1 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   17:15.2 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   17:15.3 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   17:15.4 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   17:15.5 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   17:15.6 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   17:15.7 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   17:16.0 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   17:16.1 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   17:16.2 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   17:16.3 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   17:16.4 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   17:16.5 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   17:16.6 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   17:16.7 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   17:17.0 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   17:17.1 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   17:17.2 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   17:17.3 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   17:1d.0 ('088000', ('8086', 'Intel Corporation'), ('2054', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:1d.1 ('088000', ('8086', 'Intel Corporation'), ('2055', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:1d.2 ('088000', ('8086', 'Intel Corporation'), ('2056', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:1d.3 ('088000', ('8086', 'Intel Corporation'), ('2057', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   17:1e.0 ('088000', ('8086', 'Intel Corporation'), ('2080', 'Sky Lake-E PCU Registers')) ?/? x?/x?
+   17:1e.1 ('088000', ('8086', 'Intel Corporation'), ('2081', 'Sky Lake-E PCU Registers')) ?/? x?/x?
+   17:1e.2 ('088000', ('8086', 'Intel Corporation'), ('2082', 'Sky Lake-E PCU Registers')) ?/? x?/x?
+   17:1e.3 ('088000', ('8086', 'Intel Corporation'), ('2083', 'Sky Lake-E PCU Registers')) ?/? x?/x?
+   17:1e.4 ('088000', ('8086', 'Intel Corporation'), ('2084', 'Sky Lake-E PCU Registers')) ?/? x?/x?
+   17:1e.5 ('088000', ('8086', 'Intel Corporation'), ('2085', 'Sky Lake-E PCU Registers')) ?/? x?/x?
+   17:1e.6 ('088000', ('8086', 'Intel Corporation'), ('2086', 'Sky Lake-E PCU Registers')) ?/? x?/x?
+   17:1f.0 ('088000', ('8086', 'Intel Corporation'), ('2078', 'Sky Lake-E PCU Registers')) ?/? x?/x?
+   17:1f.1 ('088000', ('8086', 'Intel Corporation'), ('2079', '??? - Unknown device?')) ?/? x?/x?
+   17:1f.2 ('088000', ('8086', 'Intel Corporation'), ('207a', 'Sky Lake-E PCU Registers')) ?/? x?/x?
+   17:1f.3 ('088000', ('8086', 'Intel Corporation'), ('207b', '??? - Unknown device?')) ?/? x?/x?
+   17:1f.4 ('088000', ('8086', 'Intel Corporation'), ('207c', '??? - Unknown device?')) ?/? x?/x?
+   17:1f.5 ('088000', ('8086', 'Intel Corporation'), ('207d', '??? - Unknown device?')) ?/? x?/x?
+   17:1f.6 ('088000', ('8086', 'Intel Corporation'), ('207e', '??? - Unknown device?')) ?/? x?/x?
+   17:1f.7 ('088000', ('8086', 'Intel Corporation'), ('207f', '??? - Unknown device?')) ?/? x?/x?
+   18:00.0 ('010802', ('8086', 'Intel Corporation'), ('0a54', 'NVMe Datacenter SSD [3DNAND, Beta Rock Controller]')) 8.0/8.0 x4/x4
+     0x00000000aae00000 0x00000000aae0ffff 0x0000000000046200
+     0x00000000aae10000 0x00000000aae13fff 0x0000000000140204
+   19:00.0 ('010802', ('8086', 'Intel Corporation'), ('0a54', 'NVMe Datacenter SSD [3DNAND, Beta Rock Controller]')) 8.0/8.0 x4/x4
+     0x00000000aad00000 0x00000000aad0ffff 0x0000000000046200
+     0x00000000aad10000 0x00000000aad13fff 0x0000000000140204
+   1a:00.0 ('010802', ('1987', 'Phison Electronics Corporation'), ('5013', 'PS5013 E13 NVMe Controller')) 8.0/8.0 x4/x4
+     0x00000000aac00000 0x00000000aac03fff 0x0000000000140204
+   1b:00.0 ('010802', ('2646', 'Kingston Technology Company, Inc.'), ('500f', '??? - Unknown device?')) 8.0/8.0 x4/x4
+     0x00000000aab00000 0x00000000aab03fff 0x0000000000140204
+
+-----
+
+   3a:00.0 ('060400', ('8086', 'Intel Corporation'), ('2030', 'Sky Lake-E PCI Express Root Port A')) 8.0/8.0 x8/x8
+    ->  ('3b:', '3b:')
+     0x0000000000007000 0x0000000000007fff 0x0000000000000100
+     0x00000000b8500000 0x00000000b86fffff 0x0000000000000200
+   3a:05.0 ('088000', ('8086', 'Intel Corporation'), ('2034', 'Sky Lake-E VT-d')) ?/? x0/x?
+   3a:05.2 ('088000', ('8086', 'Intel Corporation'), ('2035', 'Sky Lake-E RAS Configuration Registers')) ?/? x0/x?
+   3a:05.4 ('080020', ('8086', 'Intel Corporation'), ('2036', 'Sky Lake-E IOxAPIC Configuration Registers')) ?/? x0/x?
+     0x00000000b8700000 0x00000000b8700fff 0x0000000000040200
+   3a:05.6 ('110100', ('8086', 'Intel Corporation'), ('2037', '??? - Unknown device?')) ?/? x0/x?
+   3a:07.0 ('088000', ('8086', 'Intel Corporation'), ('2038', '??? - Unknown device?')) ?/? x0/x?
+   3a:07.1 ('088000', ('8086', 'Intel Corporation'), ('2039', '??? - Unknown device?')) ?/? x0/x?
+   3a:07.2 ('088000', ('8086', 'Intel Corporation'), ('203a', '??? - Unknown device?')) ?/? x0/x?
+   3a:07.3 ('088000', ('8086', 'Intel Corporation'), ('203b', '??? - Unknown device?')) ?/? x0/x?
+   3a:07.4 ('088000', ('8086', 'Intel Corporation'), ('203c', '??? - Unknown device?')) ?/? x0/x?
+   3a:07.7 ('088000', ('8086', 'Intel Corporation'), ('203d', '??? - Unknown device?')) ?/? x0/x?
+   3a:08.0 ('088000', ('8086', 'Intel Corporation'), ('2066', 'Sky Lake-E Integrated Memory Controller')) ?/? x0/x?
+   3a:08.1 ('088000', ('8086', 'Intel Corporation'), ('2067', '??? - Unknown device?')) ?/? x?/x?
+   3a:09.0 ('088000', ('8086', 'Intel Corporation'), ('2066', 'Sky Lake-E Integrated Memory Controller')) ?/? x0/x?
+   3a:09.1 ('088000', ('8086', 'Intel Corporation'), ('2067', '??? - Unknown device?')) ?/? x?/x?
+   3a:0a.0 ('088000', ('8086', 'Intel Corporation'), ('2040', 'Sky Lake-E Integrated Memory Controller')) ?/? x0/x?
+   3a:0a.1 ('088000', ('8086', 'Intel Corporation'), ('2041', 'Sky Lake-E Integrated Memory Controller')) ?/? x0/x?
+   3a:0a.2 ('088000', ('8086', 'Intel Corporation'), ('2042', 'Sky Lake-E Integrated Memory Controller')) ?/? x0/x?
+   3a:0a.3 ('088000', ('8086', 'Intel Corporation'), ('2043', 'Sky Lake-E Integrated Memory Controller')) ?/? x0/x?
+   3a:0a.4 ('088000', ('8086', 'Intel Corporation'), ('2044', 'Sky Lake-E Integrated Memory Controller')) ?/? x0/x?
+   3a:0a.5 ('088000', ('8086', 'Intel Corporation'), ('2045', 'Sky Lake-E LM Channel 1')) ?/? x0/x?
+   3a:0a.6 ('088000', ('8086', 'Intel Corporation'), ('2046', 'Sky Lake-E LMS Channel 1')) ?/? x0/x?
+   3a:0a.7 ('088000', ('8086', 'Intel Corporation'), ('2047', 'Sky Lake-E LMDP Channel 1')) ?/? x0/x?
+   3a:0b.0 ('088000', ('8086', 'Intel Corporation'), ('2048', 'Sky Lake-E DECS Channel 2')) ?/? x0/x?
+   3a:0b.1 ('088000', ('8086', 'Intel Corporation'), ('2049', 'Sky Lake-E LM Channel 2')) ?/? x0/x?
+   3a:0b.2 ('088000', ('8086', 'Intel Corporation'), ('204a', 'Sky Lake-E LMS Channel 2')) ?/? x0/x?
+   3a:0b.3 ('088000', ('8086', 'Intel Corporation'), ('204b', 'Sky Lake-E LMDP Channel 2')) ?/? x0/x?
+   3a:0c.0 ('088000', ('8086', 'Intel Corporation'), ('2040', 'Sky Lake-E Integrated Memory Controller')) ?/? x0/x?
+   3a:0c.1 ('088000', ('8086', 'Intel Corporation'), ('2041', 'Sky Lake-E Integrated Memory Controller')) ?/? x0/x?
+   3a:0c.2 ('088000', ('8086', 'Intel Corporation'), ('2042', 'Sky Lake-E Integrated Memory Controller')) ?/? x0/x?
+   3a:0c.3 ('088000', ('8086', 'Intel Corporation'), ('2043', 'Sky Lake-E Integrated Memory Controller')) ?/? x0/x?
+   3a:0c.4 ('088000', ('8086', 'Intel Corporation'), ('2044', 'Sky Lake-E Integrated Memory Controller')) ?/? x0/x?
+   3a:0c.5 ('088000', ('8086', 'Intel Corporation'), ('2045', 'Sky Lake-E LM Channel 1')) ?/? x0/x?
+   3a:0c.6 ('088000', ('8086', 'Intel Corporation'), ('2046', 'Sky Lake-E LMS Channel 1')) ?/? x0/x?
+   3a:0c.7 ('088000', ('8086', 'Intel Corporation'), ('2047', 'Sky Lake-E LMDP Channel 1')) ?/? x0/x?
+   3a:0d.0 ('088000', ('8086', 'Intel Corporation'), ('2048', 'Sky Lake-E DECS Channel 2')) ?/? x0/x?
+   3a:0d.1 ('088000', ('8086', 'Intel Corporation'), ('2049', 'Sky Lake-E LM Channel 2')) ?/? x0/x?
+   3a:0d.2 ('088000', ('8086', 'Intel Corporation'), ('204a', 'Sky Lake-E LMS Channel 2')) ?/? x0/x?
+   3a:0d.3 ('088000', ('8086', 'Intel Corporation'), ('204b', 'Sky Lake-E LMDP Channel 2')) ?/? x0/x?
+   3b:00.0 ('010700', ('1000', 'Broadcom / LSI'), ('0097', 'SAS3008 PCI-Express Fusion-MPT SAS-3')) 8.0/8.0 x8/x8
+     0x0000000000007000 0x00000000000070ff 0x0000000000040101
+     0x00000000b8500000 0x00000000b85fffff 0x0000000000046200
+     0x00000000b8600000 0x00000000b863ffff 0x0000000000140204
+     0x00000000b8640000 0x00000000b864ffff 0x0000000000140204
+
+-----
+
+   5d:00.0 ('060400', ('8086', 'Intel Corporation'), ('2030', 'Sky Lake-E PCI Express Root Port A')) 8.0/8.0 x4/x8
+    ->  ('5e:', '5e:')
+     0x00000000b8800000 0x00000000b8cfffff 0x0000000000000200
+     0x000038fffe000000 0x000038fffe4fffff 0x0000000000102201
+
+-----
+
+   5d:02.0 ('060400', ('8086', 'Intel Corporation'), ('2032', 'Sky Lake-E PCI Express Root Port C')) 8.0/8.0 x8/x8
+    ->  ('5f:', '5f:')
+     0x00000000c5c00000 0x00000000c5dfffff 0x0000000000000200
+     0x000038c000000000 0x000038c005ffffff 0x0000000000102201
+   5d:05.0 ('088000', ('8086', 'Intel Corporation'), ('2034', 'Sky Lake-E VT-d')) ?/? x0/x?
+   5d:05.2 ('088000', ('8086', 'Intel Corporation'), ('2035', 'Sky Lake-E RAS Configuration Registers')) ?/? x0/x?
+   5d:05.4 ('080020', ('8086', 'Intel Corporation'), ('2036', 'Sky Lake-E IOxAPIC Configuration Registers')) ?/? x0/x?
+     0x00000000c5f00000 0x00000000c5f00fff 0x0000000000040200
+   5d:05.6 ('110100', ('8086', 'Intel Corporation'), ('2037', '??? - Unknown device?')) ?/? x0/x?
+   5d:07.0 ('088000', ('8086', 'Intel Corporation'), ('2038', '??? - Unknown device?')) ?/? x0/x?
+   5d:07.1 ('088000', ('8086', 'Intel Corporation'), ('2039', '??? - Unknown device?')) ?/? x0/x?
+   5d:07.2 ('088000', ('8086', 'Intel Corporation'), ('203a', '??? - Unknown device?')) ?/? x0/x?
+   5d:07.3 ('088000', ('8086', 'Intel Corporation'), ('203b', '??? - Unknown device?')) ?/? x0/x?
+   5d:07.4 ('088000', ('8086', 'Intel Corporation'), ('203c', '??? - Unknown device?')) ?/? x0/x?
+   5d:07.7 ('088000', ('8086', 'Intel Corporation'), ('203d', '??? - Unknown device?')) ?/? x0/x?
+   5d:0e.0 ('110100', ('8086', 'Intel Corporation'), ('2058', 'Sky Lake-E KTI 0')) ?/? x0/x?
+   5d:0e.1 ('088000', ('8086', 'Intel Corporation'), ('2059', 'Sky Lake-E UPI Registers')) ?/? x0/x?
+   5d:0e.2 ('088000', ('8086', 'Intel Corporation'), ('205a', '??? - Unknown device?')) ?/? x0/x?
+   5d:0e.3 ('088000', ('8086', 'Intel Corporation'), ('205b', '??? - Unknown device?')) ?/? x0/x?
+   5d:0f.0 ('110100', ('8086', 'Intel Corporation'), ('2058', 'Sky Lake-E KTI 0')) ?/? x0/x?
+   5d:0f.1 ('088000', ('8086', 'Intel Corporation'), ('2059', 'Sky Lake-E UPI Registers')) ?/? x0/x?
+   5d:0f.2 ('088000', ('8086', 'Intel Corporation'), ('205a', '??? - Unknown device?')) ?/? x0/x?
+   5d:10.0 ('110100', ('8086', 'Intel Corporation'), ('2058', 'Sky Lake-E KTI 0')) ?/? x0/x?
+   5d:10.1 ('088000', ('8086', 'Intel Corporation'), ('2059', 'Sky Lake-E UPI Registers')) ?/? x0/x?
+   5d:10.2 ('088000', ('8086', 'Intel Corporation'), ('205a', '??? - Unknown device?')) ?/? x0/x?
+   5d:10.3 ('088000', ('8086', 'Intel Corporation'), ('205b', '??? - Unknown device?')) ?/? x0/x?
+   5d:12.0 ('110100', ('8086', 'Intel Corporation'), ('204c', 'Sky Lake-E M3KTI Registers')) ?/? x0/x?
+   5d:12.1 ('110100', ('8086', 'Intel Corporation'), ('204d', 'Sky Lake-E M3KTI Registers')) ?/? x?/x?
+   5d:12.2 ('088000', ('8086', 'Intel Corporation'), ('204e', 'Sky Lake-E M3KTI Registers')) ?/? x?/x?
+   5d:12.3 ('088000', ('8086', 'Intel Corporation'), ('204f', '??? - Unknown device?')) ?/? x?/x?
+   5d:12.4 ('110100', ('8086', 'Intel Corporation'), ('204c', 'Sky Lake-E M3KTI Registers')) ?/? x0/x?
+   5d:12.5 ('110100', ('8086', 'Intel Corporation'), ('204d', 'Sky Lake-E M3KTI Registers')) ?/? x?/x?
+   5d:12.6 ('088000', ('8086', 'Intel Corporation'), ('204e', 'Sky Lake-E M3KTI Registers')) ?/? x?/x?
+   5d:12.7 ('088000', ('8086', 'Intel Corporation'), ('204f', '??? - Unknown device?')) ?/? x?/x?
+   5d:15.0 ('088000', ('8086', 'Intel Corporation'), ('2018', 'Sky Lake-E M2PCI Registers')) ?/? x?/x?
+   5d:15.3 ('088000', ('8086', 'Intel Corporation'), ('2019', '??? - Unknown device?')) ?/? x?/x?
+   5d:16.0 ('088000', ('8086', 'Intel Corporation'), ('2018', 'Sky Lake-E M2PCI Registers')) ?/? x?/x?
+   5d:16.3 ('088000', ('8086', 'Intel Corporation'), ('2019', '??? - Unknown device?')) ?/? x?/x?
+   5d:16.4 ('088000', ('8086', 'Intel Corporation'), ('2018', 'Sky Lake-E M2PCI Registers')) ?/? x?/x?
+   5d:16.7 ('088000', ('8086', 'Intel Corporation'), ('2019', '??? - Unknown device?')) ?/? x?/x?
+   5d:17.0 ('088000', ('8086', 'Intel Corporation'), ('2018', 'Sky Lake-E M2PCI Registers')) ?/? x?/x?
+   5d:17.3 ('088000', ('8086', 'Intel Corporation'), ('2019', '??? - Unknown device?')) ?/? x?/x?
+   5e:00.0 ('020000', ('8086', 'Intel Corporation'), ('1563', 'Ethernet Controller 10G X550T')) 8.0/8.0 x4/x4
+     0x00000000b8800000 0x00000000b887ffff 0x0000000000046200
+     0x00000000b8900000 0x00000000b89fffff 0x0000000000140204
+     0x00000000b8a00000 0x00000000b8afffff 0x0000000000140204
+     0x000038fffe200000 0x000038fffe3fffff 0x000000000014220c
+     0x000038fffe404000 0x000038fffe407fff 0x000000000014220c
+   5e:00.1 ('020000', ('8086', 'Intel Corporation'), ('1563', 'Ethernet Controller 10G X550T')) 8.0/8.0 x4/x4
+     0x00000000b8880000 0x00000000b88fffff 0x0000000000046200
+     0x00000000b8b00000 0x00000000b8bfffff 0x0000000000140204
+     0x00000000b8c00000 0x00000000b8cfffff 0x0000000000140204
+     0x000038fffe000000 0x000038fffe1fffff 0x000000000014220c
+     0x000038fffe400000 0x000038fffe403fff 0x000000000014220c
+   5f:00.0 ('020000', ('15b3', 'Mellanox Technologies'), ('1015', 'MT27710 Family [ConnectX-4 Lx]')) 8.0/8.0 x8/x8
+     0x00000000c5d00000 0x00000000c5dfffff 0x0000000000046200
+     0x000038c000000000 0x000038c001ffffff 0x000000000014220c
+     0x000038c004000000 0x000038c0047fffff 0x000000000014220c
+   5f:00.1 ('020000', ('15b3', 'Mellanox Technologies'), ('1015', 'MT27710 Family [ConnectX-4 Lx]')) 8.0/8.0 x8/x8
+     0x00000000c5c00000 0x00000000c5cfffff 0x0000000000046200
+     0x000038c002000000 0x000038c003ffffff 0x000000000014220c
+     0x000038c004800000 0x000038c004ffffff 0x000000000014220c
+   80:04.0 ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')) ?/? x0/x?
+     0x0000393ffff1c000 0x0000393ffff1ffff 0x0000000000140204
+   80:04.1 ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')) ?/? x0/x?
+     0x0000393ffff18000 0x0000393ffff1bfff 0x0000000000140204
+   80:04.2 ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')) ?/? x0/x?
+     0x0000393ffff14000 0x0000393ffff17fff 0x0000000000140204
+   80:04.3 ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')) ?/? x0/x?
+     0x0000393ffff10000 0x0000393ffff13fff 0x0000000000140204
+   80:04.4 ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')) ?/? x0/x?
+     0x0000393ffff0c000 0x0000393ffff0ffff 0x0000000000140204
+   80:04.5 ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')) ?/? x0/x?
+     0x0000393ffff08000 0x0000393ffff0bfff 0x0000000000140204
+   80:04.6 ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')) ?/? x0/x?
+     0x0000393ffff04000 0x0000393ffff07fff 0x0000000000140204
+   80:04.7 ('088000', ('8086', 'Intel Corporation'), ('2021', 'Sky Lake-E CBDMA Registers')) ?/? x0/x?
+     0x0000393ffff00000 0x0000393ffff03fff 0x0000000000140204
+   80:05.0 ('088000', ('8086', 'Intel Corporation'), ('2024', 'Sky Lake-E MM/Vt-d Configuration Registers')) ?/? x0/x?
+   80:05.1 ('088000', ('8086', 'Intel Corporation'), ('2022', '??? - Unknown device?')) ?/? x0/x?
+   80:05.2 ('088000', ('8086', 'Intel Corporation'), ('2025', 'Sky Lake-E RAS')) ?/? x0/x?
+   80:05.4 ('080020', ('8086', 'Intel Corporation'), ('2026', 'Sky Lake-E IOAPIC')) ?/? x0/x?
+     0x00000000d3700000 0x00000000d3700fff 0x0000000000040200
+   80:05.6 ('110100', ('8086', 'Intel Corporation'), ('2027', '??? - Unknown device?')) ?/? x0/x?
+   80:07.0 ('088000', ('8086', 'Intel Corporation'), ('2028', '??? - Unknown device?')) ?/? x0/x?
+   80:07.4 ('088000', ('8086', 'Intel Corporation'), ('202c', '??? - Unknown device?')) ?/? x0/x?
+   80:07.7 ('088000', ('8086', 'Intel Corporation'), ('202d', '??? - Unknown device?')) ?/? x0/x?
+   80:08.0 ('088000', ('8086', 'Intel Corporation'), ('2014', 'Sky Lake-E Ubox Registers')) ?/? x0/x?
+   80:08.1 ('110100', ('8086', 'Intel Corporation'), ('2015', 'Sky Lake-E Ubox Registers')) ?/? x?/x?
+   80:08.2 ('088000', ('8086', 'Intel Corporation'), ('2016', 'Sky Lake-E Ubox Registers')) ?/? x0/x?
+   85:05.0 ('088000', ('8086', 'Intel Corporation'), ('2034', 'Sky Lake-E VT-d')) ?/? x0/x?
+   85:05.2 ('088000', ('8086', 'Intel Corporation'), ('2035', 'Sky Lake-E RAS Configuration Registers')) ?/? x0/x?
+   85:05.4 ('080020', ('8086', 'Intel Corporation'), ('2036', 'Sky Lake-E IOxAPIC Configuration Registers')) ?/? x0/x?
+     0x00000000e0f00000 0x00000000e0f00fff 0x0000000000040200
+   85:05.6 ('110100', ('8086', 'Intel Corporation'), ('2037', '??? - Unknown device?')) ?/? x0/x?
+   85:07.0 ('088000', ('8086', 'Intel Corporation'), ('2038', '??? - Unknown device?')) ?/? x0/x?
+   85:07.1 ('088000', ('8086', 'Intel Corporation'), ('2039', '??? - Unknown device?')) ?/? x0/x?
+   85:07.2 ('088000', ('8086', 'Intel Corporation'), ('203a', '??? - Unknown device?')) ?/? x0/x?
+   85:07.3 ('088000', ('8086', 'Intel Corporation'), ('203b', '??? - Unknown device?')) ?/? x0/x?
+   85:07.4 ('088000', ('8086', 'Intel Corporation'), ('203c', '??? - Unknown device?')) ?/? x0/x?
+   85:07.7 ('088000', ('8086', 'Intel Corporation'), ('203d', '??? - Unknown device?')) ?/? x0/x?
+   85:08.0 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:08.1 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:08.2 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:08.3 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:08.4 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:08.5 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:08.6 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:08.7 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:09.0 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:09.1 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:09.2 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:09.3 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:09.4 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:09.5 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:09.6 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:09.7 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:0a.0 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:0a.1 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:0a.2 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:0a.3 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:0a.4 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:0a.5 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:0a.6 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:0a.7 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:0b.0 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:0b.1 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:0b.2 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:0b.3 ('088000', ('8086', 'Intel Corporation'), ('208d', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:0e.0 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:0e.1 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:0e.2 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:0e.3 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:0e.4 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:0e.5 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:0e.6 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:0e.7 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:0f.0 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:0f.1 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:0f.2 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:0f.3 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:0f.4 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:0f.5 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:0f.6 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:0f.7 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:10.0 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:10.1 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:10.2 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:10.3 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:10.4 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:10.5 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:10.6 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:10.7 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:11.0 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:11.1 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:11.2 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:11.3 ('088000', ('8086', 'Intel Corporation'), ('208e', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:14.0 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   85:14.1 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   85:14.2 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   85:14.3 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   85:14.4 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   85:14.5 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   85:14.6 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   85:14.7 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   85:15.0 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   85:15.1 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   85:15.2 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   85:15.3 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   85:15.4 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   85:15.5 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   85:15.6 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   85:15.7 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   85:16.0 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   85:16.1 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   85:16.2 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   85:16.3 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   85:16.4 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   85:16.5 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   85:16.6 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   85:16.7 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   85:17.0 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   85:17.1 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   85:17.2 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   85:17.3 ('088000', ('8086', 'Intel Corporation'), ('208f', '??? - Unknown device?')) ?/? x?/x?
+   85:1d.0 ('088000', ('8086', 'Intel Corporation'), ('2054', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:1d.1 ('088000', ('8086', 'Intel Corporation'), ('2055', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:1d.2 ('088000', ('8086', 'Intel Corporation'), ('2056', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:1d.3 ('088000', ('8086', 'Intel Corporation'), ('2057', 'Sky Lake-E CHA Registers')) ?/? x?/x?
+   85:1e.0 ('088000', ('8086', 'Intel Corporation'), ('2080', 'Sky Lake-E PCU Registers')) ?/? x?/x?
+   85:1e.1 ('088000', ('8086', 'Intel Corporation'), ('2081', 'Sky Lake-E PCU Registers')) ?/? x?/x?
+   85:1e.2 ('088000', ('8086', 'Intel Corporation'), ('2082', 'Sky Lake-E PCU Registers')) ?/? x?/x?
+   85:1e.3 ('088000', ('8086', 'Intel Corporation'), ('2083', 'Sky Lake-E PCU Registers')) ?/? x?/x?
+   85:1e.4 ('088000', ('8086', 'Intel Corporation'), ('2084', 'Sky Lake-E PCU Registers')) ?/? x?/x?
+   85:1e.5 ('088000', ('8086', 'Intel Corporation'), ('2085', 'Sky Lake-E PCU Registers')) ?/? x?/x?
+   85:1e.6 ('088000', ('8086', 'Intel Corporation'), ('2086', 'Sky Lake-E PCU Registers')) ?/? x?/x?
+   85:1f.0 ('088000', ('8086', 'Intel Corporation'), ('2078', 'Sky Lake-E PCU Registers')) ?/? x?/x?
+   85:1f.1 ('088000', ('8086', 'Intel Corporation'), ('2079', '??? - Unknown device?')) ?/? x?/x?
+   85:1f.2 ('088000', ('8086', 'Intel Corporation'), ('207a', 'Sky Lake-E PCU Registers')) ?/? x?/x?
+   85:1f.3 ('088000', ('8086', 'Intel Corporation'), ('207b', '??? - Unknown device?')) ?/? x?/x?
+   85:1f.4 ('088000', ('8086', 'Intel Corporation'), ('207c', '??? - Unknown device?')) ?/? x?/x?
+   85:1f.5 ('088000', ('8086', 'Intel Corporation'), ('207d', '??? - Unknown device?')) ?/? x?/x?
+   85:1f.6 ('088000', ('8086', 'Intel Corporation'), ('207e', '??? - Unknown device?')) ?/? x?/x?
+   85:1f.7 ('088000', ('8086', 'Intel Corporation'), ('207f', '??? - Unknown device?')) ?/? x?/x?
+
+-----
+
+   ae:00.0 ('060400', ('8086', 'Intel Corporation'), ('2030', 'Sky Lake-E PCI Express Root Port A')) 8.0/8.0 x16/x16
+    ->  ('af:', 'b8:')
+     0x00000000e1000000 0x00000000e21fffff 0x0000000000000200
+     0x0000398000000000 0x0000398000ffffff 0x0000000000102201
+   ae:05.0 ('088000', ('8086', 'Intel Corporation'), ('2034', 'Sky Lake-E VT-d')) ?/? x0/x?
+   ae:05.2 ('088000', ('8086', 'Intel Corporation'), ('2035', 'Sky Lake-E RAS Configuration Registers')) ?/? x0/x?
+   ae:05.4 ('080020', ('8086', 'Intel Corporation'), ('2036', 'Sky Lake-E IOxAPIC Configuration Registers')) ?/? x0/x?
+     0x00000000ee700000 0x00000000ee700fff 0x0000000000040200
+   ae:05.6 ('110100', ('8086', 'Intel Corporation'), ('2037', '??? - Unknown device?')) ?/? x0/x?
+   ae:07.0 ('088000', ('8086', 'Intel Corporation'), ('2038', '??? - Unknown device?')) ?/? x0/x?
+   ae:07.1 ('088000', ('8086', 'Intel Corporation'), ('2039', '??? - Unknown device?')) ?/? x0/x?
+   ae:07.2 ('088000', ('8086', 'Intel Corporation'), ('203a', '??? - Unknown device?')) ?/? x0/x?
+   ae:07.3 ('088000', ('8086', 'Intel Corporation'), ('203b', '??? - Unknown device?')) ?/? x0/x?
+   ae:07.4 ('088000', ('8086', 'Intel Corporation'), ('203c', '??? - Unknown device?')) ?/? x0/x?
+   ae:07.7 ('088000', ('8086', 'Intel Corporation'), ('203d', '??? - Unknown device?')) ?/? x0/x?
+   ae:08.0 ('088000', ('8086', 'Intel Corporation'), ('2066', 'Sky Lake-E Integrated Memory Controller')) ?/? x0/x?
+   ae:08.1 ('088000', ('8086', 'Intel Corporation'), ('2067', '??? - Unknown device?')) ?/? x?/x?
+   ae:09.0 ('088000', ('8086', 'Intel Corporation'), ('2066', 'Sky Lake-E Integrated Memory Controller')) ?/? x0/x?
+   ae:09.1 ('088000', ('8086', 'Intel Corporation'), ('2067', '??? - Unknown device?')) ?/? x?/x?
+   ae:0a.0 ('088000', ('8086', 'Intel Corporation'), ('2040', 'Sky Lake-E Integrated Memory Controller')) ?/? x0/x?
+   ae:0a.1 ('088000', ('8086', 'Intel Corporation'), ('2041', 'Sky Lake-E Integrated Memory Controller')) ?/? x0/x?
+   ae:0a.2 ('088000', ('8086', 'Intel Corporation'), ('2042', 'Sky Lake-E Integrated Memory Controller')) ?/? x0/x?
+   ae:0a.3 ('088000', ('8086', 'Intel Corporation'), ('2043', 'Sky Lake-E Integrated Memory Controller')) ?/? x0/x?
+   ae:0a.4 ('088000', ('8086', 'Intel Corporation'), ('2044', 'Sky Lake-E Integrated Memory Controller')) ?/? x0/x?
+   ae:0a.5 ('088000', ('8086', 'Intel Corporation'), ('2045', 'Sky Lake-E LM Channel 1')) ?/? x0/x?
+   ae:0a.6 ('088000', ('8086', 'Intel Corporation'), ('2046', 'Sky Lake-E LMS Channel 1')) ?/? x0/x?
+   ae:0a.7 ('088000', ('8086', 'Intel Corporation'), ('2047', 'Sky Lake-E LMDP Channel 1')) ?/? x0/x?
+   ae:0b.0 ('088000', ('8086', 'Intel Corporation'), ('2048', 'Sky Lake-E DECS Channel 2')) ?/? x0/x?
+   ae:0b.1 ('088000', ('8086', 'Intel Corporation'), ('2049', 'Sky Lake-E LM Channel 2')) ?/? x0/x?
+   ae:0b.2 ('088000', ('8086', 'Intel Corporation'), ('204a', 'Sky Lake-E LMS Channel 2')) ?/? x0/x?
+   ae:0b.3 ('088000', ('8086', 'Intel Corporation'), ('204b', 'Sky Lake-E LMDP Channel 2')) ?/? x0/x?
+   ae:0c.0 ('088000', ('8086', 'Intel Corporation'), ('2040', 'Sky Lake-E Integrated Memory Controller')) ?/? x0/x?
+   ae:0c.1 ('088000', ('8086', 'Intel Corporation'), ('2041', 'Sky Lake-E Integrated Memory Controller')) ?/? x0/x?
+   ae:0c.2 ('088000', ('8086', 'Intel Corporation'), ('2042', 'Sky Lake-E Integrated Memory Controller')) ?/? x0/x?
+   ae:0c.3 ('088000', ('8086', 'Intel Corporation'), ('2043', 'Sky Lake-E Integrated Memory Controller')) ?/? x0/x?
+   ae:0c.4 ('088000', ('8086', 'Intel Corporation'), ('2044', 'Sky Lake-E Integrated Memory Controller')) ?/? x0/x?
+   ae:0c.5 ('088000', ('8086', 'Intel Corporation'), ('2045', 'Sky Lake-E LM Channel 1')) ?/? x0/x?
+   ae:0c.6 ('088000', ('8086', 'Intel Corporation'), ('2046', 'Sky Lake-E LMS Channel 1')) ?/? x0/x?
+   ae:0c.7 ('088000', ('8086', 'Intel Corporation'), ('2047', 'Sky Lake-E LMDP Channel 1')) ?/? x0/x?
+   ae:0d.0 ('088000', ('8086', 'Intel Corporation'), ('2048', 'Sky Lake-E DECS Channel 2')) ?/? x0/x?
+   ae:0d.1 ('088000', ('8086', 'Intel Corporation'), ('2049', 'Sky Lake-E LM Channel 2')) ?/? x0/x?
+   ae:0d.2 ('088000', ('8086', 'Intel Corporation'), ('204a', 'Sky Lake-E LMS Channel 2')) ?/? x0/x?
+   ae:0d.3 ('088000', ('8086', 'Intel Corporation'), ('204b', 'Sky Lake-E LMDP Channel 2')) ?/? x0/x?
+   af:00.0 ('060400', ('10b5', 'PLX Technology, Inc.'), ('8749', 'PEX 8749 48-Lane, 18-Port PCI Express Gen 3 (8.0 GT/s) Multi-Root Switch with DMA')) 8.0/8.0 x16/x16
+    ->  ('b0:', 'b8:')
+     0x00000000e1000000 0x00000000e20fffff 0x0000000000000200
+     0x00000000e2100000 0x00000000e213ffff 0x0000000000040200
+     0x0000398000000000 0x0000398000ffffff 0x0000000000102201
+   b0:08.0 ('060400', ('10b5', 'PLX Technology, Inc.'), ('8749', 'PEX 8749 48-Lane, 18-Port PCI Express Gen 3 (8.0 GT/s) Multi-Root Switch with DMA')) 8.0/8.0 x4/x4
+    ->  ('b1:', 'b1:')
+     0x00000000e1000000 0x00000000e11fffff 0x0000000000000200
+     0x0000398000000000 0x00003980001fffff 0x0000000000102201
+   b0:09.0 ('060400', ('10b5', 'PLX Technology, Inc.'), ('8749', 'PEX 8749 48-Lane, 18-Port PCI Express Gen 3 (8.0 GT/s) Multi-Root Switch with DMA')) 8.0/8.0 x4/x4
+    ->  ('b2:', 'b2:')
+     0x00000000e1200000 0x00000000e13fffff 0x0000000000000200
+     0x0000398000200000 0x00003980003fffff 0x0000000000102201
+   b0:0a.0 ('060400', ('10b5', 'PLX Technology, Inc.'), ('8749', 'PEX 8749 48-Lane, 18-Port PCI Express Gen 3 (8.0 GT/s) Multi-Root Switch with DMA')) 8.0/8.0 x4/x4
+    ->  ('b3:', 'b3:')
+     0x00000000e1400000 0x00000000e16fffff 0x0000000000000200
+     0x0000398000400000 0x00003980005fffff 0x0000000000102201
+   b0:0b.0 ('060400', ('10b5', 'PLX Technology, Inc.'), ('8749', 'PEX 8749 48-Lane, 18-Port PCI Express Gen 3 (8.0 GT/s) Multi-Root Switch with DMA')) 8.0/8.0 x4/x4
+    ->  ('b4:', 'b4:')
+     0x00000000e1700000 0x00000000e18fffff 0x0000000000000200
+     0x0000398000600000 0x00003980007fffff 0x0000000000102201
+   b0:10.0 ('060400', ('10b5', 'PLX Technology, Inc.'), ('8749', 'PEX 8749 48-Lane, 18-Port PCI Express Gen 3 (8.0 GT/s) Multi-Root Switch with DMA')) 2.5/8.0 x0/x4
+    ->  ('b5:', 'b5:')
+     0x00000000e1900000 0x00000000e1afffff 0x0000000000000200
+     0x0000398000800000 0x00003980009fffff 0x0000000000102201
+   b0:11.0 ('060400', ('10b5', 'PLX Technology, Inc.'), ('8749', 'PEX 8749 48-Lane, 18-Port PCI Express Gen 3 (8.0 GT/s) Multi-Root Switch with DMA')) 2.5/8.0 x0/x4
+    ->  ('b6:', 'b6:')
+     0x00000000e1b00000 0x00000000e1cfffff 0x0000000000000200
+     0x0000398000a00000 0x0000398000bfffff 0x0000000000102201
+   b0:12.0 ('060400', ('10b5', 'PLX Technology, Inc.'), ('8749', 'PEX 8749 48-Lane, 18-Port PCI Express Gen 3 (8.0 GT/s) Multi-Root Switch with DMA')) 2.5/8.0 x0/x4
+    ->  ('b7:', 'b7:')
+     0x00000000e1d00000 0x00000000e1efffff 0x0000000000000200
+     0x0000398000c00000 0x0000398000dfffff 0x0000000000102201
+   b0:13.0 ('060400', ('10b5', 'PLX Technology, Inc.'), ('8749', 'PEX 8749 48-Lane, 18-Port PCI Express Gen 3 (8.0 GT/s) Multi-Root Switch with DMA')) 2.5/8.0 x0/x4
+    ->  ('b8:', 'b8:')
+     0x00000000e1f00000 0x00000000e20fffff 0x0000000000000200
+     0x0000398000e00000 0x0000398000ffffff 0x0000000000102201
+   b1:00.0 ('010802', ('8086', 'Intel Corporation'), ('0a54', 'NVMe Datacenter SSD [3DNAND, Beta Rock Controller]')) 8.0/8.0 x4/x4
+     0x00000000e1000000 0x00000000e1003fff 0x0000000000140204
+   b2:00.0 ('010802', ('8086', 'Intel Corporation'), ('0a54', 'NVMe Datacenter SSD [3DNAND, Beta Rock Controller]')) 8.0/8.0 x4/x4
+     0x00000000e1200000 0x00000000e1203fff 0x0000000000140204
+   b3:00.0 ('010802', ('8086', 'Intel Corporation'), ('f1aa', '??? - Unknown device?')) 8.0/8.0 x4/x4
+     0x00000000e1400000 0x00000000e1403fff 0x0000000000140204
+     0x00000000e1404000 0x00000000e1423fff 0x0000000000140204
+   b4:00.0 ('010802', ('c0a9', 'Micron/Crucial Technology'), ('540a', 'P2 NVMe PCIe SSD')) 8.0/8.0 x4/x4
+     0x00000000e1700000 0x00000000e1703fff 0x0000000000140204
+
+-----
+
+   d7:00.0 ('060400', ('8086', 'Intel Corporation'), ('2030', 'Sky Lake-E PCI Express Root Port A')) 8.0/8.0 x16/x16
+    ->  ('d8:', 'da:')
+     0x000000000000f000 0x000000000000ffff 0x0000000000000100
+     0x00000000fbe00000 0x00000000fbefffff 0x0000000000000200
+     0x000039c000000000 0x000039c0002fffff 0x0000000000102201
+   d7:05.0 ('088000', ('8086', 'Intel Corporation'), ('2034', 'Sky Lake-E VT-d')) ?/? x0/x?
+   d7:05.2 ('088000', ('8086', 'Intel Corporation'), ('2035', 'Sky Lake-E RAS Configuration Registers')) ?/? x0/x?
+   d7:05.4 ('080020', ('8086', 'Intel Corporation'), ('2036', 'Sky Lake-E IOxAPIC Configuration Registers')) ?/? x0/x?
+     0x00000000fbf00000 0x00000000fbf00fff 0x0000000000040200
+   d7:05.6 ('110100', ('8086', 'Intel Corporation'), ('2037', '??? - Unknown device?')) ?/? x0/x?
+   d7:07.0 ('088000', ('8086', 'Intel Corporation'), ('2038', '??? - Unknown device?')) ?/? x0/x?
+   d7:07.1 ('088000', ('8086', 'Intel Corporation'), ('2039', '??? - Unknown device?')) ?/? x0/x?
+   d7:07.2 ('088000', ('8086', 'Intel Corporation'), ('203a', '??? - Unknown device?')) ?/? x0/x?
+   d7:07.3 ('088000', ('8086', 'Intel Corporation'), ('203b', '??? - Unknown device?')) ?/? x0/x?
+   d7:07.4 ('088000', ('8086', 'Intel Corporation'), ('203c', '??? - Unknown device?')) ?/? x0/x?
+   d7:07.7 ('088000', ('8086', 'Intel Corporation'), ('203d', '??? - Unknown device?')) ?/? x0/x?
+   d7:0e.0 ('110100', ('8086', 'Intel Corporation'), ('2058', 'Sky Lake-E KTI 0')) ?/? x0/x?
+   d7:0e.1 ('088000', ('8086', 'Intel Corporation'), ('2059', 'Sky Lake-E UPI Registers')) ?/? x0/x?
+   d7:0e.2 ('088000', ('8086', 'Intel Corporation'), ('205a', '??? - Unknown device?')) ?/? x0/x?
+   d7:0e.3 ('088000', ('8086', 'Intel Corporation'), ('205b', '??? - Unknown device?')) ?/? x0/x?
+   d7:0f.0 ('110100', ('8086', 'Intel Corporation'), ('2058', 'Sky Lake-E KTI 0')) ?/? x0/x?
+   d7:0f.1 ('088000', ('8086', 'Intel Corporation'), ('2059', 'Sky Lake-E UPI Registers')) ?/? x0/x?
+   d7:0f.2 ('088000', ('8086', 'Intel Corporation'), ('205a', '??? - Unknown device?')) ?/? x0/x?
+   d7:10.0 ('110100', ('8086', 'Intel Corporation'), ('2058', 'Sky Lake-E KTI 0')) ?/? x0/x?
+   d7:10.1 ('088000', ('8086', 'Intel Corporation'), ('2059', 'Sky Lake-E UPI Registers')) ?/? x0/x?
+   d7:10.2 ('088000', ('8086', 'Intel Corporation'), ('205a', '??? - Unknown device?')) ?/? x0/x?
+   d7:10.3 ('088000', ('8086', 'Intel Corporation'), ('205b', '??? - Unknown device?')) ?/? x0/x?
+   d7:12.0 ('110100', ('8086', 'Intel Corporation'), ('204c', 'Sky Lake-E M3KTI Registers')) ?/? x0/x?
+   d7:12.1 ('110100', ('8086', 'Intel Corporation'), ('204d', 'Sky Lake-E M3KTI Registers')) ?/? x?/x?
+   d7:12.2 ('088000', ('8086', 'Intel Corporation'), ('204e', 'Sky Lake-E M3KTI Registers')) ?/? x?/x?
+   d7:12.3 ('088000', ('8086', 'Intel Corporation'), ('204f', '??? - Unknown device?')) ?/? x?/x?
+   d7:12.4 ('110100', ('8086', 'Intel Corporation'), ('204c', 'Sky Lake-E M3KTI Registers')) ?/? x0/x?
+   d7:12.5 ('110100', ('8086', 'Intel Corporation'), ('204d', 'Sky Lake-E M3KTI Registers')) ?/? x?/x?
+   d7:12.6 ('088000', ('8086', 'Intel Corporation'), ('204e', 'Sky Lake-E M3KTI Registers')) ?/? x?/x?
+   d7:12.7 ('088000', ('8086', 'Intel Corporation'), ('204f', '??? - Unknown device?')) ?/? x?/x?
+   d7:15.0 ('088000', ('8086', 'Intel Corporation'), ('2018', 'Sky Lake-E M2PCI Registers')) ?/? x?/x?
+   d7:15.3 ('088000', ('8086', 'Intel Corporation'), ('2019', '??? - Unknown device?')) ?/? x?/x?
+   d7:16.0 ('088000', ('8086', 'Intel Corporation'), ('2018', 'Sky Lake-E M2PCI Registers')) ?/? x?/x?
+   d7:16.3 ('088000', ('8086', 'Intel Corporation'), ('2019', '??? - Unknown device?')) ?/? x?/x?
+   d7:16.4 ('088000', ('8086', 'Intel Corporation'), ('2018', 'Sky Lake-E M2PCI Registers')) ?/? x?/x?
+   d7:16.7 ('088000', ('8086', 'Intel Corporation'), ('2019', '??? - Unknown device?')) ?/? x?/x?
+   d7:17.0 ('088000', ('8086', 'Intel Corporation'), ('2018', 'Sky Lake-E M2PCI Registers')) ?/? x?/x?
+   d7:17.3 ('088000', ('8086', 'Intel Corporation'), ('2019', '??? - Unknown device?')) ?/? x?/x?
+   d8:00.0 ('060400', ('10b5', 'PLX Technology, Inc.'), ('8733', '??? - Unknown device?')) 8.0/8.0 x16/x16
+    ->  ('d9:', 'da:')
+     0x000000000000f000 0x000000000000ffff 0x0000000000000100
+     0x00000000fbe00000 0x00000000fbe3ffff 0x0000000000040200
+     0x000039c000000000 0x000039c0002fffff 0x0000000000102201
+   d8:00.1 ('088000', ('10b5', 'PLX Technology, Inc.'), ('87d0', 'PEX PCI Express Switch DMA interface')) 8.0/? x16/x16
+     0x00000000fbe46000 0x00000000fbe47fff 0x0000000000040200
+   d8:00.2 ('088000', ('10b5', 'PLX Technology, Inc.'), ('87d0', 'PEX PCI Express Switch DMA interface')) 8.0/? x16/x16
+     0x00000000fbe44000 0x00000000fbe45fff 0x0000000000040200
+   d8:00.3 ('088000', ('10b5', 'PLX Technology, Inc.'), ('87d0', 'PEX PCI Express Switch DMA interface')) 8.0/? x16/x16
+     0x00000000fbe42000 0x00000000fbe43fff 0x0000000000040200
+   d8:00.4 ('088000', ('10b5', 'PLX Technology, Inc.'), ('87d0', 'PEX PCI Express Switch DMA interface')) 8.0/? x16/x16
+     0x00000000fbe40000 0x00000000fbe41fff 0x0000000000040200
+   d9:08.0 ('060400', ('10b5', 'PLX Technology, Inc.'), ('8733', '??? - Unknown device?')) 2.5/8.0 x0/x16
+    ->  ('da:', 'da:')
+     0x000000000000f000 0x000000000000ffff 0x0000000000000100
+     0x000039c000000000 0x000039c0001fffff 0x0000000000102201
