@@ -1,0 +1,19 @@
+ipmiutil sensor version 3.18
+-- BMC version 3.77, IPMI version 2.0 
+Memory Device (0,0): P0_Node0_Channel0_Dimm0/P1-DIMMA1 : size=32767MB
+Memory Device (0,1): P0_Node0_Channel0_Dimm1/P1-DIMMA2 : not present
+Memory Device (0,2): P0_Node0_Channel1_Dimm0/P1-DIMMB1 : size=32767MB
+Memory Device (0,3): P0_Node0_Channel1_Dimm1/P1-DIMMB2 : not present
+Memory Device (0,4): P0_Node0_Channel2_Dimm0/P1-DIMMC1 : not present
+Memory Device (0,5): P0_Node0_Channel2_Dimm1/P1-DIMMC2 : not present
+Memory Device (0,6): P0_Node1_Channel0_Dimm0/P1-DIMMD1 : size=32767MB
+Memory Device (0,7): P0_Node1_Channel0_Dimm1/P1-DIMMD2 : not present
+Memory Device (0,8): P0_Node1_Channel1_Dimm0/P1-DIMME1 : size=32767MB
+Memory Device (0,9): P0_Node1_Channel1_Dimm1/P1-DIMME2 : not present
+Memory Device (0,10): P0_Node1_Channel2_Dimm0/P1-DIMMF1 : not present
+Memory Device (0,11): P0_Node1_Channel2_Dimm1/P1-DIMMF2 : not present
+Memory Device (0,12): P1_Node0_Channel0_Dimm0/P2-DIMMA1 : size=32767MB
+Memory Device (0,13): P1_Node0_Channel0_Dimm1/P2-DIMMA2 : not present
+Memory Device (0,14): P1_Node0_Channel1_Dimm0/P2-DIMMB1 : size=32767MB
+Memory Device (0,15): P1_Node0_Channel1_Dimm1/P2-DIMMB2 : not present
+ipmiutil sensor, completed successfully

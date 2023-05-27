@@ -1,0 +1,18 @@
+ipmiutil health ver 3.18
+BMC manufacturer  = 002a7c (SuperMicro), product = 099d X11DSC+
+BMC version       = 3.77, IPMI v2.0
+BIOS Version      = 3.8b
+IPMI driver type  = 3        (open)
+Power State       = 00       (S0: working)
+Selftest status   = 0055     (OK)
+Chassis Status    = 21 00 40 00 (on, see below)
+	chassis_power       = on
+	pwr_restore_policy  = last_state
+	chassis_intrusion   = inactive
+	front_panel_lockout = inactive
+	drive_fault         = false
+	cooling_fan_fault   = false
+System GUID       = 39313031-4d53-ac1f-6baa-505300000000
+Power On Hours    = 58 hours (2 days)
+BMC LAN Channels  = 1 
+ipmiutil health, completed successfully

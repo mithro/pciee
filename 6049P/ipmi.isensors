@@ -1,0 +1,82 @@
+ipmiutil sensor version 3.18
+-- BMC version 3.77, IPMI version 2.0 
+_ID_ SDR_Type_xx ET Own Typ S_Num   Sens_Description   Hex & Interp Reading
+0004 SDR Full 01 01 20 a 01 snum 01 CPU1 Temp        = 43 OK   67.00 degrees C
+0047 SDR Full 01 01 20 a 01 snum 02 CPU2 Temp        = 2b OK   43.00 degrees C
+008a SDR Full 01 01 20 a 01 snum 0a PCH Temp         = 23 OK   35.00 degrees C
+00cd SDR Full 01 01 20 a 01 snum 09 Inlet Temp       = 1c OK   29.00 degrees C
+0110 SDR Full 01 01 20 a 01 snum 0b System Temp      = 1e OK   30.00 degrees C
+0153 SDR Full 01 01 20 a 01 snum 0c Peripheral Temp  = 23 OK   35.00 degrees C
+0196 SDR Full 01 01 20 a 01 snum 10 VRMCpu1IN Temp   = 32 OK   50.00 degrees C
+01d9 SDR Full 01 01 20 a 01 snum 16 VRMCpu1IO Temp   = 1f OK   31.00 degrees C
+021c SDR Full 01 01 20 a 01 snum 11 VRMCpu2IN Temp   = 2b OK   43.00 degrees C
+025f SDR Full 01 01 20 a 01 snum 17 VRMCpu2IO Temp   = 21 OK   33.00 degrees C
+02a2 SDR Full 01 01 20 a 01 snum 12 VRMP1ABC Temp    = 27 OK   39.00 degrees C
+02e5 SDR Full 01 01 20 a 01 snum 13 VRMP1DEF Temp    = 24 OK   36.00 degrees C
+0328 SDR Full 01 01 20 a 01 snum 14 VRMP2ABC Temp    = 1e OK   30.00 degrees C
+036b SDR Full 01 01 20 a 01 snum 15 VRMP2DEF Temp    = 24 OK   36.00 degrees C
+03ae SDR Full 01 01 20 a 01 snum b0 P1-DIMMA1 Temp   = 2c OK   44.00 degrees C
+03f1 SDR Full 01 01 20 a 01 snum b1 P1-DIMMA2 Temp   = 00 Absent 0.00 na
+0434 SDR Full 01 01 20 a 01 snum b4 P1-DIMMB1 Temp   = 2b OK   43.00 degrees C
+0477 SDR Full 01 01 20 a 01 snum b5 P1-DIMMB2 Temp   = 00 Absent 0.00 na
+04ba SDR Full 01 01 20 a 01 snum b8 P1-DIMMC1 Temp   = 00 Absent 0.00 na
+04fd SDR Full 01 01 20 a 01 snum b9 P1-DIMMC2 Temp   = 00 Absent 0.00 na
+0540 SDR Full 01 01 20 a 01 snum bc P1-DIMMD1 Temp   = 2b OK   43.00 degrees C
+0583 SDR Full 01 01 20 a 01 snum bd P1-DIMMD2 Temp   = 00 Absent 0.00 na
+05c6 SDR Full 01 01 20 a 01 snum d0 P1-DIMME1 Temp   = 2a OK   42.00 degrees C
+0609 SDR Full 01 01 20 a 01 snum d1 P1-DIMME2 Temp   = 00 Absent 0.00 na
+064c SDR Full 01 01 20 a 01 snum d4 P1-DIMMF1 Temp   = 00 Absent 0.00 na
+068f SDR Full 01 01 20 a 01 snum d5 P1-DIMMF2 Temp   = 00 Absent 0.00 na
+06d2 SDR Full 01 01 20 a 01 snum d8 P2-DIMMA1 Temp   = 2a OK   42.00 degrees C
+0715 SDR Full 01 01 20 a 01 snum d9 P2-DIMMA2 Temp   = 00 Absent 0.00 na
+0758 SDR Full 01 01 20 a 01 snum dc P2-DIMMB1 Temp   = 27 OK   39.00 degrees C
+079b SDR Full 01 01 20 a 01 snum dd P2-DIMMB2 Temp   = 00 Absent 0.00 na
+07de SDR Full 01 01 20 a 01 snum e0 P2-DIMMC1 Temp   = 00 Absent 0.00 na
+0821 SDR Full 01 01 20 a 01 snum e1 P2-DIMMC2 Temp   = 00 Absent 0.00 na
+0864 SDR Full 01 01 20 a 01 snum e4 P2-DIMMD1 Temp   = 2a OK   42.00 degrees C
+08a7 SDR Full 01 01 20 a 01 snum e5 P2-DIMMD2 Temp   = 00 Absent 0.00 na
+08ea SDR Full 01 01 20 a 01 snum e8 P2-DIMME1 Temp   = 28 OK   40.00 degrees C
+092d SDR Full 01 01 20 a 01 snum e9 P2-DIMME2 Temp   = 00 Absent 0.00 na
+0970 SDR Full 01 01 20 a 01 snum ec P2-DIMMF1 Temp   = 00 Absent 0.00 na
+09b3 SDR Full 01 01 20 a 01 snum ed P2-DIMMF2 Temp   = 00 Absent 0.00 na
+09f6 SDR Full 01 01 20 a 04 snum 41 FAN1             = 4c OK 7600.00 RPM
+0a39 SDR Full 01 01 20 a 04 snum 42 FAN2             = 4c OK 7600.00 RPM
+0a7c SDR Full 01 01 20 a 04 snum 43 FAN3             = 4d OK 7700.00 RPM
+0abf SDR Full 01 01 20 a 04 snum 44 FAN4             = 4e OK 7800.00 RPM
+0b02 SDR Full 01 01 20 a 04 snum 45 FAN5             = 4d OK 7700.00 RPM
+0b45 SDR Full 01 01 20 a 02 snum 30 12V              = ba OK 12.14 Volts
+0b88 SDR Full 01 01 20 a 02 snum 31 5VCC             = a7 OK 5.01 Volts
+0bcb SDR Full 01 01 20 a 02 snum 32 3.3VCC           = bf OK 3.27 Volts
+0c0e SDR Full 01 6f 20 a 29 snum 33 VBAT             = 04 NotAvailable 3.27 na
+0c51 SDR Full 01 01 20 a 02 snum 34 Vcpu1            = c2 OK 1.81 Volts
+0c94 SDR Full 01 01 20 a 02 snum 36 Vcpu2            = c2 OK 1.81 Volts
+0cd7 SDR Full 01 01 20 a 02 snum 35 VDimmP1ABC       = ac OK 1.22 Volts
+0d1a SDR Full 01 01 20 a 02 snum 37 VDimmP1DEF       = ab OK 1.21 Volts
+0d5d SDR Full 01 01 20 a 02 snum 3a VDimmP2ABC       = ac OK 1.22 Volts
+0da0 SDR Full 01 01 20 a 02 snum 3b VDimmP2DEF       = ac OK 1.22 Volts
+0de3 SDR Full 01 01 20 a 02 snum 38 5VSB             = a8 OK 5.11 Volts
+0e26 SDR Full 01 01 20 a 02 snum 39 3.3VSB           = bc OK 3.21 Volts
+0e69 SDR Full 01 01 20 a 02 snum 3c 1.8V PCH         = c3 OK 1.83 Volts
+0eac SDR Full 01 01 20 a 02 snum 3d PVNN PCH         = 8f OK 1.01 Volts
+0eef SDR Full 01 01 20 a 02 snum 3e 1.05V PCH        = 95 OK 1.05 Volts
+0f32 SDR Full 01 6f 20 a 05 snum aa Chassis Intru    = 00 NotAvailable 1.05 na
+0f75 SDR FRU  11 12 dev: 20 00 80 26 00 00 BMC FRU
+0fb8 SDR IPMB 12 13 dev: 20 00 26 00 00 ATEN BMC
+0ffb SDR EvtO 03 1b 20 a dc snum 80 NM exception     = 0000 OK  
+103e SDR EvtO 03 1b 20 a dc snum 81 NM health        = 0000 OK  
+1081 SDR EvtO 03 1b 20 a dc snum 82 NM op cap        = 0000 OK  
+10c4 SDR EvtO 03 1b 20 a dc snum 83 NM alert         = 0000 OK  
+1107 SDR OEM  c0 0b Intel: NM(0,2c,0) health=25 excep=24 capab=26 thresh=27
+114a SDR Full 01 01 20 m c1 snum 1a PW Consumption   = 32 OK 505.00 Watts
+118d SDR Comp 02 6f 20 a 08 snum c4 PS1 Status       = 0001 Present
+11d0 SDR Comp 02 6f 20 a 08 snum c5 PS2 Status       = 0001 Present
+1213 SDR Full 01 01 20 a 01 snum 60 AOC_NIC1_Temp = 42 OK   66.00 degrees C
+1256 SDR Full 01 01 20 a 01 snum 80 Expander1 Temp = 3a OK   58.00 degrees C
+1299 SDR Full 01 01 20 a 01 snum 84 BPN-1 Temp = 24 OK   36.00 degrees C
+12dc SDR Full 01 01 20 a 01 snum 81 Expander2 Temp = 3d OK   61.00 degrees C
+131f SDR Full 01 01 20 a 01 snum 85 BPN-2 Temp = 25 OK   37.00 degrees C
+1362 SDR Full 01 01 20 a 01 snum 0f AOC_SAS Temp = 3c OK   60.00 degrees C
+13a5 SDR Full 01 01 20 a 01 snum 50 HDD Temp = 23 OK   35.00 degrees C
+13e8 SDR Full 01 6f 20 a 0d snum 54 HDD Status = 01 Present
+     SDR IPMI       sensor: Power On Hours 	   = 58 hours
+ipmiutil sensor, completed successfully
